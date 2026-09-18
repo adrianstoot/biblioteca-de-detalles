@@ -1,0 +1,1396 @@
+[
+  {
+    "id": "P1-1",
+    "fileCode": "P1-1",
+    "title": "Nudo articulado viga a pilar",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Articulados Viga-Pilar",
+    "categoryKey": "articulated",
+    "shortDescription": "Unión flexible viga-pilar mediante angular laminado simple atornillado/soldado al alma.",
+    "detailedDescription": "Unión articulada viga-pilar resuelta mediante casquillo angular fijado al alma de la viga IPE y al perfil UPN del pilar. Diseñado para transmitir el esfuerzo cortante sin coacción al giro, permitiendo el libre giro del extremo de la viga según hipótesis de cálculo de viga biapoyada.",
+    "structuralBehavior": "Transmisión exclusiva de esfuerzo cortante vertical. Capacidad de rotación plástica sin desarrollo de momentos flectores significativos.",
+    "components": [
+      "Perfil pilar UPN",
+      "Viga IPE",
+      "Casquillo angular L",
+      "Tornillería ordinaria / soldadura de taller al alma"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.4 / UNE-EN 1993-1-8",
+    "tags": [
+      "articulado",
+      "casquillo",
+      "angular",
+      "alma",
+      "cortante",
+      "upn",
+      "ipe"
+    ],
+    "modelFile": "/models/P1-1.glb",
+    "dimensions": {
+      "width": 1.17,
+      "height": 0.93,
+      "depth": 0.16
+    },
+    "stats": {
+      "geometriesCount": 10,
+      "totalVertices": 900,
+      "totalFaces": 300,
+      "fileSizeKb": 40.3
+    },
+    "fullTitle": "Nudo Articulado Viga IPE a Pilar UPN con Casquillo de Alma",
+    "shortTitle": "Nudo articulado viga a pilar"
+  },
+  {
+    "id": "P1-10",
+    "fileCode": "P1-10",
+    "title": "Nudo HEB con IPE y rigidizadores",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Rígidos Viga-Pilar",
+    "categoryKey": "rigid",
+    "shortDescription": "Empotramiento viga-pilar con rigidizadores horizontales de tracción y compresión.",
+    "detailedDescription": "Nudo rígido de pórtico formado por viga IPE soldada a tope directamente al ala de pilar HEB/IPE. Incluye rigidizadores horizontales en el alma del pilar alineados con las alas de la viga para evitar el abollamiento por compresión y plastificación por tracción del alma del pilar.",
+    "structuralBehavior": "Nudo rígido de resistencia completa. Transmisión íntegra del momento elástico/plástico de la viga sin distorsión del nudo.",
+    "components": [
+      "Pilar de perfiles HEB/IPE",
+      "Viga IPE",
+      "Rigidizadores de compresión",
+      "Rigidizadores de tracción",
+      "Soldadura a tope en alas y ángulo en alma"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.6 / UNE-EN 1993-1-8 Cl. 6.2",
+    "tags": [
+      "rigido",
+      "empotrado",
+      "soldado",
+      "rigidizador",
+      "traccion",
+      "compresion",
+      "ipe",
+      "heb"
+    ],
+    "modelFile": "/models/P1-10.glb",
+    "dimensions": {
+      "width": 3.309,
+      "height": 0.792,
+      "depth": 0.45
+    },
+    "stats": {
+      "geometriesCount": 10,
+      "totalVertices": 1068,
+      "totalFaces": 356,
+      "fileSizeKb": 45.1
+    },
+    "fullTitle": "Nudo Rígido Soldado Viga IPE a Pilar con Rigidizadores de Alma",
+    "shortTitle": "Nudo HEB con IPE y rigidizadores"
+  },
+  {
+    "id": "P1-11",
+    "fileCode": "P1-11",
+    "title": "Nudo IPE a pilar tubular",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Articulados Viga-Pilar",
+    "categoryKey": "articulated",
+    "shortDescription": "Conexión de viga a pilar tubular de sección hueca mediante chapa frontal.",
+    "detailedDescription": "Enlace entre una viga abierta IPE y un soporte cerrado tubular o cajón conformado. Se emplea una chapa de testa soldada en taller a la viga y anclada a la cara plana del tubo, optimizando la ejecución sin requerir acceso al interior del soporte.",
+    "structuralBehavior": "Transmisión de cortante y momento según espesor de la cara del perfil tubular y rigidez de la chapa de testa.",
+    "components": [
+      "Pilar cajón / perfil hueco conformado",
+      "Viga IPE",
+      "Chapa de testa plana",
+      "Tornillos de unión"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.4 / UNE-EN 1993-1-8 Cl. 7",
+    "tags": [
+      "tubular",
+      "soporte cajon",
+      "chapa de testa",
+      "viga-pilar",
+      "perfil hueco"
+    ],
+    "modelFile": "/models/P1-11.glb",
+    "dimensions": {
+      "width": 1.359,
+      "height": 1.934,
+      "depth": 0.28
+    },
+    "stats": {
+      "geometriesCount": 11,
+      "totalVertices": 1080,
+      "totalFaces": 360,
+      "fileSizeKb": 45.7
+    },
+    "fullTitle": "Nudo Viga IPE a Soporte Hueco / Cajón con Chapa de Testa",
+    "shortTitle": "Nudo IPE a pilar tubular"
+  },
+  {
+    "id": "P1-12",
+    "fileCode": "P1-12",
+    "title": "Nudo rígido con cartela y rigidizadores",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Rígidos Viga-Pilar",
+    "categoryKey": "rigid",
+    "shortDescription": "Nudo de gran capacidad con rigidizadores en cruz y refuerzo inferior en ménsula.",
+    "detailedDescription": "Configuración de nudo pórtico para naves y estructuras de edificación con grandes solicitaciones. Incorpora rigidización ortogonal continua en el pilar y cartela triangular inferior para incrementar el brazo mecánico y reducir las tensiones en las uniones soldadas.",
+    "structuralBehavior": "Elevadísima rigidez rotacional y capacidad de absorción de energía cíclica / sísmica.",
+    "components": [
+      "Pilar de gran inercia",
+      "Viga IPE",
+      "Cartela acartelada inferior",
+      "Rigidizadores transversales en cruz"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.6",
+    "tags": [
+      "rigido",
+      "cartela",
+      "ortogonal",
+      "acartelado",
+      "gran capacidad",
+      "pórtico"
+    ],
+    "modelFile": "/models/P1-12.glb",
+    "dimensions": {
+      "width": 2.6,
+      "height": 1.906,
+      "depth": 0.45
+    },
+    "stats": {
+      "geometriesCount": 14,
+      "totalVertices": 948,
+      "totalFaces": 316,
+      "fileSizeKb": 43.3
+    },
+    "fullTitle": "Nudo Rígido Viga-Pilar con Rigidizadores Ortogonales y Cartela",
+    "shortTitle": "Nudo rígido con cartela y rigidizadores"
+  },
+  {
+    "id": "P1-13",
+    "fileCode": "P1-13",
+    "title": "Pilar compuesto presillado",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Empalmes y Continuidad",
+    "categoryKey": "splice",
+    "shortDescription": "Columna metálica formada por 2 UPN en cajón unidos periódicamente mediante presillas.",
+    "detailedDescription": "Elemento pilar comprimido compuesto por dos perfiles UPN dispuestos en paralelo con cordones de separación fijados por presillas metálicas periódicas. Reduce la esbeltez mecánica en el eje débil (eje Y-Y) frente a pandeo por flexión.",
+    "structuralBehavior": "Comportamiento solidario de la sección compuesta. Cálculo de presillas a cortante según DB-SE-A Art. 6.3.3.",
+    "components": [
+      "2 Perfiles UPN enfrentados",
+      "Presillas de unión en chapa",
+      "Soldadura en ángulo perimetral"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 6.3.3 / UNE-EN 1993-1-1 Cl. 6.4",
+    "tags": [
+      "presillado",
+      "pilar compuesto",
+      "upn",
+      "pandeo",
+      "presillas",
+      "compresion"
+    ],
+    "modelFile": "/models/P1-13.glb",
+    "dimensions": {
+      "width": 0.844,
+      "height": 1.269,
+      "depth": 0.3
+    },
+    "stats": {
+      "geometriesCount": 12,
+      "totalVertices": 9504,
+      "totalFaces": 3168,
+      "fileSizeKb": 332.1
+    },
+    "fullTitle": "Soporte Compuesto Presillado con Perfiles UPN y Presillas Soldadas",
+    "shortTitle": "Pilar compuesto presillado"
+  },
+  {
+    "id": "P1-14",
+    "fileCode": "P1-14",
+    "title": "Cruce de vigueta y viga principal",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Entramados y Cruces de Forjado",
+    "categoryKey": "framework",
+    "shortDescription": "Encuentro ortogonal de viga maestra jácena y viguetas secundarias continuas.",
+    "detailedDescription": "Detalle constructivo de emparrillado de piso donde una viga principal continua recibe vigas secundarias perpendiculares. Se aprecian las piezas de fijación, rigidizadores bajo carga concentrada y casquillos angulares.",
+    "structuralBehavior": "Transmisión de cargas repartidas de forjado desde las viguetas a la jácena principal mediante reacciones puntuales.",
+    "components": [
+      "Viga principal (jácena)",
+      "Vigas secundarias (correas/viguetas)",
+      "Rigidizadores de apoyo",
+      "Angulares de sujeción"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.3 / UNE-EN 1993-1-8",
+    "tags": [
+      "entramado",
+      "cruce",
+      "forjado",
+      "viga principal",
+      "secundaria",
+      "jacena"
+    ],
+    "modelFile": "/models/P1-14.glb",
+    "dimensions": {
+      "width": 2.423,
+      "height": 1.646,
+      "depth": 0.67
+    },
+    "stats": {
+      "geometriesCount": 16,
+      "totalVertices": 1476,
+      "totalFaces": 492,
+      "fileSizeKb": 57.6
+    },
+    "fullTitle": "Entramado de Forjado: Cruce de Viga Principal y Secundaria",
+    "shortTitle": "Cruce de vigueta y viga principal"
+  },
+  {
+    "id": "P1-15",
+    "fileCode": "P1-15",
+    "title": "Nudo articulado con chapa corta",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Articulados Viga-Pilar",
+    "categoryKey": "articulated",
+    "shortDescription": "Unión atornillada con chapa frontal no extendida que garantiza libertad de giro.",
+    "detailedDescription": "Nudo resuelto con chapa frontal soldada en taller únicamente al alma de la viga (chapa no extendida a las alas). Al no confinar las alas, el nudo posee una rigidez a flexión despreciable actuando como apoyo simple a cortante.",
+    "structuralBehavior": "Rótula plástica pasiva. Transmisión exclusiva de cortante mediante los tornillos centrales.",
+    "components": [
+      "Pilar metálico",
+      "Viga IPE",
+      "Chapa frontal corta",
+      "Tornillos pretensados"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.4",
+    "tags": [
+      "chapa frontal",
+      "articulado",
+      "chapa corta",
+      "rotula",
+      "ipe",
+      "cortante"
+    ],
+    "modelFile": "/models/P1-15.glb",
+    "dimensions": {
+      "width": 1.158,
+      "height": 0.725,
+      "depth": 0.176
+    },
+    "stats": {
+      "geometriesCount": 7,
+      "totalVertices": 588,
+      "totalFaces": 196,
+      "fileSizeKb": 25.6
+    },
+    "fullTitle": "Nudo Articulado Viga IPE a Pilar con Chapa Frontal Corta",
+    "shortTitle": "Nudo articulado con chapa corta"
+  },
+  {
+    "id": "P1-17",
+    "fileCode": "P1-17",
+    "title": "Viga pasante sobre cabeza de pilar",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Empalmes y Continuidad",
+    "categoryKey": "splice",
+    "shortDescription": "Viga continua apoyada en la coronación de un soporte metálico con chapa de reparto.",
+    "detailedDescription": "Encuentro en el que la viga pasa continua sobre el extremo superior del pilar inferior. Incorpora rigidizadores en el alma de la viga directamente sobre el eje del pilar para prevenir la abolladura del alma por carga puntual.",
+    "structuralBehavior": "Continuidad estática de la viga (momento flector negativo sobre apoyo). Apoyo directo a compresión sobre pilar.",
+    "components": [
+      "Pilar metálico inferior",
+      "Viga continua superior",
+      "Chapa de cabeza de pilar",
+      "Rigidizadores de alma en viga"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 6.2.8 y 8.3",
+    "tags": [
+      "continuidad",
+      "cabeza pilar",
+      "viga pasante",
+      "rigidizador",
+      "apoyo continuo"
+    ],
+    "modelFile": "/models/P1-17.glb",
+    "dimensions": {
+      "width": 1.084,
+      "height": 1.644,
+      "depth": 0.201
+    },
+    "stats": {
+      "geometriesCount": 14,
+      "totalVertices": 1068,
+      "totalFaces": 356,
+      "fileSizeKb": 45.9
+    },
+    "fullTitle": "Enlace de Continuidad: Viga Pasante sobre Cabeza de Pilar con Rigidizador",
+    "shortTitle": "Viga pasante sobre cabeza de pilar"
+  },
+  {
+    "id": "P1-18",
+    "fileCode": "P1-18",
+    "title": "Cabeza de pilar con chapa de apoyo",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Empalmes y Continuidad",
+    "categoryKey": "splice",
+    "shortDescription": "Mecanización de coronación de soporte con placa gruesa de reparto de carga.",
+    "detailedDescription": "Detalle de remate superior de pilar preparado para recibir vigas de cubierta o dinteles. La chapa gruesa soldada en la testa del soporte distribuye uniformemente la presión de contacto hacia las alas y alma del perfil vertical.",
+    "structuralBehavior": "Distribución uniforme de presiones de contacto por aplastamiento directo.",
+    "components": [
+      "Perfil de pilar",
+      "Placa de cabeza de reparto t=20mm",
+      "Cordón de soldadura continuo"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.3",
+    "tags": [
+      "cabeza de pilar",
+      "chapa reparto",
+      "coronacion",
+      "dintel",
+      "apoyo"
+    ],
+    "modelFile": "/models/P1-18.glb",
+    "dimensions": {
+      "width": 0.497,
+      "height": 1.044,
+      "depth": 0.461
+    },
+    "stats": {
+      "geometriesCount": 8,
+      "totalVertices": 624,
+      "totalFaces": 208,
+      "fileSizeKb": 26.5
+    },
+    "fullTitle": "Cabeza de Pilar con Chapa de Reparto para Apoyo de Dintel",
+    "shortTitle": "Cabeza de pilar con chapa de apoyo"
+  },
+  {
+    "id": "P1-2",
+    "fileCode": "P1-2",
+    "title": "Nudo viga a pilar con angulares",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Articulados Viga-Pilar",
+    "categoryKey": "articulated",
+    "shortDescription": "Apoyo sobre angular de asiento inferior con angular estabilizador superior de cabeza.",
+    "detailedDescription": "Detalle constructivo de unión viga-soporte constituido por un angular inferior que resiste la reacción vertical de apoyo y un angular superior en el ala de cabeza que proporciona arriostramiento contra el vuelco lateral. Presenta rigidez rotacional parcial clasificada como semi-rígida.",
+    "structuralBehavior": "Reacción vertical resistida por angular inferior. Resistencia a momento moderada según deformabilidad del angular de cabeza.",
+    "components": [
+      "Pilar UPN",
+      "Viga metálica IPE",
+      "Angular de asiento inferior",
+      "Angular estabilizador de cabeza"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.4 / UNE-EN 1993-1-8 Cl. 5.1.2",
+    "tags": [
+      "asiento",
+      "semi-rigido",
+      "angular",
+      "vuelco",
+      "ipe",
+      "upn"
+    ],
+    "modelFile": "/models/P1-2.glb",
+    "dimensions": {
+      "width": 2.388,
+      "height": 2.074,
+      "depth": 0.219
+    },
+    "stats": {
+      "geometriesCount": 24,
+      "totalVertices": 25416,
+      "totalFaces": 8472,
+      "fileSizeKb": 699.5
+    },
+    "fullTitle": "Nudo Semi-Rígido Viga a Pilar con Angulares de Asiento y Cabeza",
+    "shortTitle": "Nudo viga a pilar con angulares"
+  },
+  {
+    "id": "P1-20",
+    "fileCode": "P1-20",
+    "title": "Nudo rígido con cartela acartelada",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Rígidos Viga-Pilar",
+    "categoryKey": "rigid",
+    "shortDescription": "Nudo empotrado de alta ductilidad con chapa de testa extendida y acartelamiento inferior.",
+    "detailedDescription": "Unión rígida desmontable para pórticos de edificación. La chapa de testa sobresale del ala traccionada permitiendo alojar filas de tornillos exteriores de tracción. El acartelamiento triangular inferior aleja la sección crítica de plastificación del plano del pilar.",
+    "structuralBehavior": "Momento flector y rigidez clasificada como rígida de resistencia completa. Mecanismo de fallo dúctil en chapa de testa o viga.",
+    "components": [
+      "Pilar HEB",
+      "Viga IPE",
+      "Cartela acartelada",
+      "Chapa de testa extendida",
+      "Tornillos de alta resistencia clase 10.9"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.6 / UNE-EN 1993-1-8 Cl. 6.2.7",
+    "tags": [
+      "chapa testa extendida",
+      "acartelado",
+      "rigido",
+      "tornillos TR",
+      "portico",
+      "ductil"
+    ],
+    "modelFile": "/models/P1-20.glb",
+    "dimensions": {
+      "width": 0.556,
+      "height": 1.473,
+      "depth": 0.759
+    },
+    "stats": {
+      "geometriesCount": 26,
+      "totalVertices": 26904,
+      "totalFaces": 8968,
+      "fileSizeKb": 795.7
+    },
+    "fullTitle": "Nudo Rígido Atornillado con Chapa de Testa Extendida y Cartela Acartelada",
+    "shortTitle": "Nudo rígido con cartela acartelada"
+  },
+  {
+    "id": "P1-21",
+    "fileCode": "P1-21",
+    "title": "Nudo con rigidizador diagonal",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Rígidos Viga-Pilar",
+    "categoryKey": "rigid",
+    "shortDescription": "Refuerzo diagonal en alma de pilar para absorber el esfuerzo cortante del nudo de pórtico.",
+    "detailedDescription": "Nudo rígido para zonas con elevados esfuerzos cortantes en el alma del pilar producidos por los pares de momentos de vigas concurrentes. El rigidizador diagonal actúa como tirante/puntal triangulado evitando el pandeo por cortante del panel de nudo.",
+    "structuralBehavior": "Aumento drástico de la resistencia a cortante del panel de nudo. Evita el deslizamiento angular relativo del pilar.",
+    "components": [
+      "Pilar metálico",
+      "Viga IPE",
+      "Rigidizador diagonal en alma",
+      "Rigidizadores horizontales"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.6.3 / UNE-EN 1993-1-8 Cl. 6.2.6.1",
+    "tags": [
+      "panel cortante",
+      "diagonal",
+      "rigidizador diagonal",
+      "rigido",
+      "ductilidad",
+      "sismo"
+    ],
+    "modelFile": "/models/P1-21.glb",
+    "dimensions": {
+      "width": 0.556,
+      "height": 1.441,
+      "depth": 0.49
+    },
+    "stats": {
+      "geometriesCount": 19,
+      "totalVertices": 20388,
+      "totalFaces": 6796,
+      "fileSizeKb": 627.7
+    },
+    "fullTitle": "Nudo Rígido Viga-Pilar con Rigidizador Diagonal en Panel de Cortante",
+    "shortTitle": "Nudo con rigidizador diagonal"
+  },
+  {
+    "id": "P1-22",
+    "fileCode": "P1-22",
+    "title": "Apoyo de viga sobre jácena",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Entramados y Cruces de Forjado",
+    "categoryKey": "framework",
+    "shortDescription": "Apoyo directo a diferente cota de correa/vigueta apoyada sobre la viga principal.",
+    "detailedDescription": "Solución de forjado a cotas diferenciadas donde la viga secundaria apoya directamente sobre el ala superior de la viga principal continua. Fijación mediante angulares laterales o tornillos pasantes para absorber esfuerzos de succión o vuelco.",
+    "structuralBehavior": "Apoyo continuo de correa. Transmisión de compresión directa al ala superior con rigidización local de alma si la reacción es elevada.",
+    "components": [
+      "Jácena principal",
+      "Viga secundaria / correa",
+      "Casquillo o clip de retención",
+      "Tornillos de anclaje"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.3",
+    "tags": [
+      "cruce",
+      "ala superior",
+      "correa",
+      "forjado",
+      "diferente cota",
+      "apoyo"
+    ],
+    "modelFile": "/models/P1-22.glb",
+    "dimensions": {
+      "width": 0.221,
+      "height": 0.525,
+      "depth": 0.117
+    },
+    "stats": {
+      "geometriesCount": 8,
+      "totalVertices": 8604,
+      "totalFaces": 2868,
+      "fileSizeKb": 298.5
+    },
+    "fullTitle": "Cruce de Forjado: Apoyo de Viga Secundaria sobre Ala Superior de Jácena",
+    "shortTitle": "Apoyo de viga sobre jácena"
+  },
+  {
+    "id": "P1-23",
+    "fileCode": "P1-23",
+    "title": "Empalme de viga con platabandas",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Empalmes y Continuidad",
+    "categoryKey": "splice",
+    "shortDescription": "Empalme de tramos de viga mediante platabandas mecanizadas en ambas alas y en el alma.",
+    "detailedDescription": "Unión atornillada precalificada de continuidad de vigas continuas de edificación. Permite transportar vigas en módulos de longitud reglamentaria y montarlas en obra garantizando el 100% de la capacidad mecánica del perfil sin aplicar calor ni soldadura en altura.",
+    "structuralBehavior": "Transmisión total de momento flector y cortante con deformabilidad rotacional prácticamente nula.",
+    "components": [
+      "Perfiles IPE",
+      "Platabandas exteriores de ala",
+      "Platabandas interiores de ala",
+      "Cubrejuntas de alma",
+      "Tornillos pretensados 10.9"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.7",
+    "tags": [
+      "empalme",
+      "platabanda",
+      "atornillado",
+      "alta resistencia",
+      "continuidad",
+      "ipe"
+    ],
+    "modelFile": "/models/P1-23.glb",
+    "dimensions": {
+      "width": 2.418,
+      "height": 1.067,
+      "depth": 0.15
+    },
+    "stats": {
+      "geometriesCount": 12,
+      "totalVertices": 3720,
+      "totalFaces": 1240,
+      "fileSizeKb": 136.9
+    },
+    "fullTitle": "Empalme Atornillado Viga-Viga de Alta Resistencia con Platabandas",
+    "shortTitle": "Empalme de viga con platabandas"
+  },
+  {
+    "id": "P1-24",
+    "fileCode": "P1-24",
+    "title": "Unión enrasada con doble angular",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Entramados y Cruces de Forjado",
+    "categoryKey": "framework",
+    "shortDescription": "Conexión a la misma cota de vigueta a alma de jácena mediante doble casquillo angular.",
+    "detailedDescription": "Encuentro ortogonal de forjado a ras (misma cota superior de compresión). Las alas de la viga secundaria se recortan o despuntan para encajar en el alma de la viga principal, conectándose mediante dos angulares laminados atornillados al alma.",
+    "structuralBehavior": "Unión articulada a cortante puro a cota constante, permitiendo colocar chapa colaborante o bovedillas continuas.",
+    "components": [
+      "Jácena principal",
+      "Vigueta secundaria recortada",
+      "Doble angular L de alma",
+      "Tornillería estándar"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.4",
+    "tags": [
+      "enrasado",
+      "misma cota",
+      "doble angular",
+      "forjado",
+      "despunte",
+      "articulado"
+    ],
+    "modelFile": "/models/P1-24.glb",
+    "dimensions": {
+      "width": 0.221,
+      "height": 0.525,
+      "depth": 0.117
+    },
+    "stats": {
+      "geometriesCount": 8,
+      "totalVertices": 8604,
+      "totalFaces": 2868,
+      "fileSizeKb": 298.5
+    },
+    "fullTitle": "Unión Viga Secundaria a Viga Principal Enrasada con Doble Angular",
+    "shortTitle": "Unión enrasada con doble angular"
+  },
+  {
+    "id": "P1-6",
+    "fileCode": "P1-6",
+    "title": "Nudo de esquina viga a pilar",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Articulados Viga-Pilar",
+    "categoryKey": "articulated",
+    "shortDescription": "Apoyo de viga sobre repisa / chapa de asiento en cara exterior de pilar continuo.",
+    "detailedDescription": "Enlace constructivo donde la viga acomete a la cara del pilar continuo UPN apoyando directamente sobre una cartela o chapa de reparto rigidizada. Facilita el montaje de forjados garantizando la continuidad vertical del soporte.",
+    "structuralBehavior": "Apoyo directo por compresión vertical. Excentricidad de carga controlada sobre el eje del soporte.",
+    "components": [
+      "Pilar continuo UPN",
+      "Viga de forjado",
+      "Chapa de asiento rigidizada",
+      "Tornillos de fijación"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.3 / UNE-EN 1993-1-8",
+    "tags": [
+      "esquina",
+      "pilar continuo",
+      "chapa reparto",
+      "asiento",
+      "upn"
+    ],
+    "modelFile": "/models/P1-6.glb",
+    "dimensions": {
+      "width": 1.334,
+      "height": 1.836,
+      "depth": 0.28
+    },
+    "stats": {
+      "geometriesCount": 21,
+      "totalVertices": 1692,
+      "totalFaces": 564,
+      "fileSizeKb": 70.6
+    },
+    "fullTitle": "Nudo de Esquina con Pilar Continuo y Viga Apoyada en Chapa de Reparto",
+    "shortTitle": "Nudo de esquina viga a pilar"
+  },
+  {
+    "id": "P1-7",
+    "fileCode": "P1-7",
+    "title": "Nudo viga doble UPN a pilar",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Articulados Viga-Pilar",
+    "categoryKey": "articulated",
+    "shortDescription": "Viga compuesta por doble perfil UPN conectada a cara de pilar mediante casquillo.",
+    "detailedDescription": "Unión de dintel formado por dos perfiles UPN dispuestos espalda contra espalda o en cajón hacia el soporte continuo. Se resuelve con casquillos y pasadores asegurando la entrega equilibrada de ambas vigas al pilar.",
+    "structuralBehavior": "Distribución simétrica de esfuerzos cortantes de ambas almas hacia el núcleo del pilar.",
+    "components": [
+      "Doble perfil UPN en viga",
+      "Pilar metálico",
+      "Casquillos de enlace",
+      "Tornillería pasante"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.5",
+    "tags": [
+      "doble upn",
+      "perfil compuesto",
+      "casquillo",
+      "articulado",
+      "viga doble"
+    ],
+    "modelFile": "/models/P1-7.glb",
+    "dimensions": {
+      "width": 3.759,
+      "height": 1.766,
+      "depth": 0.28
+    },
+    "stats": {
+      "geometriesCount": 23,
+      "totalVertices": 2304,
+      "totalFaces": 768,
+      "fileSizeKb": 91.2
+    },
+    "fullTitle": "Nudo Viga Doble UPN a Pilar Continuo con Casquillo",
+    "shortTitle": "Nudo viga doble UPN a pilar"
+  },
+  {
+    "id": "P1-8",
+    "fileCode": "P1-8",
+    "title": "Empalme soldado con cubrejuntas",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Empalmes y Continuidad",
+    "categoryKey": "splice",
+    "shortDescription": "Empalme de continuidad soldado con platabandas de refuerzo en alas traccionada y comprimida.",
+    "detailedDescription": "Unión de prolongación longitudinal viga-viga realizada mediante soldadura a tope con biselado de chapas y reforzada con cubrejuntas soldadas en ambas alas. Desarrolla la capacidad portante completa del perfil metálico.",
+    "structuralBehavior": "Transmisión total de momento flector, esfuerzo cortante y axil (empalme de resistencia completa).",
+    "components": [
+      "Perfiles IPE alineados",
+      "Soldadura a tope en alma",
+      "Cubrejuntas de alas superior e inferior",
+      "Cordones en ángulo"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.7 / UNE-EN 1993-1-8",
+    "tags": [
+      "empalme",
+      "soldado",
+      "cubrejuntas",
+      "continuidad",
+      "ipe",
+      "tope"
+    ],
+    "modelFile": "/models/P1-8.glb",
+    "dimensions": {
+      "width": 2.418,
+      "height": 1.052,
+      "depth": 0.15
+    },
+    "stats": {
+      "geometriesCount": 11,
+      "totalVertices": 1128,
+      "totalFaces": 376,
+      "fileSizeKb": 44.7
+    },
+    "fullTitle": "Empalme de Viga Soldado a Tope con Cubrejuntas en Alas",
+    "shortTitle": "Empalme soldado con cubrejuntas"
+  },
+  {
+    "id": "P1-9",
+    "fileCode": "P1-9",
+    "title": "Empalme atornillado en alma y alas",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Empalmes y Continuidad",
+    "categoryKey": "splice",
+    "shortDescription": "Empalme de montaje en obra con cubrejuntas atornilladas en alma y en ambas alas.",
+    "detailedDescription": "Solución estándar de montaje rápido en obra sin soldadura en posición. Las cubrejuntas de las alas absorben el par de fuerzas de tracción-compresión del momento flector, mientras que la cubrejunta doble de alma absorbe el cortante mediante tornillos de alta resistencia.",
+    "structuralBehavior": "Conexión a cortante por fricción/aplastamiento y absorción de momento flector por platabandas de ala.",
+    "components": [
+      "Perfiles viga",
+      "Platabandas de ala exterior e interior",
+      "Doble cubrejunta de alma",
+      "Tornillos de alta resistencia (8.8/10.9)"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.7 y 8.8",
+    "tags": [
+      "empalme atornillado",
+      "cubrejuntas",
+      "tornillos TR",
+      "alma",
+      "alas",
+      "resistencia completa"
+    ],
+    "modelFile": "/models/P1-9.glb",
+    "dimensions": {
+      "width": 2.418,
+      "height": 1.365,
+      "depth": 0.176
+    },
+    "stats": {
+      "geometriesCount": 13,
+      "totalVertices": 1200,
+      "totalFaces": 400,
+      "fileSizeKb": 47.3
+    },
+    "fullTitle": "Empalme Atornillado Viga-Viga con Cubrejuntas en Alma y Alas",
+    "shortTitle": "Empalme atornillado en alma y alas"
+  },
+  {
+    "id": "P2-A1",
+    "fileCode": "P2-A1",
+    "title": "Base articulada simple",
+    "practice": "Práctica 2: Bases de Pilar",
+    "practiceNum": 2,
+    "category": "Bases y Placas de Anclaje",
+    "categoryKey": "base",
+    "shortDescription": "Placa de anclaje con 2 pernos centrados en el eje neutro para permitir giro libre.",
+    "detailedDescription": "Base de soporte metálico de perfiles UPN articulada en cimentación. La placa de base se apoya sobre el pedestal y dispone de 2 pernos de anclaje dispuestos sobre el eje de menor inercia, garantizando que el pilar no transmite momento flector a la zapata.",
+    "structuralBehavior": "Apoyo articulado teórico. Transmisión de axil de compresión por contacto y cortante horizontal por rozamiento o pernos.",
+    "components": [
+      "Pilar de perfiles UPN",
+      "Placa de anclaje base",
+      "2 Pernos de anclaje",
+      "Mortero de nivelación / grout"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.9 / UNE-EN 1993-1-8 Cl. 6.2.8",
+    "tags": [
+      "base",
+      "placa anclaje",
+      "articulada",
+      "2 pernos",
+      "cimentacion",
+      "upn"
+    ],
+    "modelFile": "/models/P2-A1.glb",
+    "dimensions": {
+      "width": 0.286,
+      "height": 2.011,
+      "depth": 0.396
+    },
+    "stats": {
+      "geometriesCount": 8,
+      "totalVertices": 480,
+      "totalFaces": 160,
+      "fileSizeKb": 22.1
+    },
+    "fullTitle": "Base Articulada de Pilar UPN con Placa de Anclaje Simple",
+    "shortTitle": "Base articulada simple"
+  },
+  {
+    "id": "P2-A2",
+    "fileCode": "P2-A2",
+    "title": "Base articulada con placa de asiento",
+    "practice": "Práctica 2: Bases de Pilar",
+    "practiceNum": 2,
+    "category": "Bases y Placas de Anclaje",
+    "categoryKey": "base",
+    "shortDescription": "Apoyo articulado con doble chapa para reparto óptimo de presiones sobre dado de hormigón.",
+    "detailedDescription": "Placa de anclaje combinada con chapa de reparto mecanizada sobre pedestal de hormigón armado. Mejora la difusión de presiones locales de compresión evitando la trituración del hormigón bajo las alas del pilar.",
+    "structuralBehavior": "Distribución uniforme de presiones trapezoidales sobre hormigón HA-25/30 sin coacción al giro.",
+    "components": [
+      "Pilar metálico",
+      "Placa base mecanizada",
+      "Pernos de fijación",
+      "Pedestal de cimentación"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.9",
+    "tags": [
+      "base articulada",
+      "chapa reparto",
+      "pedestal",
+      "hormigon",
+      "presion"
+    ],
+    "modelFile": "/models/P2-A2.glb",
+    "dimensions": {
+      "width": 0.397,
+      "height": 2.055,
+      "depth": 0.329
+    },
+    "stats": {
+      "geometriesCount": 5,
+      "totalVertices": 516,
+      "totalFaces": 172,
+      "fileSizeKb": 22.6
+    },
+    "fullTitle": "Base Articulada con Placa de Asiento y Chapa de Reparto en Cimentación",
+    "shortTitle": "Base articulada con placa de asiento"
+  },
+  {
+    "id": "P2-A3",
+    "fileCode": "P2-A3",
+    "title": "Base articulada con cartelas",
+    "practice": "Práctica 2: Bases de Pilar",
+    "practiceNum": 2,
+    "category": "Bases y Placas de Anclaje",
+    "categoryKey": "base",
+    "shortDescription": "Placa base articulada rigidizada con pequeñas cartelas triangulares de reparto.",
+    "detailedDescription": "Base de apoyo en cimentación en la que la placa base se rigidiza mediante pequeñas cartelas triangulares en la base del soporte para reducir el espesor requerido de la placa base frente a flexión por la presión reactiva del hormigón.",
+    "structuralBehavior": "Comportamiento articulado en conjunto; reduce la deformación en ménsula de los vuelos de la placa.",
+    "components": [
+      "Pilar metálico",
+      "Placa base de anclaje",
+      "Cartelas triangulares de base",
+      "Pernos de anclaje"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.9",
+    "tags": [
+      "base",
+      "cartelas de reparto",
+      "placa base",
+      "cimentacion",
+      "rigidez local"
+    ],
+    "modelFile": "/models/P2-A3.glb",
+    "dimensions": {
+      "width": 0.397,
+      "height": 2.066,
+      "depth": 0.329
+    },
+    "stats": {
+      "geometriesCount": 8,
+      "totalVertices": 768,
+      "totalFaces": 256,
+      "fileSizeKb": 30.7
+    },
+    "fullTitle": "Base Articulada de Pilar con Cartelas de Reparto Inferiores",
+    "shortTitle": "Base articulada con cartelas"
+  },
+  {
+    "id": "P2-B1-A",
+    "fileCode": "P2-B1-A",
+    "title": "Base empotrada con 4 pernos",
+    "practice": "Práctica 2: Bases de Pilar",
+    "practiceNum": 2,
+    "category": "Bases y Placas de Anclaje",
+    "categoryKey": "base",
+    "shortDescription": "Placa de anclaje con 4 pernos perimetrales y entrega en pedestal de cimentación.",
+    "detailedDescription": "Detalle constructivo de base con 4 pernos de anclaje roscados embebidos en el pedestal de cimentación. Ofrece resistencia al giro parcial (semi-rígida) permitiendo absorber momentos de viento en fase de montaje y servicio.",
+    "structuralBehavior": "Rigidez rotacional media. Transmisión combinada de esfuerzo axil, cortante basal y momento flector moderado.",
+    "components": [
+      "Pilar metálico",
+      "Placa de anclaje cuadrangular",
+      "4 Pernos de anclaje con patilla",
+      "Dado de hormigón armado"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.9 / UNE-EN 1993-1-8 Cl. 6.2.8",
+    "tags": [
+      "semi-empotrada",
+      "4 pernos",
+      "pedestal",
+      "zapata",
+      "momento flector"
+    ],
+    "modelFile": "/models/P2-B1-A.glb",
+    "dimensions": {
+      "width": 0.258,
+      "height": 2.052,
+      "depth": 0.358
+    },
+    "stats": {
+      "geometriesCount": 6,
+      "totalVertices": 696,
+      "totalFaces": 232,
+      "fileSizeKb": 28.0
+    },
+    "fullTitle": "Base Semi-Empotrada con 4 Pernos y Pedestal de Hormigón Armado",
+    "shortTitle": "Base empotrada con 4 pernos"
+  },
+  {
+    "id": "P2-B1-B",
+    "fileCode": "P2-B1-B",
+    "title": "Base empotrada con rigidizadores",
+    "practice": "Práctica 2: Bases de Pilar",
+    "practiceNum": 2,
+    "category": "Bases y Placas de Anclaje",
+    "categoryKey": "base",
+    "shortDescription": "Empotramiento en cimentación con pernos exteriores a las alas y cartelas rigidizadoras.",
+    "detailedDescription": "Base empotrada para pilares de pórtico sometidos a fuertes momentos de empotramiento en la base. Los pernos se sitúan fuera del contorno del perfil para maximizar el brazo de palanca interno, con rigidizadores soldados en las alas.",
+    "structuralBehavior": "Empotramiento rígido. El par resistente tracción en pernos / compresión en hormigón absorbe el momento flector completo.",
+    "components": [
+      "Pilar de pórtico",
+      "Placa base extendida",
+      "Rigidizadores de ala",
+      "Pernos de gran diámetro 8.8"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.9",
+    "tags": [
+      "empotrada",
+      "pernos exteriores",
+      "brazo mecanico",
+      "portico",
+      "rigidizadores base"
+    ],
+    "modelFile": "/models/P2-B1-B.glb",
+    "dimensions": {
+      "width": 0.241,
+      "height": 2.054,
+      "depth": 0.358
+    },
+    "stats": {
+      "geometriesCount": 4,
+      "totalVertices": 936,
+      "totalFaces": 312,
+      "fileSizeKb": 36.9
+    },
+    "fullTitle": "Base Empotrada de Pilar con Pernos Exteriores y Rigidizadores de Base",
+    "shortTitle": "Base empotrada con rigidizadores"
+  },
+  {
+    "id": "P2-C1",
+    "fileCode": "P2-C1",
+    "title": "Base con rigidizadores en cruz",
+    "practice": "Práctica 2: Bases de Pilar",
+    "practiceNum": 2,
+    "category": "Bases y Placas de Anclaje",
+    "categoryKey": "base",
+    "shortDescription": "Placa de base rigidizada en ambos ejes ortogonales con cartelas perimetrales en cruz.",
+    "detailedDescription": "Solución de apoyo para soportes principales de esquina o aislados sometidos a flexión esviada (momentos Mx y My simultáneos). Las cartelas en cruz reparten las tensiones en todas direcciones hacia la zapata.",
+    "structuralBehavior": "Empotramiento biaxial rígido. Control de presiones de contacto bidimensionales y deformación del acero.",
+    "components": [
+      "Pilar metálico de gran inercia",
+      "Placa de anclaje reforzada",
+      "Cartelas ortogonales en cruz",
+      "Grupo de pernos perimetrales"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.9",
+    "tags": [
+      "flexion esviada",
+      "rigidizadores en cruz",
+      "gran inercia",
+      "empotramiento biaxial",
+      "base"
+    ],
+    "modelFile": "/models/P2-C1.glb",
+    "dimensions": {
+      "width": 0.67,
+      "height": 2.056,
+      "depth": 0.426
+    },
+    "stats": {
+      "geometriesCount": 12,
+      "totalVertices": 816,
+      "totalFaces": 272,
+      "fileSizeKb": 27.1
+    },
+    "fullTitle": "Base de Gran Inercia con Rigidizadores en Cruz para Momentos Biaxiales",
+    "shortTitle": "Base con rigidizadores en cruz"
+  },
+  {
+    "id": "P2-C2",
+    "fileCode": "P2-C2",
+    "title": "Transición pilar UPN a IPE",
+    "practice": "Práctica 2: Bases de Pilar",
+    "practiceNum": 2,
+    "category": "Empalmes y Continuidad",
+    "categoryKey": "splice",
+    "shortDescription": "Empalme de cambio de sección en altura entre pilar de dos UPN y pilar simple IPE.",
+    "detailedDescription": "Detalle constructivo de transición de planta entre un pilar de planta baja de mayor capacidad (formado por dos perfiles UPN presillados) y el pilar de planta superior (perfil laminado IPE de menor escuadría), resuelto con chapa de transición y cartelas.",
+    "structuralBehavior": "Transmisión centrada de cargas axiles y compatibilidad de giros con chapa de transición mecanizada.",
+    "components": [
+      "Pilar inferior 2 UPN",
+      "Pilar superior IPE",
+      "Chapa de transición mecanizada t=25mm",
+      "Cartelas de rigidización"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.8",
+    "tags": [
+      "transicion",
+      "cambio de seccion",
+      "pilar-pilar",
+      "upn",
+      "ipe",
+      "chapa transicion"
+    ],
+    "modelFile": "/models/P2-C2.glb",
+    "dimensions": {
+      "width": 0.67,
+      "height": 2.058,
+      "depth": 1.0
+    },
+    "stats": {
+      "geometriesCount": 15,
+      "totalVertices": 1536,
+      "totalFaces": 512,
+      "fileSizeKb": 60.3
+    },
+    "fullTitle": "Transición y Enlace Pilar-Pilar: Soporte Compuesto UPN a Perfil IPE",
+    "shortTitle": "Transición pilar UPN a IPE"
+  },
+  {
+    "id": "P2-D1",
+    "fileCode": "P2-D1",
+    "title": "Base empotrada con cartelas",
+    "practice": "Práctica 2: Bases de Pilar",
+    "practiceNum": 2,
+    "category": "Bases y Placas de Anclaje",
+    "categoryKey": "base",
+    "shortDescription": "Empotramiento de nave industrial con rigidizadores triangulares de gran altura.",
+    "detailedDescription": "Base rígida de pilar de nave de gran luz. Incorpora cartelas triangulares de gran altura que trasladan las fuerzas de tracción de los pernos directamente a la coronación de las alas del pilar, garantizando un comportamiento rígido puro sin pandeo de placa.",
+    "structuralBehavior": "Empotramiento perfecto con rigidez rotacional máxima. Distribución lineal de tensiones en zapatas de gran canto.",
+    "components": [
+      "Pilar HEB / IPE de nave",
+      "Placa base de 35mm",
+      "Cartelas triangulares de gran canto",
+      "Pernos de anclaje de alta capacidad con placa de anclaje inferior"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.9",
+    "tags": [
+      "gran canto",
+      "cartelas triangulares",
+      "nave industrial",
+      "empotramiento perfecto",
+      "portico pesada"
+    ],
+    "modelFile": "/models/P2-D1.glb",
+    "dimensions": {
+      "width": 1.287,
+      "height": 3.239,
+      "depth": 1.001
+    },
+    "stats": {
+      "geometriesCount": 28,
+      "totalVertices": 1992,
+      "totalFaces": 664,
+      "fileSizeKb": 80.6
+    },
+    "fullTitle": "Base Empotrada de Pórtico con Cartelas Triangulares de Gran Canto",
+    "shortTitle": "Base empotrada con cartelas"
+  },
+  {
+    "id": "P3-1",
+    "fileCode": "P3-1",
+    "title": "Apoyo y arranque de cercha",
+    "practice": "Práctica 3: Cercha Polonceau",
+    "practiceNum": 3,
+    "category": "Cercha Polonceau y Celosías",
+    "categoryKey": "truss",
+    "shortDescription": "Nudo de estribo y encuentro del par inclinado y tirante inferior sobre el pilar.",
+    "detailedDescription": "Nudo singular de apoyo perimetral de la cercha Polonceau. En esta cartela convergen el par inclinado (comprimido) y el tirante inferior (traccionado), entregando la resultante de carga vertical sobre la chapa de coronación del pilar de fachada.",
+    "structuralBehavior": "Descomposición triangular de fuerzas: equilibrio entre compresión del par y tracción del tirante inferior. Apoyo deslizante o fijo sobre pilar.",
+    "components": [
+      "Extremo de par doble UPN",
+      "Terminal de tirante inferior",
+      "Cartela nodal de arranque",
+      "Placa de apoyo sobre pilar",
+      "Perno pasador"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.5",
+    "tags": [
+      "nudo 1",
+      "apoyo cercha",
+      "arranque",
+      "estribo",
+      "cartela",
+      "pilar fachada"
+    ],
+    "modelFile": "/models/P3-1.glb",
+    "dimensions": {
+      "width": 1.659,
+      "height": 1.219,
+      "depth": 1.0
+    },
+    "stats": {
+      "geometriesCount": 56,
+      "totalVertices": 98985,
+      "totalFaces": 32995,
+      "fileSizeKb": 2200.3
+    },
+    "fullTitle": "Nudo 1: Apoyo y Arranque de Cercha en Cabeza de Pilar",
+    "shortTitle": "Apoyo y arranque de cercha"
+  },
+  {
+    "id": "P3-10",
+    "fileCode": "P3-10",
+    "title": "Nudo de cordón superior",
+    "practice": "Práctica 3: Cercha Polonceau",
+    "practiceNum": 3,
+    "category": "Cercha Polonceau y Celosías",
+    "categoryKey": "truss",
+    "shortDescription": "Encuentro en el par continuo de la cercha con el montante perpendicular y la diagonal.",
+    "detailedDescription": "Nudo intermedio a lo largo del cordón superior de la cercha Polonceau. En la cartela intermedia se produce el empalme y conexión del montante perpendicular al par y las barras diagonales estabilizadoras que reducen la luz de pandeo del par.",
+    "structuralBehavior": "Transmisión de esfuerzos axiles axiales concurrentes en un único punto nodal para evitar momentos secundarios parásitos.",
+    "components": [
+      "Par superior continuo",
+      "Montante tubular / angular",
+      "Diagonal de celosía",
+      "Cartela pasante atornillada"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.5",
+    "tags": [
+      "nudo intermedio",
+      "cordon superior",
+      "par",
+      "montante",
+      "diagonal",
+      "nudo 10"
+    ],
+    "modelFile": "/models/P3-10.glb",
+    "dimensions": {
+      "width": 4.357,
+      "height": 1.532,
+      "depth": 0.5
+    },
+    "stats": {
+      "geometriesCount": 110,
+      "totalVertices": 275622,
+      "totalFaces": 91874,
+      "fileSizeKb": 6259.8
+    },
+    "fullTitle": "Nudo 10: Nudo Intermedio de Cordón Superior (Par, Montante y Diagonal)",
+    "shortTitle": "Nudo de cordón superior"
+  },
+  {
+    "id": "P3-2",
+    "fileCode": "P3-2",
+    "title": "Nudo de cumbrera",
+    "practice": "Práctica 3: Cercha Polonceau",
+    "practiceNum": 3,
+    "category": "Cercha Polonceau y Celosías",
+    "categoryKey": "truss",
+    "shortDescription": "Vértice superior de la cercha donde confluyen ambos pares de cubierta y el montante central.",
+    "detailedDescription": "Nudo de coronación (cumbrera) de la cercha Polonceau. En este nudo se unen los dos pares superiores que forman la pendiente de la cubierta y la péndola vertical o montante central mediante una cartela triangular de chapa gruesa atornillada/soldada.",
+    "structuralBehavior": "Equilibrio simétrico de compresiones de ambos pares y tracción de la péndola vertical central.",
+    "components": [
+      "Par izquierdo doble UPN",
+      "Par derecho doble UPN",
+      "Cartela de cumbrera",
+      "Péndola / montante central",
+      "Tornillos de unión"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.5",
+    "tags": [
+      "cumbrera",
+      "nudo 2",
+      "coronacion",
+      "vertice",
+      "pares",
+      "pendola",
+      "cartela cumbrera"
+    ],
+    "modelFile": "/models/P3-2.glb",
+    "dimensions": {
+      "width": 2.138,
+      "height": 0.737,
+      "depth": 0.237
+    },
+    "stats": {
+      "geometriesCount": 30,
+      "totalVertices": 6684,
+      "totalFaces": 2228,
+      "fileSizeKb": 177.6
+    },
+    "fullTitle": "Nudo 2: Cumbrera de Cercha (Encuentro de Pares en Coronación)",
+    "shortTitle": "Nudo de cumbrera"
+  },
+  {
+    "id": "P3-20",
+    "fileCode": "P3-20",
+    "title": "Nudo de tirante y péndola",
+    "practice": "Práctica 3: Cercha Polonceau",
+    "practiceNum": 3,
+    "category": "Cercha Polonceau y Celosías",
+    "categoryKey": "truss",
+    "shortDescription": "Unión inferior del tirante horizontal con las diagonales y el montante vertical.",
+    "detailedDescription": "Nudo articulado situado en la cuerda inferior de la cercha. Conecta los tramos del tirante traccionado con la péndola central que sostiene el tirante evitando su deformación por peso propio (catenaria).",
+    "structuralBehavior": "Tracción pura en barras horizontales equilibrada por la fuerza de suspensión de la péndola.",
+    "components": [
+      "Tirante horizontal (redondo / angular)",
+      "Péndola vertical de cuelgue",
+      "Cartela circular o trapezoidal",
+      "Bulones pasadores"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.5",
+    "tags": [
+      "tirante",
+      "nudo inferior",
+      "pendola",
+      "nudo 20",
+      "traccion",
+      "cuerda inferior"
+    ],
+    "modelFile": "/models/P3-20.glb",
+    "dimensions": {
+      "width": 2.583,
+      "height": 1.532,
+      "depth": 0.5
+    },
+    "stats": {
+      "geometriesCount": 113,
+      "totalVertices": 313548,
+      "totalFaces": 104516,
+      "fileSizeKb": 8789.9
+    },
+    "fullTitle": "Nudo 20: Nudo Central de Tirante Inferior y Péndola",
+    "shortTitle": "Nudo de tirante y péndola"
+  },
+  {
+    "id": "P3-29",
+    "fileCode": "P3-29",
+    "title": "Tensor de tirante con horquilla",
+    "practice": "Práctica 3: Cercha Polonceau",
+    "practiceNum": 3,
+    "category": "Cercha Polonceau y Celosías",
+    "categoryKey": "truss",
+    "shortDescription": "Mecanismo de tesado y regulación de longitud de tirante mediante bulón y horquilla.",
+    "detailedDescription": "Detalle constructivo de alta precisión para el tesado inicial y ajuste de flecha de la cercha metálica. Cuenta con horquilla roscada mecanizada, bulón pasador y tuercas de contrabloqueo para garantizar la puesta en carga uniforme de los tirantes.",
+    "structuralBehavior": "Conexión articulada pura (rótula cilíndrica) resistente a tracción pura axial sin transmisión de flexión al tensor.",
+    "components": [
+      "Tensor de acero macizo",
+      "Horquilla articulada roscada",
+      "Bulón pasador templado",
+      "Chapa de anclaje con barrilete"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.5 / UNE-EN 1993-1-11",
+    "tags": [
+      "tensor",
+      "bulon",
+      "horquilla",
+      "regulacion",
+      "tesado",
+      "nudo 29",
+      "tirante"
+    ],
+    "modelFile": "/models/P3-29.glb",
+    "dimensions": {
+      "width": 1.239,
+      "height": 2.001,
+      "depth": 0.611
+    },
+    "stats": {
+      "geometriesCount": 121,
+      "totalVertices": 402348,
+      "totalFaces": 134116,
+      "fileSizeKb": 9393.5
+    },
+    "fullTitle": "Nudo 29: Anclaje y Tensor de Tirante Inferior con Horquilla y Bulón",
+    "shortTitle": "Tensor de tirante con horquilla"
+  },
+  {
+    "id": "P3-3",
+    "fileCode": "P3-3",
+    "title": "Cumbrera con apoyo de correa",
+    "practice": "Práctica 3: Cercha Polonceau",
+    "practiceNum": 3,
+    "category": "Cercha Polonceau y Celosías",
+    "categoryKey": "truss",
+    "shortDescription": "Detalle de cumbrera con casquillos y repisa de apoyo para la correa de coronación.",
+    "detailedDescription": "Variante de nudo de cumbrera en la que además de enlazar los pares estructurales se incorpora el detalle constructivo de apoyo de la correa de cumbrera que sustenta las chapas de cubrición y el remate de chapa de ventilación.",
+    "structuralBehavior": "Transmisión de cargas gravitatorias y de succión de viento de la correa al nudo principal de la cercha.",
+    "components": [
+      "Pares de cercha",
+      "Cartela de cumbrera",
+      "Casquillo de apoyo de correa",
+      "Perfil correa IPE / conformado"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.3",
+    "tags": [
+      "cumbrera",
+      "correa",
+      "cubierta",
+      "nudo 3",
+      "apoyo correa",
+      "cartela"
+    ],
+    "modelFile": "/models/P3-3.glb",
+    "dimensions": {
+      "width": 2.785,
+      "height": 1.366,
+      "depth": 0.337
+    },
+    "stats": {
+      "geometriesCount": 33,
+      "totalVertices": 5055,
+      "totalFaces": 1685,
+      "fileSizeKb": 162.4
+    },
+    "fullTitle": "Nudo 3: Cumbrera con Cartela de Enlace y Apoyo de Correa de Cubierta",
+    "shortTitle": "Cumbrera con apoyo de correa"
+  },
+  {
+    "id": "P3-POLONCEAU COMPUESTA",
+    "fileCode": "P3-POLONCEAU COMPUESTA",
+    "title": "Cercha Polonceau completa",
+    "practice": "Práctica 3: Cercha Polonceau",
+    "practiceNum": 3,
+    "category": "Cercha Polonceau y Celosías",
+    "categoryKey": "truss",
+    "shortDescription": "Maqueta completa de la cercha Polonceau triangulada con tirantes y montantes.",
+    "detailedDescription": "Estructura metálica triangulada de cubierta de dos aguas ideada por J.B. Polonceau en su variante compuesta. Cuenta con pares de doble UPN en compresión, tirantes inferiores de acero en tracción, montantes y péndolas intermedias. Salva luces de 14 a 24 metros con óptima ligereza y estética.",
+    "structuralBehavior": "Estructura articulada triangulada isostática/hiperestática. Los pares trabajan a flexo-compresión y los tirantes a tracción pura.",
+    "components": [
+      "Pares de doble UPN en cajón",
+      "Tirante horizontal inferior",
+      "Montantes comprimidos",
+      "Tirantillos secundarios",
+      "Cartelas nodales de unión"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 6.3 / UNE-EN 1993-1-1 Cl. 6.3",
+    "tags": [
+      "cercha polonceau",
+      "celosia",
+      "cubierta",
+      "triangulada",
+      "tirante",
+      "par",
+      "montante",
+      "luz 14m"
+    ],
+    "modelFile": "/models/P3-POLONCEAU COMPUESTA.glb",
+    "dimensions": {
+      "width": 13.297,
+      "height": 3.254,
+      "depth": 0.337
+    },
+    "stats": {
+      "geometriesCount": 71,
+      "totalVertices": 6144,
+      "totalFaces": 2048,
+      "fileSizeKb": 234.9
+    },
+    "fullTitle": "Cercha Polonceau Compuesta Completa (Luz ~14m)",
+    "shortTitle": "Cercha Polonceau completa"
+  }
+]

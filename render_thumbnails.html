@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Thumbnail Generator</title>
+</head>
+<body style="background: transparent; margin: 0; overflow: hidden;">
+  <canvas id="c" width="320" height="240" style="display: block;"></canvas>
+  <div id="status" style="font-family: monospace; padding: 10px;">Starting...</div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "/node_modules/three/build/three.module.js",
+        "three/examples/jsm/": "/node_modules/three/examples/jsm/"
+      }
+    }
+  </script>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
+    const canvas = document.getElementById('c');
+    const status = document.getElementById('status');
+
+    // 1. Scene with transparent background
+    const scene = new THREE.Scene();
+    scene.background = null; // Transparent!
+
+    // 2. Camera
+    const camera = new THREE.PerspectiveCamera(35, 320 / 240, 0.1, 100);
+    
+    // 3. Renderer with alpha
+    const renderer = new THREE.WebGLRenderer({
+      canvas: canvas,
+      alpha: true,
+      antialias: true,
+      preserveDrawingBuffer: true
+    });
+    renderer.setSize(320, 240);
+    renderer.setPixelRatio(1);
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.0;
+
+    // 4. Lighting
+    const amb = new THREE.AmbientLight(0xffffff, 0.85);
+    scene.add(amb);
+
+    const sun = new THREE.DirectionalLight(0xfffdfa, 1.6);
+    sun.position.set(6, 12, 8);
+    scene.add(sun);
+
+    const fill = new THREE.DirectionalLight(0xdbeafe, 1.0);
+    fill.position.set(-6, 4, -4);
+    scene.add(fill);
+
+    const loader = new GLTFLoader();
+    const textureLoader = new THREE.TextureLoader();
+
+    const steelDiff = textureLoader.load('/public/textures/steel_color_real.jpg');
+    const steelRough = textureLoader.load('/public/textures/steel_roughness_real.jpg');
+    const steelNormal = textureLoader.load('/public/textures/steel_normal_real.jpg');
+    const concDiff = textureLoader.load('/public/textures/concrete_diffuse.png');
+
+    [steelDiff, steelRough, steelNormal].forEach(t => {
+      t.wrapS = THREE.RepeatWrapping;
+      t.wrapT = THREE.RepeatWrapping;
+      t.repeat.set(0.65, 0.65);
+    });
+
+    const steelMat = new THREE.MeshStandardMaterial({
+      color: 0xffffff,
+      map: steelDiff,
+      roughnessMap: steelRough,
+      normalMap: steelNormal,
+      normalScale: new THREE.Vector2(0.4, 0.4),
+      roughness: 0.42,
+      metalness: 0.38,
+      side: THREE.DoubleSide
+    });
+
+    const concMat = new THREE.MeshStandardMaterial({
+      color: 0xffffff,
+      map: concDiff,
+      roughness: 0.90,
+      metalness: 0.0,
+      side: THREE.DoubleSide
+    });
+
+    // Fetch details.json
+    const resp = await fetch('/src/data/details.json');
+    const details = await resp.json();
+
+    const group = new THREE.Group();
+    scene.add(group);
+
+    for (let i = 0; i < details.length; i++) {
+      const detail = details[i];
+      status.innerText = `Rendering ${i + 1}/${details.length}: ${detail.id}`;
+
+      // Clear group
+      while (group.children.length > 0) {
+        group.remove(group.children[0]);
+      }
+
+      await new Promise((resolve) => {
+        loader.load('/public' + detail.modelFile, (gltf) => {
+          const model = gltf.scene;
+          
+          model.traverse((child) => {
+            if (child.isMesh) {
+              const nameLower = child.name.toLowerCase();
+              const isConc = detail.id.startsWith('P2') && (nameLower.includes('pedestal') || nameLower.includes('capa'));
+
+              if (isConc) {
+                child.material = concMat;
+              } else {
+                child.material = steelMat;
+              }
+            }
+          });
+
+          group.add(model);
+
+          // Fit Camera to Object at 45 degree isometric angle
+          const box = new THREE.Box3().setFromObject(model);
+          const center = new THREE.Vector3();
+          box.getCenter(center);
+          const size = new THREE.Vector3();
+          box.getSize(size);
+
+          const maxDim = Math.max(size.x, size.y, size.z, 0.5);
+          const dist = maxDim * 1.85;
+
+          camera.position.set(center.x + dist * 0.75, center.y + dist * 0.55, center.z + dist * 0.75);
+          camera.lookAt(center);
+          camera.updateProjectionMatrix();
+
+          // Render transparent snapshot
+          renderer.render(scene, camera);
+
+          const dataUrl = canvas.toDataURL('image/png');
+
+          // POST to server
+          fetch(`/save?id=${detail.id}`, {
+            method: 'POST',
+            body: dataUrl
+          }).then(() => resolve());
+        }, undefined, (err) => {
+          console.error(err);
+          resolve();
+        });
+      });
+    }
+
+    status.innerText = 'Completed all 34 thumbnails!';
+  </script>
+</body>
+</html>
