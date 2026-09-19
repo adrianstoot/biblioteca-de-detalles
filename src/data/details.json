@@ -1,93 +1,78 @@
 [
   {
-    "id": "maqueta-etsie-02",
-    "fileCode": "MAQUETA-ETSIE-02",
-    "title": "Maqueta ETSIE - Módulo 02 Envolvente y Fachadas",
-    "fullTitle": "Maqueta Arquitectónica Datasmith - Módulo Docente 02: Envolvente, Ventilación y Cerramientos",
-    "shortTitle": "Maqueta ETSIE 02",
-    "practice": "Metaverso: Maquetas Arquitectónicas ETSIE",
-    "practiceNum": 7,
-    "category": "Maquetas y Envolvente Edilicia",
-    "categoryKey": "architectural_models",
-    "shortDescription": "Modelo arquitectónico completo de la Escuela Técnica Superior de Ingeniería de Edificación (Sevilla).",
-    "detailedDescription": "Modelo BIM / Datasmith de detalle arquitectónico y constructivo correspondiente al bloque docente de la ETSIE (Universidad de Sevilla). Integra carpinterías exteriores, lamas de protección solar, estructura portante de hormigón visto, petos de cubierta invertida y particiones interiores de fábrica de ladrillo con acabados de estucos y revestimientos cerámicos.",
-    "structuralBehavior": "Comportamiento conjunto de pórticos de hormigón armado arriostrados por núcleos de comunicación vertical. Transmisión térmica optimizada según exigencias de transmitancia térmica CTE DB-HE-1.",
+    "id": "tripo-03a0de29",
+    "fileCode": "TRIPO-03A0DE",
+    "title": "Mobiliario y Equipamiento Técnico Tripo 3D",
+    "shortTitle": "Elemento Técnico Tripo 1",
+    "practice": "Modelos Tripo 3D Metaverso",
+    "practiceNum": 4,
+    "category": "Modelos Tripo 3D",
+    "categoryKey": "tripo_models",
+    "shortDescription": "Elemento de equipamiento técnico generado con Tripo 3D del metaverso.",
+    "detailedDescription": "Modelo de equipamiento técnico modelado mediante IA generativa en Tripo 3D con mapas PBR completos (albedo, normales, roughness).",
+    "structuralBehavior": "Elemento de equipamiento y mobiliario interior.",
     "components": [
-      "Estructura principal de pórticos de hormigón armado",
-      "Cerramiento de fachada ventilada y paneles de protección solar",
-      "Carpinterías exteriores de aluminio con rotura de puente térmico",
-      "Vidrios dobles bajo emisivos con cámara de gas argón",
-      "Cubierta plana invertida transitable con protección pesada",
-      "Pavimentos y revestimientos interiores continuos"
+      "Cuerpo estructural",
+      "Superficie de acabado",
+      "Herrajes"
     ],
-    "normativeReference": "CTE DB-HE (Ahorro de energía) / CTE DB-SE / Planeamiento Campus Reina Mercedes",
+    "normativeReference": "CTE DB-SUA / Equipamiento docente",
     "tags": [
-      "maqueta",
-      "etsie",
-      "edificacion",
-      "envolvente",
-      "arquitectura",
-      "sevilla",
-      "bim"
+      "tripo",
+      "equipamiento",
+      "mobiliario",
+      "metaverso"
     ],
-    "modelFile": "/models/maqueta-etsie-02.glb",
+    "modelFile": "/models/tripo-03a0de29.glb",
+    "isTexturedModel": true,
     "dimensions": {
-      "width": 3.44,
-      "height": 3.74,
-      "depth": 3.31
+      "width": 0.302,
+      "height": 1.002,
+      "depth": 0.476
     },
     "stats": {
-      "geometriesCount": 67,
-      "totalVertices": 752150,
-      "totalFaces": 999919,
-      "fileSizeKb": 54665.2
-    },
-    "isTexturedModel": true
+      "geometriesCount": 1,
+      "totalVertices": 4921,
+      "totalFaces": 6488,
+      "fileSizeKb": 8078.4
+    }
   },
   {
-    "id": "maqueta-etsie-03",
-    "fileCode": "MAQUETA-ETSIE-03",
-    "title": "Maqueta ETSIE - Módulo 03 Espacios y Volumetría",
-    "fullTitle": "Maqueta Arquitectónica Datasmith - Módulo 03: Espacios Docentes, Cubiertas y Cerramientos",
-    "shortTitle": "Maqueta ETSIE 03",
-    "practice": "Metaverso: Maquetas Arquitectónicas ETSIE",
-    "practiceNum": 7,
-    "category": "Maquetas y Envolvente Edilicia",
-    "categoryKey": "architectural_models",
-    "shortDescription": "Modelo arquitectónico volumétrico y espacial de la ETSIE con zonificación docente y áreas comunes.",
-    "detailedDescription": "Modelo tridimensional completo importado mediante Datasmith desde Archicad que reproduce las galerías, aulas y núcleos de acceso de la Escuela de Edificación de la Universidad de Sevilla. Permite la inspección en 360 grados de los detalles constructivos de antepechos, juntas de dilatación estructurales, encuentros de fachada-forjado y distribución espacial.",
-    "structuralBehavior": "Distribución espacial de cargas gravitatorias y de sobrecarga de uso de uso público (3.0 kN/m² según CTE DB-SE-AE). Juntas de dilatación estructurales cada 30 metros de longitud.",
+    "id": "tripo-ec660f31",
+    "fileCode": "TRIPO-EC660F",
+    "title": "Módulo de Aula y Mobiliario Tripo 3D",
+    "shortTitle": "Elemento de Aula Tripo 2",
+    "practice": "Modelos Tripo 3D Metaverso",
+    "practiceNum": 4,
+    "category": "Modelos Tripo 3D",
+    "categoryKey": "tripo_models",
+    "shortDescription": "Módulo interior generado con Tripo 3D para las aulas del metaverso.",
+    "detailedDescription": "Elemento interior arquitectónico texturizado en PBR proveniente del metaverso ETSIE.",
+    "structuralBehavior": "Elemento de distribución y mobiliario interior.",
     "components": [
-      "Módulos docentes y aulas de docencia",
-      "Galerías perimetrales de circulación y pasarelas",
-      "Estructura soporte y pilares apantallados",
-      "Juntas de dilatación con doble pilar y pasadores de transmisión cortante",
-      "Luminarias, falso techo registrable y conductos de climatización",
-      "Barandillas de protección y elementos de seguridad frente a caídas"
+      "Módulo autoportante",
+      "Revestimiento"
     ],
-    "normativeReference": "CTE DB-SUA 1 (Seguridad frente a caídas) / CTE DB-SE-AE (Acciones en la edificación)",
+    "normativeReference": "CTE DB-SI / DB-SUA",
     "tags": [
-      "maqueta",
-      "etsie",
-      "aulas",
-      "volumetria",
-      "junta dilatacion",
-      "arquitectura",
-      "datasmith"
+      "tripo",
+      "aula",
+      "interior",
+      "metaverso"
     ],
-    "modelFile": "/models/maqueta-etsie-03.glb",
+    "modelFile": "/models/tripo-ec660f31.glb",
+    "isTexturedModel": true,
     "dimensions": {
-      "width": 4.99,
-      "height": 4.32,
-      "depth": 3.6
+      "width": 0.256,
+      "height": 0.257,
+      "depth": 1.0
     },
     "stats": {
-      "geometriesCount": 116,
-      "totalVertices": 1094795,
-      "totalFaces": 999933,
-      "fileSizeKb": 64127.3
-    },
-    "isTexturedModel": true
+      "geometriesCount": 1,
+      "totalVertices": 3082,
+      "totalFaces": 4166,
+      "fileSizeKb": 7733.1
+    }
   },
   {
     "id": "tripo-cuchara",
@@ -127,6 +112,286 @@
       "totalVertices": 360000,
       "totalFaces": 120000,
       "fileSizeKb": 4415.5
+    }
+  },
+  {
+    "id": "maqueta-ma02",
+    "fileCode": "MAQUETA-MA02",
+    "title": "Maqueta ETSIE MA-02 (Envolvente y Fachadas)",
+    "shortTitle": "Maqueta MA02",
+    "practice": "Maquetas BIM Datasmith ETSIE",
+    "practiceNum": 5,
+    "category": "Maquetas Datasmith",
+    "categoryKey": "architectural_models",
+    "shortDescription": "Envolvente exterior, fachadas principales y volumetría general de la Escuela Técnica Superior de Ingeniería de Edificación.",
+    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA02, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
+    "components": [
+      "Conjunto de 84 elementos constructivos BIM",
+      "Muros y particiones",
+      "Forjados y carpinterías"
+    ],
+    "normativeReference": "Código Técnico de la Edificación (CTE)",
+    "tags": [
+      "maqueta",
+      "ma02",
+      "datasmith",
+      "etsie",
+      "bim",
+      "metaverso"
+    ],
+    "modelFile": "/models/maqueta-MA02.glb",
+    "isTexturedModel": false,
+    "dimensions": {
+      "width": 1.766,
+      "height": 0.391,
+      "depth": 0.604
+    },
+    "stats": {
+      "geometriesCount": 84,
+      "totalVertices": 1234,
+      "totalFaces": 916,
+      "fileSizeKb": 36.2
+    }
+  },
+  {
+    "id": "maqueta-ma03",
+    "fileCode": "MAQUETA-MA03",
+    "title": "Maqueta ETSIE MA-03 (Espacios y Aulas)",
+    "shortTitle": "Maqueta MA03",
+    "practice": "Maquetas BIM Datasmith ETSIE",
+    "practiceNum": 5,
+    "category": "Maquetas Datasmith",
+    "categoryKey": "architectural_models",
+    "shortDescription": "Distribución arquitectónica de espacios docentes, pasillos y núcleos de comunicación.",
+    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA03, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
+    "components": [
+      "Conjunto de 48 elementos constructivos BIM",
+      "Muros y particiones",
+      "Forjados y carpinterías"
+    ],
+    "normativeReference": "Código Técnico de la Edificación (CTE)",
+    "tags": [
+      "maqueta",
+      "ma03",
+      "datasmith",
+      "etsie",
+      "bim",
+      "metaverso"
+    ],
+    "modelFile": "/models/maqueta-MA03.glb",
+    "isTexturedModel": false,
+    "dimensions": {
+      "width": 0.002,
+      "height": 0.001,
+      "depth": 0.0
+    },
+    "stats": {
+      "geometriesCount": 48,
+      "totalVertices": 836,
+      "totalFaces": 672,
+      "fileSizeKb": 25.6
+    }
+  },
+  {
+    "id": "maqueta-ma04",
+    "fileCode": "MAQUETA-MA04",
+    "title": "Maqueta ETSIE MA-04 (Módulo Docente Norte)",
+    "shortTitle": "Maqueta MA04",
+    "practice": "Maquetas BIM Datasmith ETSIE",
+    "practiceNum": 5,
+    "category": "Maquetas Datasmith",
+    "categoryKey": "architectural_models",
+    "shortDescription": "Sector norte de aulas y laboratorios de materiales y edificación.",
+    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA04, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
+    "components": [
+      "Conjunto de 32 elementos constructivos BIM",
+      "Muros y particiones",
+      "Forjados y carpinterías"
+    ],
+    "normativeReference": "Código Técnico de la Edificación (CTE)",
+    "tags": [
+      "maqueta",
+      "ma04",
+      "datasmith",
+      "etsie",
+      "bim",
+      "metaverso"
+    ],
+    "modelFile": "/models/maqueta-MA04.glb",
+    "isTexturedModel": false,
+    "dimensions": {
+      "width": 0.002,
+      "height": 0.001,
+      "depth": 0.002
+    },
+    "stats": {
+      "geometriesCount": 32,
+      "totalVertices": 1580,
+      "totalFaces": 1240,
+      "fileSizeKb": 46.8
+    }
+  },
+  {
+    "id": "maqueta-ma05",
+    "fileCode": "MAQUETA-MA05",
+    "title": "Maqueta ETSIE MA-05 (Estructura y Forjados)",
+    "shortTitle": "Maqueta MA05",
+    "practice": "Maquetas BIM Datasmith ETSIE",
+    "practiceNum": 5,
+    "category": "Maquetas Datasmith",
+    "categoryKey": "architectural_models",
+    "shortDescription": "Modelo estructural integrado: pilares, vigas, forjados y núcleos rígidos.",
+    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA05, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
+    "components": [
+      "Conjunto de 114 elementos constructivos BIM",
+      "Muros y particiones",
+      "Forjados y carpinterías"
+    ],
+    "normativeReference": "Código Técnico de la Edificación (CTE)",
+    "tags": [
+      "maqueta",
+      "ma05",
+      "datasmith",
+      "etsie",
+      "bim",
+      "metaverso"
+    ],
+    "modelFile": "/models/maqueta-MA05.glb",
+    "isTexturedModel": false,
+    "dimensions": {
+      "width": 0.002,
+      "height": 0.001,
+      "depth": 0.002
+    },
+    "stats": {
+      "geometriesCount": 114,
+      "totalVertices": 11586,
+      "totalFaces": 10696,
+      "fileSizeKb": 353.0
+    }
+  },
+  {
+    "id": "maqueta-ma07",
+    "fileCode": "MAQUETA-MA07",
+    "title": "Maqueta ETSIE MA-07 (Acabados y Pavimentos)",
+    "shortTitle": "Maqueta MA07",
+    "practice": "Maquetas BIM Datasmith ETSIE",
+    "practiceNum": 5,
+    "category": "Maquetas Datasmith",
+    "categoryKey": "architectural_models",
+    "shortDescription": "Detalle constructivo de solados, pavimentos y encuentros de particiones.",
+    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA07, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
+    "components": [
+      "Conjunto de 256 elementos constructivos BIM",
+      "Muros y particiones",
+      "Forjados y carpinterías"
+    ],
+    "normativeReference": "Código Técnico de la Edificación (CTE)",
+    "tags": [
+      "maqueta",
+      "ma07",
+      "datasmith",
+      "etsie",
+      "bim",
+      "metaverso"
+    ],
+    "modelFile": "/models/maqueta-MA07.glb",
+    "isTexturedModel": false,
+    "dimensions": {
+      "width": 0.001,
+      "height": 0.0,
+      "depth": 0.0
+    },
+    "stats": {
+      "geometriesCount": 256,
+      "totalVertices": 12341,
+      "totalFaces": 9858,
+      "fileSizeKb": 357.9
+    }
+  },
+  {
+    "id": "maqueta-ma08",
+    "fileCode": "MAQUETA-MA08",
+    "title": "Maqueta ETSIE MA-08 (Instalaciones y Conducciones)",
+    "shortTitle": "Maqueta MA08",
+    "practice": "Maquetas BIM Datasmith ETSIE",
+    "practiceNum": 5,
+    "category": "Maquetas Datasmith",
+    "categoryKey": "architectural_models",
+    "shortDescription": "Redes de distribución técnica, patinillos y acometidas de la Escuela.",
+    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA08, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
+    "components": [
+      "Conjunto de 60 elementos constructivos BIM",
+      "Muros y particiones",
+      "Forjados y carpinterías"
+    ],
+    "normativeReference": "Código Técnico de la Edificación (CTE)",
+    "tags": [
+      "maqueta",
+      "ma08",
+      "datasmith",
+      "etsie",
+      "bim",
+      "metaverso"
+    ],
+    "modelFile": "/models/maqueta-MA08.glb",
+    "isTexturedModel": false,
+    "dimensions": {
+      "width": 0.0,
+      "height": 0.0,
+      "depth": 0.0
+    },
+    "stats": {
+      "geometriesCount": 60,
+      "totalVertices": 1518,
+      "totalFaces": 768,
+      "fileSizeKb": 40.0
+    }
+  },
+  {
+    "id": "maqueta-ma09",
+    "fileCode": "MAQUETA-MA09",
+    "title": "Maqueta ETSIE MA-09 (Cubiertas y Lucernarios)",
+    "shortTitle": "Maqueta MA09",
+    "practice": "Maquetas BIM Datasmith ETSIE",
+    "practiceNum": 5,
+    "category": "Maquetas Datasmith",
+    "categoryKey": "architectural_models",
+    "shortDescription": "Solución técnica de cubierta invertida, impermeabilización y lucernarios de iluminación cenital.",
+    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA09, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
+    "components": [
+      "Conjunto de 174 elementos constructivos BIM",
+      "Muros y particiones",
+      "Forjados y carpinterías"
+    ],
+    "normativeReference": "Código Técnico de la Edificación (CTE)",
+    "tags": [
+      "maqueta",
+      "ma09",
+      "datasmith",
+      "etsie",
+      "bim",
+      "metaverso"
+    ],
+    "modelFile": "/models/maqueta-MA09.glb",
+    "isTexturedModel": false,
+    "dimensions": {
+      "width": 0.004,
+      "height": 0.002,
+      "depth": 0.001
+    },
+    "stats": {
+      "geometriesCount": 174,
+      "totalVertices": 10974,
+      "totalFaces": 6970,
+      "fileSizeKb": 297.4
     }
   },
   {
