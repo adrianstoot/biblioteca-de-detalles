@@ -351,11 +351,6 @@ function ensureGeometryUV(geometry) {
 
         while (modelGroup.children.length > 0) {
           const obj = modelGroup.children[0];
-          obj.traverse((child) => {
-            if (child.isMesh && child.geometry) {
-              child.geometry.dispose();
-            }
-          });
           modelGroup.remove(obj);
         }
 
