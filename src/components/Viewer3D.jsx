@@ -255,10 +255,12 @@ export default function Viewer3D({
     group.traverse((child) => {
       if (child.isMesh) {
         child.castShadow = true;
-        child.receiveShadow = true;
-
-        // Apply Realistic Triplanar Material (Continuous, seamless, without cuts)
-        child.material = createRealisticMaterial(preset, child.name, detailId);
+        // Preserve original material if textured model, otherwise apply realistic materials
+        if (currentDetail?.isTexturedModel && child.userData.originalMaterial && preset !== 'wireframe') {
+          child.material = child.userData.originalMaterial;
+        } else {
+          child.material = createRealisticMaterial(preset, child.name, detailId);
+        }
 
         // Technical Outline Edges
         if (withEdges && preset !== 'wireframe') {
@@ -309,6 +311,11 @@ export default function Viewer3D({
         }
 
         const model = gltf.scene;
+        model.traverse((child) => {
+          if (child.isMesh && child.material) {
+            child.userData.originalMaterial = child.material;
+          }
+        });
         modelGroup.add(model);
 
         // Apply realistic materials

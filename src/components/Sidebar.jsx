@@ -27,7 +27,12 @@ const DetailCard = memo(function DetailCard({ detail, isSelected, onSelect }) {
     base: 'Base',
     splice: 'Empalme',
     truss: 'Cercha',
-    framework: 'Forjado'
+    framework: 'Forjado',
+    retaining_walls: 'Muro Pantalla',
+    foundations: 'Cimentación',
+    slabs: 'Forjado',
+    installations: 'P. Tierra',
+    architectural_models: 'Maqueta BIM'
   }[detail.categoryKey] || detail.category;
 
   const displayTitle = detail.shortTitle || detail.title;
@@ -43,12 +48,13 @@ const DetailCard = memo(function DetailCard({ detail, isSelected, onSelect }) {
     >
       {/* 3D Model Thumbnail (compact square with transparent model) */}
       <div className="relative w-14 h-14 rounded-lg bg-gradient-to-b from-slate-50 to-slate-100 border border-slate-200/80 flex items-center justify-center flex-shrink-0 overflow-hidden group-hover:border-slate-300 transition-colors">
+        <Box className="w-6 h-6 text-slate-300 absolute inset-auto pointer-events-none" />
         <img
           src={`${import.meta.env.BASE_URL || '/'}thumbnails/${detail.id}.png`}
           alt={displayTitle}
           loading="lazy"
           decoding="async"
-          className="max-h-12 max-w-12 object-contain filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.12)] group-hover:scale-110 transition-transform duration-200"
+          className="relative z-10 max-h-12 max-w-12 object-contain filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.12)] group-hover:scale-110 transition-transform duration-200"
           onError={(e) => {
             e.currentTarget.style.display = 'none';
           }}
@@ -111,12 +117,17 @@ export default function Sidebar({
   // Category list with labels
   const categories = [
     { key: 'all', label: 'Todos' },
+    { key: 'architectural_models', label: 'Maquetas BIM' },
+    { key: 'retaining_walls', label: 'Pantallas' },
+    { key: 'foundations', label: 'Cimentación' },
+    { key: 'slabs', label: 'Forjados' },
+    { key: 'installations', label: 'P. Tierra' },
     { key: 'base', label: 'Bases' },
     { key: 'rigid', label: 'Rígidos' },
     { key: 'articulated', label: 'Articulados' },
     { key: 'splice', label: 'Empalmes' },
     { key: 'truss', label: 'Cerchas' },
-    { key: 'framework', label: 'Forjados' }
+    { key: 'framework', label: 'Estructuras' }
   ];
 
   // Calculate counts per category
@@ -166,7 +177,7 @@ export default function Sidebar({
               </span>
             </h2>
             <p className="text-[11px] text-slate-500 mt-0.5">
-              Detalles constructivos metálicos ETSIE
+              Detalles constructivos y maquetas ETSIE
             </p>
           </div>
           <button 
