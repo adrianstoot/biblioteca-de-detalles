@@ -70,39 +70,63 @@ export default function DetailInfoPanel({
           <div className="space-y-1.5 bg-slate-50 p-2.5 rounded-xl border border-slate-100 font-mono text-[11px]">
             <div className="flex items-center justify-between text-slate-600">
               <span>Ancho</span>
-              <span className="font-semibold text-slate-900">{widthMm} mm</span>
+              <span className="font-semibold text-slate-900">
+                {detail.dimensions?.width >= 2 ? `${detail.dimensions.width} m` : `${widthMm} mm`}
+              </span>
             </div>
             <div className="flex items-center justify-between text-slate-600">
               <span>Alto</span>
-              <span className="font-semibold text-slate-900">{heightMm} mm</span>
+              <span className="font-semibold text-slate-900">
+                {detail.dimensions?.height >= 2 ? `${detail.dimensions.height} m` : `${heightMm} mm`}
+              </span>
             </div>
             <div className="flex items-center justify-between text-slate-600">
               <span>Profundidad</span>
-              <span className="font-semibold text-slate-900">{depthMm} mm</span>
+              <span className="font-semibold text-slate-900">
+                {detail.dimensions?.depth >= 2 ? `${detail.dimensions.depth} m` : `${depthMm} mm`}
+              </span>
             </div>
           </div>
         </div>
 
-        {/* Acabado de Acero */}
+        {/* Acabado o Materiales Reales */}
         <div>
           <h4 className="text-[11px] font-semibold text-slate-700 uppercase tracking-wider mb-2">
-            Textura de Acero
+            {detail.isTexturedModel ? 'Materiales y Acabados Reales' : 'Textura de Acero'}
           </h4>
-          <div className="grid grid-cols-2 gap-1.5">
-            {materials.map((m) => (
-              <button
-                key={m.id}
-                onClick={() => onChangeMaterial(m.id)}
-                className={`px-2.5 py-2 text-[11px] rounded-lg border text-left transition-all ${
-                  materialPreset === m.id
-                    ? 'bg-blue-50 border-blue-500 text-blue-700 font-medium'
-                    : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
-                }`}
-              >
-                {m.label}
-              </button>
-            ))}
-          </div>
+          {detail.isTexturedModel ? (
+            <div className="bg-slate-50 p-2.5 rounded-xl border border-slate-100 space-y-2 text-[11px]">
+              <div className="flex items-center text-emerald-700 font-medium">
+                <CheckCircle2 className="w-3.5 h-3.5 mr-1.5 text-emerald-600 shrink-0" />
+                <span>Textura / Material original del modelo</span>
+              </div>
+              {detail.stats?.materials && (
+                <div className="pt-1.5 border-t border-slate-200/60 flex flex-wrap gap-1">
+                  {detail.stats.materials.map((mat, i) => (
+                    <span key={i} className="px-2 py-0.5 bg-white border border-slate-200 rounded-md text-[10px] text-slate-700 shadow-xs">
+                      {mat}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="grid grid-cols-2 gap-1.5">
+              {materials.map((m) => (
+                <button
+                  key={m.id}
+                  onClick={() => onChangeMaterial(m.id)}
+                  className={`px-2.5 py-2 text-[11px] rounded-lg border text-left transition-all ${
+                    materialPreset === m.id
+                      ? 'bg-blue-50 border-blue-500 text-blue-700 font-medium'
+                      : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
+                  }`}
+                >
+                  {m.label}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Aristas Técnicas CAD */}

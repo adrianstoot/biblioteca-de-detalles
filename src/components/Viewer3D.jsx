@@ -255,16 +255,26 @@ export default function Viewer3D({
     group.traverse((child) => {
       if (child.isMesh) {
         child.castShadow = true;
+        child.receiveShadow = true;
+
+        const isTextured = currentDetail?.isTexturedModel || 
+                           currentDetail?.categoryKey === 'architectural_models' || 
+                           currentDetail?.categoryKey === 'tripo_models';
+
         // Preserve original material if textured model, otherwise apply realistic materials
-        if (currentDetail?.isTexturedModel && child.userData.originalMaterial && preset !== 'wireframe') {
+        if (isTextured && child.userData.originalMaterial && preset !== 'wireframe') {
           child.material = child.userData.originalMaterial;
+          child.material.side = THREE.DoubleSide;
         } else {
           child.material = createRealisticMaterial(preset, child.name, detailId);
+          child.material.side = THREE.DoubleSide;
         }
 
-        // Technical Outline Edges
-        if (withEdges && preset !== 'wireframe') {
-          const edgesGeo = new THREE.EdgesGeometry(child.geometry, 30);
+        // Technical Outline Edges (avoid clutter on organic tripo models)
+        const shouldDrawEdges = withEdges && preset !== 'wireframe' && (!isTextured || currentDetail?.categoryKey === 'architectural_models');
+        if (shouldDrawEdges) {
+          const threshold = isTextured ? 42 : 30;
+          const edgesGeo = new THREE.EdgesGeometry(child.geometry, threshold);
           const line = new THREE.LineSegments(edgesGeo, edgeLineMat);
           line.position.copy(child.position);
           line.rotation.copy(child.rotation);
@@ -313,6 +323,9 @@ export default function Viewer3D({
         const model = gltf.scene;
         model.traverse((child) => {
           if (child.isMesh && child.material) {
+            child.material.side = THREE.DoubleSide;
+            child.castShadow = true;
+            child.receiveShadow = true;
             child.userData.originalMaterial = child.material;
           }
         });

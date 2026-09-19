@@ -2,116 +2,75 @@
   {
     "id": "tripo-03a0de29",
     "fileCode": "TRIPO-03A0DE",
-    "title": "Mobiliario y Equipamiento Técnico Tripo 3D",
+    "title": "Elemento Técnico Tripo 1 (Metaverso)",
     "shortTitle": "Elemento Técnico Tripo 1",
     "practice": "Modelos Tripo 3D Metaverso",
     "practiceNum": 4,
     "category": "Modelos Tripo 3D",
     "categoryKey": "tripo_models",
-    "shortDescription": "Elemento de equipamiento técnico generado con Tripo 3D del metaverso.",
-    "detailedDescription": "Modelo de equipamiento técnico modelado mediante IA generativa en Tripo 3D con mapas PBR completos (albedo, normales, roughness).",
-    "structuralBehavior": "Elemento de equipamiento y mobiliario interior.",
+    "shortDescription": "Modelo técnico modelado con Tripo AI con mapa de color PBR original de alta resolución.",
+    "detailedDescription": "Modelo técnico modelado con Tripo AI con mapa de color PBR original de alta resolución. Exportado directamente con coordenadas UV originales y mapas de texturas PBR vinculados.",
+    "structuralBehavior": "Elemento volumétrico para interiorismo y dotación del metaverso ETSIE.",
     "components": [
-      "Cuerpo estructural",
-      "Superficie de acabado",
+      "Cuerpo estructural principal",
+      "Acabado exterior texturizado",
       "Herrajes"
     ],
-    "normativeReference": "CTE DB-SUA / Equipamiento docente",
+    "normativeReference": "CTE DB-SI / DB-SUA",
     "tags": [
       "tripo",
-      "equipamiento",
-      "mobiliario",
-      "metaverso"
+      "metaverso",
+      "etsie",
+      "pbr",
+      "3d"
     ],
     "modelFile": "/models/tripo-03a0de29.glb",
     "isTexturedModel": true,
     "dimensions": {
       "width": 0.302,
-      "height": 1.002,
-      "depth": 0.476
+      "height": 0.476,
+      "depth": 1.002
     },
     "stats": {
       "geometriesCount": 1,
-      "totalVertices": 4921,
-      "totalFaces": 6488,
-      "fileSizeKb": 8078.4
+      "fileSizeKb": 8136.4
     }
   },
   {
     "id": "tripo-ec660f31",
     "fileCode": "TRIPO-EC660F",
-    "title": "Módulo de Aula y Mobiliario Tripo 3D",
+    "title": "Elemento de Aula Tripo 2 (Metaverso)",
     "shortTitle": "Elemento de Aula Tripo 2",
     "practice": "Modelos Tripo 3D Metaverso",
     "practiceNum": 4,
     "category": "Modelos Tripo 3D",
     "categoryKey": "tripo_models",
-    "shortDescription": "Módulo interior generado con Tripo 3D para las aulas del metaverso.",
-    "detailedDescription": "Elemento interior arquitectónico texturizado en PBR proveniente del metaverso ETSIE.",
-    "structuralBehavior": "Elemento de distribución y mobiliario interior.",
+    "shortDescription": "Pilar y módulo decorativo de aula interior generado con Tripo AI con coordenadas UV nativas y mapa de color.",
+    "detailedDescription": "Pilar y módulo decorativo de aula interior generado con Tripo AI con coordenadas UV nativas y mapa de color. Exportado directamente con coordenadas UV originales y mapas de texturas PBR vinculados.",
+    "structuralBehavior": "Elemento volumétrico para interiorismo y dotación del metaverso ETSIE.",
     "components": [
-      "Módulo autoportante",
-      "Revestimiento"
+      "Fuste central",
+      "Capitel y base decorativa",
+      "Revestimiento polícromo PBR"
     ],
     "normativeReference": "CTE DB-SI / DB-SUA",
     "tags": [
       "tripo",
-      "aula",
-      "interior",
-      "metaverso"
+      "metaverso",
+      "etsie",
+      "pbr",
+      "3d"
     ],
     "modelFile": "/models/tripo-ec660f31.glb",
     "isTexturedModel": true,
     "dimensions": {
       "width": 0.256,
-      "height": 0.257,
-      "depth": 1.0
+      "height": 1.0,
+      "depth": 0.257
     },
     "stats": {
       "geometriesCount": 1,
-      "totalVertices": 3082,
-      "totalFaces": 4166,
-      "fileSizeKb": 7733.1
-    }
-  },
-  {
-    "id": "tripo-cuchara",
-    "fileCode": "TRIPO-CUCHARA",
-    "title": "Cuchara de Excavación / Maquinaria de Obra",
-    "shortTitle": "Cuchara de Obra",
-    "practice": "Modelos Tripo 3D Metaverso",
-    "practiceNum": 4,
-    "category": "Modelos Tripo 3D",
-    "categoryKey": "tripo_models",
-    "shortDescription": "Cuchara dentada de excavación y movimiento de tierras generada con Tripo 3D.",
-    "detailedDescription": "Modelo 3D texturizado en alta resolución de cuchara de excavadora para movimiento de tierras y excavación de zanjas en obra, importado del metaverso ETSIE.",
-    "structuralBehavior": "Elemento de maquinaria pesada para excavación de vaciados, zapatas y desmontes.",
-    "components": [
-      "Cuchara de acero antidesgaste",
-      "Dientes de penetración",
-      "Enganches para brazo articulado"
-    ],
-    "normativeReference": "Normativa de seguridad en maquinaria de obra UNE-EN 474-5",
-    "tags": [
-      "tripo",
-      "cuchara",
-      "excavacion",
-      "obra",
-      "maquinaria",
-      "metaverso"
-    ],
-    "modelFile": "/models/tripo-cuchara.glb",
-    "isTexturedModel": true,
-    "dimensions": {
-      "width": 0.692,
-      "height": 1.9,
-      "depth": 1.439
-    },
-    "stats": {
-      "geometriesCount": 1,
-      "totalVertices": 360000,
-      "totalFaces": 120000,
-      "fileSizeKb": 4415.5
+      "fileSizeKb": 7769.5
     }
   },
   {
@@ -124,12 +83,13 @@
     "category": "Maquetas Datasmith",
     "categoryKey": "architectural_models",
     "shortDescription": "Envolvente exterior, fachadas principales y volumetría general de la Escuela Técnica Superior de Ingeniería de Edificación.",
-    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA02, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "detailedDescription": "Envolvente exterior, fachadas principales y volumetría general de la Escuela Técnica Superior de Ingeniería de Edificación. Ensamblado geométricamente a partir del archivo original Datasmith con jerarquía de piezas y materiales arquitectónicos reales (Madera de Roble, Pintura Gris Claro, Estuco Rojo Rústico, Pintura Gris Oscuro).",
     "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
     "components": [
-      "Conjunto de 84 elementos constructivos BIM",
-      "Muros y particiones",
-      "Forjados y carpinterías"
+      "Plataforma base de madera",
+      "Pilares y soportes estructurales",
+      "Paneles de estuco rústico",
+      "Carpinterías y revestimientos"
     ],
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
@@ -141,17 +101,21 @@
       "metaverso"
     ],
     "modelFile": "/models/maqueta-MA02.glb",
-    "isTexturedModel": false,
+    "isTexturedModel": true,
     "dimensions": {
       "width": 1.766,
-      "height": 0.391,
-      "depth": 0.604
+      "height": 0.712,
+      "depth": 0.391
     },
     "stats": {
-      "geometriesCount": 84,
-      "totalVertices": 1234,
-      "totalFaces": 916,
-      "fileSizeKb": 36.2
+      "geometriesCount": 4,
+      "materials": [
+        "Madera de Roble",
+        "Pintura Gris Claro",
+        "Estuco Rojo Rústico",
+        "Pintura Gris Oscuro"
+      ],
+      "fileSizeKb": 13.2
     }
   },
   {
@@ -164,12 +128,13 @@
     "category": "Maquetas Datasmith",
     "categoryKey": "architectural_models",
     "shortDescription": "Distribución arquitectónica de espacios docentes, pasillos y núcleos de comunicación.",
-    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA03, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "detailedDescription": "Distribución arquitectónica de espacios docentes, pasillos y núcleos de comunicación. Ensamblado geométricamente a partir del archivo original Datasmith con jerarquía de piezas y materiales arquitectónicos reales (Madera de Caoba, Pintura Burdeos, Metal Níquel, Pintura Gris Claro, Pintura Gris Oscuro).",
     "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
     "components": [
-      "Conjunto de 48 elementos constructivos BIM",
-      "Muros y particiones",
-      "Forjados y carpinterías"
+      "Tabiquería interior",
+      "Barandillas de níquel",
+      "Paramentos de madera de caoba",
+      "Mobiliario y divisiones"
     ],
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
@@ -181,17 +146,22 @@
       "metaverso"
     ],
     "modelFile": "/models/maqueta-MA03.glb",
-    "isTexturedModel": false,
+    "isTexturedModel": true,
     "dimensions": {
-      "width": 0.002,
-      "height": 0.001,
-      "depth": 0.0
+      "width": 1.5,
+      "height": 0.34,
+      "depth": 0.606
     },
     "stats": {
-      "geometriesCount": 48,
-      "totalVertices": 836,
-      "totalFaces": 672,
-      "fileSizeKb": 25.6
+      "geometriesCount": 5,
+      "materials": [
+        "Madera de Caoba",
+        "Pintura Burdeos",
+        "Metal Níquel",
+        "Pintura Gris Claro",
+        "Pintura Gris Oscuro"
+      ],
+      "fileSizeKb": 10.5
     }
   },
   {
@@ -204,12 +174,13 @@
     "category": "Maquetas Datasmith",
     "categoryKey": "architectural_models",
     "shortDescription": "Sector norte de aulas y laboratorios de materiales y edificación.",
-    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA04, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "detailedDescription": "Sector norte de aulas y laboratorios de materiales y edificación. Ensamblado geométricamente a partir del archivo original Datasmith con jerarquía de piezas y materiales arquitectónicos reales (Madera de Caoba, Metal Cromo, Metal Aluminio, Acero Inoxidable, Pintura Gris).",
     "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
     "components": [
-      "Conjunto de 32 elementos constructivos BIM",
-      "Muros y particiones",
-      "Forjados y carpinterías"
+      "Módulos docentes",
+      "Perfiles de aluminio y cromo",
+      "Vigas maestras",
+      "Remates metálicos"
     ],
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
@@ -221,17 +192,22 @@
       "metaverso"
     ],
     "modelFile": "/models/maqueta-MA04.glb",
-    "isTexturedModel": false,
+    "isTexturedModel": true,
     "dimensions": {
-      "width": 0.002,
-      "height": 0.001,
-      "depth": 0.002
+      "width": 1.5,
+      "height": 1.388,
+      "depth": 0.842
     },
     "stats": {
-      "geometriesCount": 32,
-      "totalVertices": 1580,
-      "totalFaces": 1240,
-      "fileSizeKb": 46.8
+      "geometriesCount": 6,
+      "materials": [
+        "Madera de Caoba",
+        "Metal Cromo",
+        "Metal Aluminio",
+        "Acero Inoxidable",
+        "Pintura Gris"
+      ],
+      "fileSizeKb": 19.8
     }
   },
   {
@@ -244,12 +220,14 @@
     "category": "Maquetas Datasmith",
     "categoryKey": "architectural_models",
     "shortDescription": "Modelo estructural integrado: pilares, vigas, forjados y núcleos rígidos.",
-    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA05, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "detailedDescription": "Modelo estructural integrado: pilares, vigas, forjados y núcleos rígidos. Ensamblado geométricamente a partir del archivo original Datasmith con jerarquía de piezas y materiales arquitectónicos reales (Acero Estructural, Acero Inoxidable, Cobre, Aluminio, Estuco Blanco, Hormigón, Vidrio).",
     "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
     "components": [
-      "Conjunto de 114 elementos constructivos BIM",
-      "Muros y particiones",
-      "Forjados y carpinterías"
+      "Pórticos de acero",
+      "Nudos de unión rígidos",
+      "Tornapuntas y riostras",
+      "Forjado de hormigón",
+      "Acristalamientos"
     ],
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
@@ -261,17 +239,24 @@
       "metaverso"
     ],
     "modelFile": "/models/maqueta-MA05.glb",
-    "isTexturedModel": false,
+    "isTexturedModel": true,
     "dimensions": {
-      "width": 0.002,
-      "height": 0.001,
-      "depth": 0.002
+      "width": 0.674,
+      "height": 1.006,
+      "depth": 0.677
     },
     "stats": {
-      "geometriesCount": 114,
-      "totalVertices": 11586,
-      "totalFaces": 10696,
-      "fileSizeKb": 353.0
+      "geometriesCount": 9,
+      "materials": [
+        "Acero Estructural",
+        "Acero Inoxidable",
+        "Cobre",
+        "Aluminio",
+        "Estuco Blanco",
+        "Hormigón",
+        "Vidrio"
+      ],
+      "fileSizeKb": 134.6
     }
   },
   {
@@ -284,12 +269,13 @@
     "category": "Maquetas Datasmith",
     "categoryKey": "architectural_models",
     "shortDescription": "Detalle constructivo de solados, pavimentos y encuentros de particiones.",
-    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA07, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "detailedDescription": "Detalle constructivo de solados, pavimentos y encuentros de particiones. Ensamblado geométricamente a partir del archivo original Datasmith con jerarquía de piezas y materiales arquitectónicos reales (Hormigón, Acero Inoxidable, Baldosas Marrón, Pintura Bermellón, Pintura Gris Claro).",
     "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
     "components": [
-      "Conjunto de 256 elementos constructivos BIM",
-      "Muros y particiones",
-      "Forjados y carpinterías"
+      "Pavimento de hormigón pulido",
+      "Revestimientos cerámicos marrones",
+      "Pinturas protectoras bermellón",
+      "Guías y zócalos de acero inox"
     ],
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
@@ -301,17 +287,22 @@
       "metaverso"
     ],
     "modelFile": "/models/maqueta-MA07.glb",
-    "isTexturedModel": false,
+    "isTexturedModel": true,
     "dimensions": {
-      "width": 0.001,
-      "height": 0.0,
-      "depth": 0.0
+      "width": 8.37,
+      "height": 7.794,
+      "depth": 6.683
     },
     "stats": {
-      "geometriesCount": 256,
-      "totalVertices": 12341,
-      "totalFaces": 9858,
-      "fileSizeKb": 357.9
+      "geometriesCount": 6,
+      "materials": [
+        "Hormigón",
+        "Acero Inoxidable",
+        "Baldosas Marrón",
+        "Pintura Bermellón",
+        "Pintura Gris Claro"
+      ],
+      "fileSizeKb": 129.4
     }
   },
   {
@@ -324,12 +315,13 @@
     "category": "Maquetas Datasmith",
     "categoryKey": "architectural_models",
     "shortDescription": "Redes de distribución técnica, patinillos y acometidas de la Escuela.",
-    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA08, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "detailedDescription": "Redes de distribución técnica, patinillos y acometidas de la Escuela. Ensamblado geométricamente a partir del archivo original Datasmith con jerarquía de piezas y materiales arquitectónicos reales (Pintura Gris Claro, Hormigón Técnico).",
     "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
     "components": [
-      "Conjunto de 60 elementos constructivos BIM",
-      "Muros y particiones",
-      "Forjados y carpinterías"
+      "Conductos de ventilación y climatización",
+      "Tuberías de fontanería",
+      "Bandejas portacables",
+      "Pasadotectos de hormigón"
     ],
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
@@ -341,17 +333,19 @@
       "metaverso"
     ],
     "modelFile": "/models/maqueta-MA08.glb",
-    "isTexturedModel": false,
+    "isTexturedModel": true,
     "dimensions": {
-      "width": 0.0,
-      "height": 0.0,
-      "depth": 0.0
+      "width": 1.711,
+      "height": 12.091,
+      "depth": 2.773
     },
     "stats": {
-      "geometriesCount": 60,
-      "totalVertices": 1518,
-      "totalFaces": 768,
-      "fileSizeKb": 40.0
+      "geometriesCount": 2,
+      "materials": [
+        "Pintura Gris Claro",
+        "Hormigón Técnico"
+      ],
+      "fileSizeKb": 15.0
     }
   },
   {
@@ -364,12 +358,13 @@
     "category": "Maquetas Datasmith",
     "categoryKey": "architectural_models",
     "shortDescription": "Solución técnica de cubierta invertida, impermeabilización y lucernarios de iluminación cenital.",
-    "detailedDescription": "Modelo BIM original de la maqueta arquitectónica MA09, importado de Archicad/3ds Max mediante Datasmith al metaverso ETSIE.",
+    "detailedDescription": "Solución técnica de cubierta invertida, impermeabilización y lucernarios de iluminación cenital. Ensamblado geométricamente a partir del archivo original Datasmith con jerarquía de piezas y materiales arquitectónicos reales (Pintura Gris Claro, Estuco Blanco).",
     "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
     "components": [
-      "Conjunto de 174 elementos constructivos BIM",
-      "Muros y particiones",
-      "Forjados y carpinterías"
+      "Losa de cubierta",
+      "Petos perimetrales de protección",
+      "Casetón de lucernario cenital",
+      "Pendientes de evacuación pluvial"
     ],
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
@@ -381,17 +376,19 @@
       "metaverso"
     ],
     "modelFile": "/models/maqueta-MA09.glb",
-    "isTexturedModel": false,
+    "isTexturedModel": true,
     "dimensions": {
-      "width": 0.004,
-      "height": 0.002,
-      "depth": 0.001
+      "width": 8.523,
+      "height": 2.34,
+      "depth": 3.571
     },
     "stats": {
-      "geometriesCount": 174,
-      "totalVertices": 10974,
-      "totalFaces": 6970,
-      "fileSizeKb": 297.4
+      "geometriesCount": 2,
+      "materials": [
+        "Pintura Gris Claro",
+        "Estuco Blanco"
+      ],
+      "fileSizeKb": 106.6
     }
   },
   {
