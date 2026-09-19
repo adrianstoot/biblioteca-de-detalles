@@ -22,17 +22,14 @@ const DetailCard = memo(function DetailCard({ detail, isSelected, onSelect }) {
 
   // Short category label
   const categoryLabel = {
+    architectural_models: 'Maqueta BIM',
+    tripo_models: 'Tripo 3D',
+    base: 'Base',
     rigid: 'Rígido',
     articulated: 'Articulado',
-    base: 'Base',
     splice: 'Empalme',
     truss: 'Cercha',
-    framework: 'Forjado',
-    retaining_walls: 'Muro Pantalla',
-    foundations: 'Cimentación',
-    slabs: 'Forjado',
-    installations: 'P. Tierra',
-    architectural_models: 'Maqueta BIM'
+    framework: 'Forjado'
   }[detail.categoryKey] || detail.category;
 
   const displayTitle = detail.shortTitle || detail.title;
@@ -117,11 +114,8 @@ export default function Sidebar({
   // Category list with labels
   const categories = [
     { key: 'all', label: 'Todos' },
-    { key: 'architectural_models', label: 'Maquetas BIM' },
-    { key: 'retaining_walls', label: 'Pantallas' },
-    { key: 'foundations', label: 'Cimentación' },
-    { key: 'slabs', label: 'Forjados' },
-    { key: 'installations', label: 'P. Tierra' },
+    { key: 'architectural_models', label: 'Maquetas Datasmith' },
+    { key: 'tripo_models', label: 'Modelos Tripo' },
     { key: 'base', label: 'Bases' },
     { key: 'rigid', label: 'Rígidos' },
     { key: 'articulated', label: 'Articulados' },

@@ -1,181 +1,5 @@
 [
   {
-    "id": "muro-pantalla",
-    "fileCode": "MURO-PANTALLA",
-    "title": "Muro Pantalla de Hormigón Armado con Anclajes",
-    "fullTitle": "Muro Pantalla Continuo de Hormigón Armado con Viga de Coronación y Anclajes Activos al Terreno",
-    "shortTitle": "Muro Pantalla con Anclajes",
-    "practice": "Metaverso: Geotecnia y Cimentaciones",
-    "practiceNum": 4,
-    "category": "Muros de Contención y Pantallas",
-    "categoryKey": "retaining_walls",
-    "shortDescription": "Estructura de contención flexible formada por paneles de hormigón armado excavados por bataches con anclajes provisionales.",
-    "detailedDescription": "Detalle constructivo de contención perimetral de tierras para sótano mediante muro pantalla continuo de hormigón armado (HA-30/B/20/IIa) ejecutado in situ mediante cuchara bivalva y lodos bentoníticos. Consta de paneles de excavación alternos, viga de coronación superior rigidizadora, nivel freático deprimido y línea de anclajes provisionales activos de cable tesado al bulbo inyectado en roca/sustrato competente.",
-    "structuralBehavior": "Resistencia a flexión y cortante frente al empuje activo de tierras y sobrecargas superficiales. El nivel de anclajes reduce drásticamente el momento flector en el vano y los desplazamientos horizontales en coronación.",
-    "components": [
-      "Paneles de hormigón armado HA-30 (bataches primarios y secundarios)",
-      "Viga de coronación de hormigón armado",
-      "Anclajes provisionales activos con cables de acero de pretensado Y 1860 S7",
-      "Cabezas de anclaje de fundición con placa de apoyo inclinada",
-      "Solera / losa de cimentación de fondo de excavación",
-      "Juntas de estanqueidad entre paneles (Waterstop)"
-    ],
-    "normativeReference": "CTE DB-SE-C Art. 6 (Muros) / UNE-EN 1538 (Ejecución de pantallas)",
-    "tags": [
-      "muro pantalla",
-      "contencion",
-      "geotecnia",
-      "anclajes",
-      "viga coronacion",
-      "hormigon armado",
-      "cte-se-c"
-    ],
-    "modelFile": "/models/muro-pantalla.glb",
-    "dimensions": {
-      "width": 7.5,
-      "height": 6.7,
-      "depth": 6.16
-    },
-    "stats": {
-      "geometriesCount": 14,
-      "totalVertices": 460,
-      "totalFaces": 864,
-      "fileSizeKb": 13.6
-    }
-  },
-  {
-    "id": "cimentacion-zapata",
-    "fileCode": "CIMENTACION-ZAPATA",
-    "title": "Zapata Aislada con Placa de Anclaje y Riostra",
-    "fullTitle": "Zapata Aislada de Hormigón Armado para Pilar Metálico con Placa de Asiento y Viga de Atado",
-    "shortTitle": "Zapata Aislada y Riostra",
-    "practice": "Metaverso: Geotecnia y Cimentaciones",
-    "practiceNum": 4,
-    "category": "Cimentaciones Superficiales",
-    "categoryKey": "foundations",
-    "shortDescription": "Cimentación directa mediante zapata rígida aislada con placa de anclaje para arranque de estructura metálica.",
-    "detailedDescription": "Cimentación superficial directa de hormigón armado HA-25/B/20/IIa con armadura inferior bidireccional B 500 S. Incluye capa de hormigón de limpieza HM-20 de 10 cm, placa de anclaje de acero S275JR rigidizada con cartelas triangulares, 4 pernos de anclaje roscados con patilla corrugada y viga de atado / riostra que une con las zapatas colindantes para absorción de esfuerzos horizontales y sismo.",
-    "structuralBehavior": "Transmisión de cargas axiles y momentos del pilar al terreno admisible. La zapata trabaja a flexión en ménsula invertida; la viga riostra arriostra frente al pandeo y asientos diferenciales.",
-    "components": [
-      "Zapata aislada de hormigón armado HA-25",
-      "Hormigón de limpieza HM-20 (espesor 10 cm)",
-      "Placa de anclaje de acero laminado S275JR",
-      "Pernos de anclaje M30 de acero corrugado B 500 S con tuerca y contratuerca",
-      "Cartelas rigidizadoras de chapa de 15 mm soldadas al pilar y placa",
-      "Pilar metálico de perfil laminado HEB 260",
-      "Viga riostra / viga de atado longitudinal"
-    ],
-    "normativeReference": "CTE DB-SE-C Art. 4 (Cimentaciones directas) / Código Estructural",
-    "tags": [
-      "zapata",
-      "cimentacion",
-      "riostra",
-      "placa anclaje",
-      "pernos",
-      "heb",
-      "cte-se-c"
-    ],
-    "modelFile": "/models/cimentacion-zapata.glb",
-    "dimensions": {
-      "width": 4.2,
-      "height": 2.93,
-      "depth": 2.6
-    },
-    "stats": {
-      "geometriesCount": 13,
-      "totalVertices": 336,
-      "totalFaces": 620,
-      "fileSizeKb": 11.8
-    }
-  },
-  {
-    "id": "forjado-unidireccional",
-    "fileCode": "FORJADO-UNIDIRECCIONAL",
-    "title": "Forjado Unidireccional de Viguetas y Bovedillas",
-    "fullTitle": "Forjado Unidireccional de Hormigón con Viguetas Pretensadas T, Bovedillas Aligerantes y Capa de Compresión",
-    "shortTitle": "Forjado Unidireccional",
-    "practice": "Metaverso: Estructuras y Forjados",
-    "practiceNum": 5,
-    "category": "Sistemas de Forjados",
-    "categoryKey": "slabs",
-    "shortDescription": "Sistema estructural de piso compuesto por viguetas prefabricadas autorresistentes, bovedillas y losa superior armada.",
-    "detailedDescription": "Detalle constructivo de forjado unidireccional tradicional de edificación (canto total 25+5 cm = 30 cm) formado por viguetas de hormigón pretensado con sección en T invertida apoyadas en viga plana de cuelgue cero. Entre ejes de viguetas a 70 cm se intercalan bovedillas aligerantes, rematadas superiormente con una losa o capa de compresión de 5 cm de hormigón HA-25 y mallazo electrosoldado de reparto B 500 T.",
-    "structuralBehavior": "Flexión en una dirección (sentido longitudinal de las viguetas). La capa de compresión absorbe la cabeza de compresión y reparte cargas concentradas; las armaduras inferiores pretensadas absorben las tracciones.",
-    "components": [
-      "Viga plana de hormigón armado de canto 30 cm",
-      "Viguetas de hormigón pretensado autorresistente en T invertida",
-      "Bovedillas aligerantes curvas (anchura 54 cm, canto 22 cm)",
-      "Capa de compresión de hormigón HA-25 (espesor 5 cm)",
-      "Mallazo electrosoldado de reparto #15x15x5 en capa de compresión",
-      "Armadura de refuerzo de negativos sobre apoyos de vigas"
-    ],
-    "normativeReference": "Código Estructural Título 2 (Estructuras de Hormigón) / CTE DB-SE",
-    "tags": [
-      "forjado",
-      "vigueta pretensada",
-      "bovedilla",
-      "capa compresion",
-      "mallazo",
-      "viga plana"
-    ],
-    "modelFile": "/models/forjado-unidireccional.glb",
-    "dimensions": {
-      "width": 3.6,
-      "height": 3.1,
-      "depth": 3.2
-    },
-    "stats": {
-      "geometriesCount": 49,
-      "totalVertices": 1012,
-      "totalFaces": 1808,
-      "fileSizeKb": 35.8
-    }
-  },
-  {
-    "id": "puesta-a-tierra",
-    "fileCode": "PUESTA-A-TIERRA",
-    "title": "Arqueta y Pica de Toma de Tierra",
-    "fullTitle": "Sistema de Puesta a Tierra del Edificio: Pica Vertical, Conductor Desnudo y Arqueta de Registro",
-    "shortTitle": "Puesta a Tierra y Arqueta",
-    "practice": "Metaverso: Instalaciones y Medios de Obra",
-    "practiceNum": 6,
-    "category": "Instalaciones de Protección",
-    "categoryKey": "installations",
-    "shortDescription": "Electrodo de puesta a tierra con pica vertical cobreada, conductor perimetral y arqueta registrable.",
-    "detailedDescription": "Instalación de seguridad de puesta a tierra de la estructura del edificio según reglamento electrotécnico de baja tensión (REBT). Consta de pica vertical de acero con recubrimiento de cobre electrolítico de 2.0 m clavada en el fondo del pozo, grapa de conexión de alta conductividad, conductor de cobre desnudo de 35 mm² formando anillo cerrado enterrado bajo zapatas y arqueta de registro prefabricada de 40x40 cm con tapa y puente de comprobación seccionable.",
-    "structuralBehavior": "Disipación de corrientes de defecto, descargas atmosféricas (pararrayos) y derivaciones de masa a tierra garantizando que la tensión de contacto permanezca por debajo del umbral de seguridad (< 24 V en locales húmedos).",
-    "components": [
-      "Pica vertical de acero cobreado de Ø14 mm y 2.0 m de longitud",
-      "Arqueta de registro prefabricada de hormigón (40x40x40 cm)",
-      "Tapa practicable de fundición dúctil clase B-125",
-      "Grapa de unión de bronce/latón pica-conductor",
-      "Conductor de cobre electrolítico desnudo de 35 mm² de sección",
-      "Puente de comprobación seccionable"
-    ],
-    "normativeReference": "REBT ITC-BT-18 / CTE DB-SUA 8 (Riesgo por rayo)",
-    "tags": [
-      "puesta a tierra",
-      "pica",
-      "cobre",
-      "arqueta",
-      "rebt",
-      "instalaciones",
-      "seguridad"
-    ],
-    "modelFile": "/models/puesta-a-tierra.glb",
-    "dimensions": {
-      "width": 0.45,
-      "height": 1.05,
-      "depth": 2.5
-    },
-    "stats": {
-      "geometriesCount": 5,
-      "totalVertices": 156,
-      "totalFaces": 292,
-      "fileSizeKb": 6.2
-    }
-  },
-  {
     "id": "maqueta-etsie-02",
     "fileCode": "MAQUETA-ETSIE-02",
     "title": "Maqueta ETSIE - Módulo 02 Envolvente y Fachadas",
@@ -264,6 +88,46 @@
       "fileSizeKb": 64127.3
     },
     "isTexturedModel": true
+  },
+  {
+    "id": "tripo-cuchara",
+    "fileCode": "TRIPO-CUCHARA",
+    "title": "Cuchara de Excavación / Maquinaria de Obra",
+    "shortTitle": "Cuchara de Obra",
+    "practice": "Modelos Tripo 3D Metaverso",
+    "practiceNum": 4,
+    "category": "Modelos Tripo 3D",
+    "categoryKey": "tripo_models",
+    "shortDescription": "Cuchara dentada de excavación y movimiento de tierras generada con Tripo 3D.",
+    "detailedDescription": "Modelo 3D texturizado en alta resolución de cuchara de excavadora para movimiento de tierras y excavación de zanjas en obra, importado del metaverso ETSIE.",
+    "structuralBehavior": "Elemento de maquinaria pesada para excavación de vaciados, zapatas y desmontes.",
+    "components": [
+      "Cuchara de acero antidesgaste",
+      "Dientes de penetración",
+      "Enganches para brazo articulado"
+    ],
+    "normativeReference": "Normativa de seguridad en maquinaria de obra UNE-EN 474-5",
+    "tags": [
+      "tripo",
+      "cuchara",
+      "excavacion",
+      "obra",
+      "maquinaria",
+      "metaverso"
+    ],
+    "modelFile": "/models/tripo-cuchara.glb",
+    "isTexturedModel": true,
+    "dimensions": {
+      "width": 0.692,
+      "height": 1.9,
+      "depth": 1.439
+    },
+    "stats": {
+      "geometriesCount": 1,
+      "totalVertices": 360000,
+      "totalFaces": 120000,
+      "fileSizeKb": 4415.5
+    }
   },
   {
     "id": "P1-1",
