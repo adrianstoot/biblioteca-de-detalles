@@ -1,83 +1,67 @@
 [
   {
-    "id": "tripo-03a0de29",
-    "fileCode": "TRIPO-03A0DE",
-    "title": "Elemento Técnico Tripo 1 (Metaverso)",
-    "shortTitle": "Elemento Técnico Tripo 1",
+    "id": "tripo-obra-model2",
+    "fileCode": "MAQUETA-01",
+    "title": "Maqueta 1",
+    "shortTitle": "Maqueta 1",
     "practice": "Modelos Tripo 3D Metaverso",
     "practiceNum": 4,
     "category": "Modelos Tripo 3D",
     "categoryKey": "tripo_models",
-    "shortDescription": "Modelo técnico modelado con Tripo AI con mapa de color PBR original de alta resolución.",
-    "detailedDescription": "Modelo técnico modelado con Tripo AI con mapa de color PBR original de alta resolución. Exportado directamente con coordenadas UV originales y mapas de texturas PBR vinculados.",
-    "structuralBehavior": "Elemento volumétrico para interiorismo y dotación del metaverso ETSIE.",
+    "shortDescription": "Maqueta de obra con ejecución de losa y muro armado con paramentos vistos y armadura.",
+    "detailedDescription": "Maqueta de obra con ejecución de losa y muro armado con paramentos vistos y armadura en proceso constructivo.",
+    "structuralBehavior": "Interacción entre losa de cimentación y arranque de muro de contención.",
     "components": [
-      "Cuerpo estructural principal",
-      "Acabado exterior texturizado",
-      "Herrajes"
+      "Losa de hormigón armado",
+      "Muro de contención",
+      "Armadura de conexión"
     ],
-    "normativeReference": "CTE DB-SI / DB-SUA",
+    "normativeReference": "Código Estructural (CE-21)",
     "tags": [
+      "maqueta",
+      "maqueta 1",
+      "maqueta-1",
       "tripo",
+      "obra",
+      "muro",
+      "losa",
+      "hormigon",
       "metaverso",
-      "etsie",
-      "pbr",
-      "3d"
+      "maqueta",
+      "de",
+      "obra",
+      "3",
+      "(losa",
+      "y",
+      "muro",
+      "de",
+      "hormigón",
+      "armado)"
     ],
-    "modelFile": "/models/tripo-03a0de29.glb",
+    "modelFile": "/models/tripo-obra-model2.glb",
     "isTexturedModel": true,
     "dimensions": {
-      "width": 0.302,
-      "height": 0.476,
-      "depth": 1.002
+      "width": 1.08,
+      "height": 0.3,
+      "depth": 0.9
     },
     "stats": {
       "geometriesCount": 1,
-      "fileSizeKb": 8136.4
-    }
-  },
-  {
-    "id": "tripo-ec660f31",
-    "fileCode": "TRIPO-EC660F",
-    "title": "Elemento de Aula Tripo 2 (Metaverso)",
-    "shortTitle": "Elemento de Aula Tripo 2",
-    "practice": "Modelos Tripo 3D Metaverso",
-    "practiceNum": 4,
-    "category": "Modelos Tripo 3D",
-    "categoryKey": "tripo_models",
-    "shortDescription": "Pilar y módulo decorativo de aula interior generado con Tripo AI con coordenadas UV nativas y mapa de color.",
-    "detailedDescription": "Pilar y módulo decorativo de aula interior generado con Tripo AI con coordenadas UV nativas y mapa de color. Exportado directamente con coordenadas UV originales y mapas de texturas PBR vinculados.",
-    "structuralBehavior": "Elemento volumétrico para interiorismo y dotación del metaverso ETSIE.",
-    "components": [
-      "Fuste central",
-      "Capitel y base decorativa",
-      "Revestimiento polícromo PBR"
-    ],
-    "normativeReference": "CTE DB-SI / DB-SUA",
-    "tags": [
-      "tripo",
-      "metaverso",
-      "etsie",
-      "pbr",
-      "3d"
-    ],
-    "modelFile": "/models/tripo-ec660f31.glb",
-    "isTexturedModel": true,
-    "dimensions": {
-      "width": 0.256,
-      "height": 1.0,
-      "depth": 0.257
+      "fileSizeKb": 976
     },
-    "stats": {
-      "geometriesCount": 1,
-      "fileSizeKb": 7769.5
-    }
+    "maquetaNumber": 1,
+    "maquetaId": "maqueta-1",
+    "name": "Maqueta 1",
+    "displayName": "Maqueta 1",
+    "technicalTitle": "Maqueta de Obra 3 (Losa y Muro de Hormigón Armado)",
+    "originalCode": "TRIPO-OBRA-03",
+    "thumbnail": "tripo-obra-model2"
   },
   {
     "id": "maqueta-ma02",
-    "fileCode": "MAQUETA-MA02",
-    "title": "Maqueta ETSIE MA-02 (Envolvente y Fachadas)",
-    "shortTitle": "Maqueta MA02",
+    "fileCode": "MAQUETA-02",
+    "title": "Maqueta 2",
+    "shortTitle": "Maqueta 2",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -94,11 +78,20 @@
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
       "maqueta",
+      "maqueta 2",
+      "maqueta-2",
+      "maqueta",
       "ma02",
       "datasmith",
       "etsie",
       "bim",
-      "metaverso"
+      "metaverso",
+      "maqueta",
+      "etsie",
+      "ma-02",
+      "(envolvente",
+      "y",
+      "fachadas)"
     ],
     "modelFile": "/models/maqueta-MA02.glb",
     "isTexturedModel": true,
@@ -116,13 +109,20 @@
         "Pintura Gris Oscuro"
       ],
       "fileSizeKb": 13.2
-    }
+    },
+    "maquetaNumber": 2,
+    "maquetaId": "maqueta-2",
+    "name": "Maqueta 2",
+    "displayName": "Maqueta 2",
+    "technicalTitle": "Maqueta ETSIE MA-02 (Envolvente y Fachadas)",
+    "originalCode": "MAQUETA-MA02",
+    "thumbnail": "maqueta-ma02"
   },
   {
     "id": "maqueta-ma03",
-    "fileCode": "MAQUETA-MA03",
-    "title": "Maqueta ETSIE MA-03 (Espacios y Aulas)",
-    "shortTitle": "Maqueta MA03",
+    "fileCode": "MAQUETA-03",
+    "title": "Maqueta 3",
+    "shortTitle": "Maqueta 3",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -139,18 +139,27 @@
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
       "maqueta",
+      "maqueta 3",
+      "maqueta-3",
+      "maqueta",
       "ma03",
       "datasmith",
       "etsie",
       "bim",
-      "metaverso"
+      "metaverso",
+      "maqueta",
+      "etsie",
+      "ma-03",
+      "(espacios",
+      "y",
+      "aulas)"
     ],
     "modelFile": "/models/maqueta-MA03.glb",
     "isTexturedModel": true,
     "dimensions": {
-      "width": 1.5,
-      "height": 0.34,
-      "depth": 0.606
+      "width": 1.64,
+      "height": 0.37,
+      "depth": 0.66
     },
     "stats": {
       "geometriesCount": 5,
@@ -162,13 +171,20 @@
         "Pintura Gris Oscuro"
       ],
       "fileSizeKb": 10.5
-    }
+    },
+    "maquetaNumber": 3,
+    "maquetaId": "maqueta-3",
+    "name": "Maqueta 3",
+    "displayName": "Maqueta 3",
+    "technicalTitle": "Maqueta ETSIE MA-03 (Espacios y Aulas)",
+    "originalCode": "MAQUETA-MA03",
+    "thumbnail": "maqueta-ma03"
   },
   {
     "id": "maqueta-ma04",
-    "fileCode": "MAQUETA-MA04",
-    "title": "Maqueta ETSIE MA-04 (Módulo Docente Norte)",
-    "shortTitle": "Maqueta MA04",
+    "fileCode": "MAQUETA-04",
+    "title": "Maqueta 4",
+    "shortTitle": "Maqueta 4",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -185,18 +201,27 @@
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
       "maqueta",
+      "maqueta 4",
+      "maqueta-4",
+      "maqueta",
       "ma04",
       "datasmith",
       "etsie",
       "bim",
-      "metaverso"
+      "metaverso",
+      "maqueta",
+      "etsie",
+      "ma-04",
+      "(módulo",
+      "docente",
+      "norte)"
     ],
     "modelFile": "/models/maqueta-MA04.glb",
     "isTexturedModel": true,
     "dimensions": {
-      "width": 1.5,
-      "height": 1.388,
-      "depth": 0.842
+      "width": 1.78,
+      "height": 1.65,
+      "depth": 1
     },
     "stats": {
       "geometriesCount": 6,
@@ -208,13 +233,20 @@
         "Pintura Gris"
       ],
       "fileSizeKb": 19.8
-    }
+    },
+    "maquetaNumber": 4,
+    "maquetaId": "maqueta-4",
+    "name": "Maqueta 4",
+    "displayName": "Maqueta 4",
+    "technicalTitle": "Maqueta ETSIE MA-04 (Módulo Docente Norte)",
+    "originalCode": "MAQUETA-MA04",
+    "thumbnail": "maqueta-ma04"
   },
   {
     "id": "maqueta-ma05",
-    "fileCode": "MAQUETA-MA05",
-    "title": "Maqueta ETSIE MA-05 (Estructura y Forjados)",
-    "shortTitle": "Maqueta MA05",
+    "fileCode": "MAQUETA-05",
+    "title": "Maqueta 5",
+    "shortTitle": "Maqueta 5",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -232,18 +264,27 @@
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
       "maqueta",
+      "maqueta 5",
+      "maqueta-5",
+      "maqueta",
       "ma05",
       "datasmith",
       "etsie",
       "bim",
-      "metaverso"
+      "metaverso",
+      "maqueta",
+      "etsie",
+      "ma-05",
+      "(estructura",
+      "y",
+      "forjados)"
     ],
     "modelFile": "/models/maqueta-MA05.glb",
     "isTexturedModel": true,
     "dimensions": {
-      "width": 0.674,
-      "height": 1.006,
-      "depth": 0.677
+      "width": 1.33,
+      "height": 1.3,
+      "depth": 1.15
     },
     "stats": {
       "geometriesCount": 9,
@@ -257,13 +298,78 @@
         "Vidrio"
       ],
       "fileSizeKb": 134.6
-    }
+    },
+    "maquetaNumber": 5,
+    "maquetaId": "maqueta-5",
+    "name": "Maqueta 5",
+    "displayName": "Maqueta 5",
+    "technicalTitle": "Maqueta ETSIE MA-05 (Estructura y Forjados)",
+    "originalCode": "MAQUETA-MA05",
+    "thumbnail": "maqueta-ma05"
+  },
+  {
+    "id": "tripo-obra-ma06",
+    "fileCode": "MAQUETA-06",
+    "title": "Maqueta 6",
+    "shortTitle": "Maqueta 6",
+    "practice": "Modelos Tripo 3D Metaverso",
+    "practiceNum": 4,
+    "category": "Modelos Tripo 3D",
+    "categoryKey": "tripo_models",
+    "shortDescription": "Maqueta de obra y detalle de cimentación con armaduras de ferralla, encofrado y terreno.",
+    "detailedDescription": "Maqueta de obra y detalle de cimentación con armaduras de ferralla, encofrado y terreno de excavación, generado con Tripo AI y texturizado PBR completo con UVs originales de alta definición.",
+    "structuralBehavior": "Análisis constructivo de armaduras de espera, zapatas y disposición de encofrados.",
+    "components": [
+      "Armadura de acero corrugado (ferralla)",
+      "Bancada y terreno de excavación",
+      "Encofrado perimetral",
+      "Hormigón de limpieza y base"
+    ],
+    "normativeReference": "Código Estructural (CE-21) / EHE-08",
+    "tags": [
+      "maqueta",
+      "maqueta 6",
+      "maqueta-6",
+      "tripo",
+      "obra",
+      "armaduras",
+      "ferralla",
+      "cimentacion",
+      "metaverso",
+      "maqueta",
+      "de",
+      "obra",
+      "con",
+      "armaduras",
+      "1",
+      "(cimentación",
+      "y",
+      "ferralla)"
+    ],
+    "modelFile": "/models/tripo-obra-ma06.glb",
+    "isTexturedModel": true,
+    "dimensions": {
+      "width": 1.72,
+      "height": 1.2,
+      "depth": 1.83
+    },
+    "stats": {
+      "geometriesCount": 1,
+      "fileSizeKb": 1730.4
+    },
+    "maquetaNumber": 6,
+    "maquetaId": "maqueta-6",
+    "name": "Maqueta 6",
+    "displayName": "Maqueta 6",
+    "technicalTitle": "Maqueta de Obra con Armaduras 1 (Cimentación y Ferralla)",
+    "originalCode": "TRIPO-OBRA-01",
+    "thumbnail": "tripo-obra-ma06"
   },
   {
     "id": "maqueta-ma07",
-    "fileCode": "MAQUETA-MA07",
-    "title": "Maqueta ETSIE MA-07 (Acabados y Pavimentos)",
-    "shortTitle": "Maqueta MA07",
+    "fileCode": "MAQUETA-07",
+    "title": "Maqueta 7",
+    "shortTitle": "Maqueta 7",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -280,18 +386,27 @@
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
       "maqueta",
+      "maqueta 7",
+      "maqueta-7",
+      "maqueta",
       "ma07",
       "datasmith",
       "etsie",
       "bim",
-      "metaverso"
+      "metaverso",
+      "maqueta",
+      "etsie",
+      "ma-07",
+      "(acabados",
+      "y",
+      "pavimentos)"
     ],
     "modelFile": "/models/maqueta-MA07.glb",
     "isTexturedModel": true,
     "dimensions": {
-      "width": 8.37,
-      "height": 7.794,
-      "depth": 6.683
+      "width": 10.14,
+      "height": 11.62,
+      "depth": 9.17
     },
     "stats": {
       "geometriesCount": 6,
@@ -303,13 +418,20 @@
         "Pintura Gris Claro"
       ],
       "fileSizeKb": 129.4
-    }
+    },
+    "maquetaNumber": 7,
+    "maquetaId": "maqueta-7",
+    "name": "Maqueta 7",
+    "displayName": "Maqueta 7",
+    "technicalTitle": "Maqueta ETSIE MA-07 (Acabados y Pavimentos)",
+    "originalCode": "MAQUETA-MA07",
+    "thumbnail": "maqueta-ma07"
   },
   {
     "id": "maqueta-ma08",
-    "fileCode": "MAQUETA-MA08",
-    "title": "Maqueta ETSIE MA-08 (Instalaciones y Conducciones)",
-    "shortTitle": "Maqueta MA08",
+    "fileCode": "MAQUETA-08",
+    "title": "Maqueta 8",
+    "shortTitle": "Maqueta 8",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -326,18 +448,27 @@
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
       "maqueta",
+      "maqueta 8",
+      "maqueta-8",
+      "maqueta",
       "ma08",
       "datasmith",
       "etsie",
       "bim",
-      "metaverso"
+      "metaverso",
+      "maqueta",
+      "etsie",
+      "ma-08",
+      "(instalaciones",
+      "y",
+      "conducciones)"
     ],
     "modelFile": "/models/maqueta-MA08.glb",
     "isTexturedModel": true,
     "dimensions": {
-      "width": 1.711,
-      "height": 12.091,
-      "depth": 2.773
+      "width": 1.98,
+      "height": 13.06,
+      "depth": 3.51
     },
     "stats": {
       "geometriesCount": 2,
@@ -345,14 +476,21 @@
         "Pintura Gris Claro",
         "Hormigón Técnico"
       ],
-      "fileSizeKb": 15.0
-    }
+      "fileSizeKb": 15
+    },
+    "maquetaNumber": 8,
+    "maquetaId": "maqueta-8",
+    "name": "Maqueta 8",
+    "displayName": "Maqueta 8",
+    "technicalTitle": "Maqueta ETSIE MA-08 (Instalaciones y Conducciones)",
+    "originalCode": "MAQUETA-MA08",
+    "thumbnail": "maqueta-ma08"
   },
   {
     "id": "maqueta-ma09",
-    "fileCode": "MAQUETA-MA09",
-    "title": "Maqueta ETSIE MA-09 (Cubiertas y Lucernarios)",
-    "shortTitle": "Maqueta MA09",
+    "fileCode": "MAQUETA-09",
+    "title": "Maqueta 9",
+    "shortTitle": "Maqueta 9",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -369,18 +507,27 @@
     "normativeReference": "Código Técnico de la Edificación (CTE)",
     "tags": [
       "maqueta",
+      "maqueta 9",
+      "maqueta-9",
+      "maqueta",
       "ma09",
       "datasmith",
       "etsie",
       "bim",
-      "metaverso"
+      "metaverso",
+      "maqueta",
+      "etsie",
+      "ma-09",
+      "(cubiertas",
+      "y",
+      "lucernarios)"
     ],
     "modelFile": "/models/maqueta-MA09.glb",
     "isTexturedModel": true,
     "dimensions": {
-      "width": 8.523,
-      "height": 2.34,
-      "depth": 3.571
+      "width": 9.36,
+      "height": 2.43,
+      "depth": 4.65
     },
     "stats": {
       "geometriesCount": 2,
@@ -389,12 +536,80 @@
         "Estuco Blanco"
       ],
       "fileSizeKb": 106.6
-    }
+    },
+    "maquetaNumber": 9,
+    "maquetaId": "maqueta-9",
+    "name": "Maqueta 9",
+    "displayName": "Maqueta 9",
+    "technicalTitle": "Maqueta ETSIE MA-09 (Cubiertas y Lucernarios)",
+    "originalCode": "MAQUETA-MA09",
+    "thumbnail": "maqueta-ma09"
+  },
+  {
+    "id": "tripo-obra-ma10",
+    "fileCode": "MAQUETA-10",
+    "title": "Maqueta 10",
+    "shortTitle": "Maqueta 10",
+    "practice": "Modelos Tripo 3D Metaverso",
+    "practiceNum": 4,
+    "category": "Modelos Tripo 3D",
+    "categoryKey": "tripo_models",
+    "shortDescription": "Detalle constructivo de nudo estructural y pilar con jaula de armaduras y estribos vistos.",
+    "detailedDescription": "Detalle constructivo de nudo estructural y pilar con jaula de armaduras de acero B500S, cercos, estribos y barras longitudinales vistas en proceso de hormigonado.",
+    "structuralBehavior": "Disposición geométrica y anclaje de barras corrugadas en nudo estructural.",
+    "components": [
+      "Barras longitudinales de acero B500S",
+      "Estribos transversales de atado",
+      "Base de pilar hormigonada",
+      "Plataforma de trabajo"
+    ],
+    "normativeReference": "Código Estructural (CE-21)",
+    "tags": [
+      "maqueta",
+      "maqueta 10",
+      "maqueta-10",
+      "tripo",
+      "obra",
+      "armaduras",
+      "pilar",
+      "estribos",
+      "ferralla",
+      "metaverso",
+      "maqueta",
+      "de",
+      "obra",
+      "con",
+      "armaduras",
+      "2",
+      "(pilar",
+      "y",
+      "nudo",
+      "con",
+      "ferralla)"
+    ],
+    "modelFile": "/models/tripo-obra-ma10.glb",
+    "isTexturedModel": true,
+    "dimensions": {
+      "width": 1.18,
+      "height": 1.05,
+      "depth": 1.28
+    },
+    "stats": {
+      "geometriesCount": 1,
+      "fileSizeKb": 1390
+    },
+    "maquetaNumber": 10,
+    "maquetaId": "maqueta-10",
+    "name": "Maqueta 10",
+    "displayName": "Maqueta 10",
+    "technicalTitle": "Maqueta de Obra con Armaduras 2 (Pilar y Nudo con Ferralla)",
+    "originalCode": "TRIPO-OBRA-02",
+    "thumbnail": "tripo-obra-ma10"
   },
   {
     "id": "P1-1",
-    "fileCode": "P1-1",
-    "title": "Nudo articulado viga a pilar",
+    "fileCode": "MAQUETA-11",
+    "title": "Maqueta 11",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Nudos Articulados Viga-Pilar",
@@ -410,13 +625,21 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.4 / UNE-EN 1993-1-8",
     "tags": [
+      "maqueta",
+      "maqueta 11",
+      "maqueta-11",
       "articulado",
       "casquillo",
       "angular",
       "alma",
       "cortante",
       "upn",
-      "ipe"
+      "ipe",
+      "nudo",
+      "articulado",
+      "viga",
+      "a",
+      "pilar"
     ],
     "modelFile": "/models/P1-1.glb",
     "dimensions": {
@@ -431,12 +654,300 @@
       "fileSizeKb": 40.3
     },
     "fullTitle": "Nudo Articulado Viga IPE a Pilar UPN con Casquillo de Alma",
-    "shortTitle": "Nudo articulado viga a pilar"
+    "shortTitle": "Maqueta 11",
+    "maquetaNumber": 11,
+    "maquetaId": "maqueta-11",
+    "name": "Maqueta 11",
+    "displayName": "Maqueta 11",
+    "technicalTitle": "Nudo articulado viga a pilar",
+    "originalCode": "P1-1",
+    "thumbnail": "P1-1"
+  },
+  {
+    "id": "P1-2",
+    "fileCode": "MAQUETA-12",
+    "title": "Maqueta 12",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Articulados Viga-Pilar",
+    "categoryKey": "articulated",
+    "shortDescription": "Apoyo sobre angular de asiento inferior con angular estabilizador superior de cabeza.",
+    "detailedDescription": "Detalle constructivo de unión viga-soporte constituido por un angular inferior que resiste la reacción vertical de apoyo y un angular superior en el ala de cabeza que proporciona arriostramiento contra el vuelco lateral. Presenta rigidez rotacional parcial clasificada como semi-rígida.",
+    "structuralBehavior": "Reacción vertical resistida por angular inferior. Resistencia a momento moderada según deformabilidad del angular de cabeza.",
+    "components": [
+      "Pilar UPN",
+      "Viga metálica IPE",
+      "Angular de asiento inferior",
+      "Angular estabilizador de cabeza"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.4 / UNE-EN 1993-1-8 Cl. 5.1.2",
+    "tags": [
+      "maqueta",
+      "maqueta 12",
+      "maqueta-12",
+      "asiento",
+      "semi-rigido",
+      "angular",
+      "vuelco",
+      "ipe",
+      "upn",
+      "nudo",
+      "viga",
+      "a",
+      "pilar",
+      "con",
+      "angulares"
+    ],
+    "modelFile": "/models/P1-2.glb",
+    "dimensions": {
+      "width": 2.388,
+      "height": 2.074,
+      "depth": 0.219
+    },
+    "stats": {
+      "geometriesCount": 24,
+      "totalVertices": 25416,
+      "totalFaces": 8472,
+      "fileSizeKb": 699.5
+    },
+    "fullTitle": "Nudo Semi-Rígido Viga a Pilar con Angulares de Asiento y Cabeza",
+    "shortTitle": "Maqueta 12",
+    "maquetaNumber": 12,
+    "maquetaId": "maqueta-12",
+    "name": "Maqueta 12",
+    "displayName": "Maqueta 12",
+    "technicalTitle": "Nudo viga a pilar con angulares",
+    "originalCode": "P1-2",
+    "thumbnail": "P1-2"
+  },
+  {
+    "id": "P1-6",
+    "fileCode": "MAQUETA-13",
+    "title": "Maqueta 13",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Articulados Viga-Pilar",
+    "categoryKey": "articulated",
+    "shortDescription": "Apoyo de viga sobre repisa / chapa de asiento en cara exterior de pilar continuo.",
+    "detailedDescription": "Enlace constructivo donde la viga acomete a la cara del pilar continuo UPN apoyando directamente sobre una cartela o chapa de reparto rigidizada. Facilita el montaje de forjados garantizando la continuidad vertical del soporte.",
+    "structuralBehavior": "Apoyo directo por compresión vertical. Excentricidad de carga controlada sobre el eje del soporte.",
+    "components": [
+      "Pilar continuo UPN",
+      "Viga de forjado",
+      "Chapa de asiento rigidizada",
+      "Tornillos de fijación"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.3 / UNE-EN 1993-1-8",
+    "tags": [
+      "maqueta",
+      "maqueta 13",
+      "maqueta-13",
+      "esquina",
+      "pilar continuo",
+      "chapa reparto",
+      "asiento",
+      "upn",
+      "nudo",
+      "de",
+      "esquina",
+      "viga",
+      "a",
+      "pilar"
+    ],
+    "modelFile": "/models/P1-6.glb",
+    "dimensions": {
+      "width": 1.334,
+      "height": 1.836,
+      "depth": 0.28
+    },
+    "stats": {
+      "geometriesCount": 21,
+      "totalVertices": 1692,
+      "totalFaces": 564,
+      "fileSizeKb": 70.6
+    },
+    "fullTitle": "Nudo de Esquina con Pilar Continuo y Viga Apoyada en Chapa de Reparto",
+    "shortTitle": "Maqueta 13",
+    "maquetaNumber": 13,
+    "maquetaId": "maqueta-13",
+    "name": "Maqueta 13",
+    "displayName": "Maqueta 13",
+    "technicalTitle": "Nudo de esquina viga a pilar",
+    "originalCode": "P1-6",
+    "thumbnail": "P1-6"
+  },
+  {
+    "id": "P1-7",
+    "fileCode": "MAQUETA-14",
+    "title": "Maqueta 14",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Articulados Viga-Pilar",
+    "categoryKey": "articulated",
+    "shortDescription": "Viga compuesta por doble perfil UPN conectada a cara de pilar mediante casquillo.",
+    "detailedDescription": "Unión de dintel formado por dos perfiles UPN dispuestos espalda contra espalda o en cajón hacia el soporte continuo. Se resuelve con casquillos y pasadores asegurando la entrega equilibrada de ambas vigas al pilar.",
+    "structuralBehavior": "Distribución simétrica de esfuerzos cortantes de ambas almas hacia el núcleo del pilar.",
+    "components": [
+      "Doble perfil UPN en viga",
+      "Pilar metálico",
+      "Casquillos de enlace",
+      "Tornillería pasante"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.5",
+    "tags": [
+      "maqueta",
+      "maqueta 14",
+      "maqueta-14",
+      "doble upn",
+      "perfil compuesto",
+      "casquillo",
+      "articulado",
+      "viga doble",
+      "nudo",
+      "viga",
+      "doble",
+      "upn",
+      "a",
+      "pilar"
+    ],
+    "modelFile": "/models/P1-7.glb",
+    "dimensions": {
+      "width": 3.759,
+      "height": 1.766,
+      "depth": 0.28
+    },
+    "stats": {
+      "geometriesCount": 23,
+      "totalVertices": 2304,
+      "totalFaces": 768,
+      "fileSizeKb": 91.2
+    },
+    "fullTitle": "Nudo Viga Doble UPN a Pilar Continuo con Casquillo",
+    "shortTitle": "Maqueta 14",
+    "maquetaNumber": 14,
+    "maquetaId": "maqueta-14",
+    "name": "Maqueta 14",
+    "displayName": "Maqueta 14",
+    "technicalTitle": "Nudo viga doble UPN a pilar",
+    "originalCode": "P1-7",
+    "thumbnail": "P1-7"
+  },
+  {
+    "id": "P1-8",
+    "fileCode": "MAQUETA-15",
+    "title": "Maqueta 15",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Empalmes y Continuidad",
+    "categoryKey": "splice",
+    "shortDescription": "Empalme de continuidad soldado con platabandas de refuerzo en alas traccionada y comprimida.",
+    "detailedDescription": "Unión de prolongación longitudinal viga-viga realizada mediante soldadura a tope con biselado de chapas y reforzada con cubrejuntas soldadas en ambas alas. Desarrolla la capacidad portante completa del perfil metálico.",
+    "structuralBehavior": "Transmisión total de momento flector, esfuerzo cortante y axil (empalme de resistencia completa).",
+    "components": [
+      "Perfiles IPE alineados",
+      "Soldadura a tope en alma",
+      "Cubrejuntas de alas superior e inferior",
+      "Cordones en ángulo"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.7 / UNE-EN 1993-1-8",
+    "tags": [
+      "maqueta",
+      "maqueta 15",
+      "maqueta-15",
+      "empalme",
+      "soldado",
+      "cubrejuntas",
+      "continuidad",
+      "ipe",
+      "tope",
+      "empalme",
+      "soldado",
+      "con",
+      "cubrejuntas"
+    ],
+    "modelFile": "/models/P1-8.glb",
+    "dimensions": {
+      "width": 2.418,
+      "height": 1.052,
+      "depth": 0.15
+    },
+    "stats": {
+      "geometriesCount": 11,
+      "totalVertices": 1128,
+      "totalFaces": 376,
+      "fileSizeKb": 44.7
+    },
+    "fullTitle": "Empalme de Viga Soldado a Tope con Cubrejuntas en Alas",
+    "shortTitle": "Maqueta 15",
+    "maquetaNumber": 15,
+    "maquetaId": "maqueta-15",
+    "name": "Maqueta 15",
+    "displayName": "Maqueta 15",
+    "technicalTitle": "Empalme soldado con cubrejuntas",
+    "originalCode": "P1-8",
+    "thumbnail": "P1-8"
+  },
+  {
+    "id": "P1-9",
+    "fileCode": "MAQUETA-16",
+    "title": "Maqueta 16",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Empalmes y Continuidad",
+    "categoryKey": "splice",
+    "shortDescription": "Empalme de montaje en obra con cubrejuntas atornilladas en alma y en ambas alas.",
+    "detailedDescription": "Solución estándar de montaje rápido en obra sin soldadura en posición. Las cubrejuntas de las alas absorben el par de fuerzas de tracción-compresión del momento flector, mientras que la cubrejunta doble de alma absorbe el cortante mediante tornillos de alta resistencia.",
+    "structuralBehavior": "Conexión a cortante por fricción/aplastamiento y absorción de momento flector por platabandas de ala.",
+    "components": [
+      "Perfiles viga",
+      "Platabandas de ala exterior e interior",
+      "Doble cubrejunta de alma",
+      "Tornillos de alta resistencia (8.8/10.9)"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.7 y 8.8",
+    "tags": [
+      "maqueta",
+      "maqueta 16",
+      "maqueta-16",
+      "empalme atornillado",
+      "cubrejuntas",
+      "tornillos TR",
+      "alma",
+      "alas",
+      "resistencia completa",
+      "empalme",
+      "atornillado",
+      "en",
+      "alma",
+      "y",
+      "alas"
+    ],
+    "modelFile": "/models/P1-9.glb",
+    "dimensions": {
+      "width": 2.418,
+      "height": 1.365,
+      "depth": 0.176
+    },
+    "stats": {
+      "geometriesCount": 13,
+      "totalVertices": 1200,
+      "totalFaces": 400,
+      "fileSizeKb": 47.3
+    },
+    "fullTitle": "Empalme Atornillado Viga-Viga con Cubrejuntas en Alma y Alas",
+    "shortTitle": "Maqueta 16",
+    "maquetaNumber": 16,
+    "maquetaId": "maqueta-16",
+    "name": "Maqueta 16",
+    "displayName": "Maqueta 16",
+    "technicalTitle": "Empalme atornillado en alma y alas",
+    "originalCode": "P1-9",
+    "thumbnail": "P1-9"
   },
   {
     "id": "P1-10",
-    "fileCode": "P1-10",
-    "title": "Nudo HEB con IPE y rigidizadores",
+    "fileCode": "MAQUETA-17",
+    "title": "Maqueta 17",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Nudos Rígidos Viga-Pilar",
@@ -453,6 +964,9 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.6 / UNE-EN 1993-1-8 Cl. 6.2",
     "tags": [
+      "maqueta",
+      "maqueta 17",
+      "maqueta-17",
       "rigido",
       "empotrado",
       "soldado",
@@ -460,7 +974,13 @@
       "traccion",
       "compresion",
       "ipe",
-      "heb"
+      "heb",
+      "nudo",
+      "heb",
+      "con",
+      "ipe",
+      "y",
+      "rigidizadores"
     ],
     "modelFile": "/models/P1-10.glb",
     "dimensions": {
@@ -475,12 +995,19 @@
       "fileSizeKb": 45.1
     },
     "fullTitle": "Nudo Rígido Soldado Viga IPE a Pilar con Rigidizadores de Alma",
-    "shortTitle": "Nudo HEB con IPE y rigidizadores"
+    "shortTitle": "Maqueta 17",
+    "maquetaNumber": 17,
+    "maquetaId": "maqueta-17",
+    "name": "Maqueta 17",
+    "displayName": "Maqueta 17",
+    "technicalTitle": "Nudo HEB con IPE y rigidizadores",
+    "originalCode": "P1-10",
+    "thumbnail": "P1-10"
   },
   {
     "id": "P1-11",
-    "fileCode": "P1-11",
-    "title": "Nudo IPE a pilar tubular",
+    "fileCode": "MAQUETA-18",
+    "title": "Maqueta 18",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Nudos Articulados Viga-Pilar",
@@ -496,11 +1023,19 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.4 / UNE-EN 1993-1-8 Cl. 7",
     "tags": [
+      "maqueta",
+      "maqueta 18",
+      "maqueta-18",
       "tubular",
       "soporte cajon",
       "chapa de testa",
       "viga-pilar",
-      "perfil hueco"
+      "perfil hueco",
+      "nudo",
+      "ipe",
+      "a",
+      "pilar",
+      "tubular"
     ],
     "modelFile": "/models/P1-11.glb",
     "dimensions": {
@@ -515,12 +1050,19 @@
       "fileSizeKb": 45.7
     },
     "fullTitle": "Nudo Viga IPE a Soporte Hueco / Cajón con Chapa de Testa",
-    "shortTitle": "Nudo IPE a pilar tubular"
+    "shortTitle": "Maqueta 18",
+    "maquetaNumber": 18,
+    "maquetaId": "maqueta-18",
+    "name": "Maqueta 18",
+    "displayName": "Maqueta 18",
+    "technicalTitle": "Nudo IPE a pilar tubular",
+    "originalCode": "P1-11",
+    "thumbnail": "P1-11"
   },
   {
     "id": "P1-12",
-    "fileCode": "P1-12",
-    "title": "Nudo rígido con cartela y rigidizadores",
+    "fileCode": "MAQUETA-19",
+    "title": "Maqueta 19",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Nudos Rígidos Viga-Pilar",
@@ -536,12 +1078,21 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.6",
     "tags": [
+      "maqueta",
+      "maqueta 19",
+      "maqueta-19",
       "rigido",
       "cartela",
       "ortogonal",
       "acartelado",
       "gran capacidad",
-      "pórtico"
+      "pórtico",
+      "nudo",
+      "rígido",
+      "con",
+      "cartela",
+      "y",
+      "rigidizadores"
     ],
     "modelFile": "/models/P1-12.glb",
     "dimensions": {
@@ -556,12 +1107,19 @@
       "fileSizeKb": 43.3
     },
     "fullTitle": "Nudo Rígido Viga-Pilar con Rigidizadores Ortogonales y Cartela",
-    "shortTitle": "Nudo rígido con cartela y rigidizadores"
+    "shortTitle": "Maqueta 19",
+    "maquetaNumber": 19,
+    "maquetaId": "maqueta-19",
+    "name": "Maqueta 19",
+    "displayName": "Maqueta 19",
+    "technicalTitle": "Nudo rígido con cartela y rigidizadores",
+    "originalCode": "P1-12",
+    "thumbnail": "P1-12"
   },
   {
     "id": "P1-13",
-    "fileCode": "P1-13",
-    "title": "Pilar compuesto presillado",
+    "fileCode": "MAQUETA-20",
+    "title": "Maqueta 20",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Empalmes y Continuidad",
@@ -576,12 +1134,18 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 6.3.3 / UNE-EN 1993-1-1 Cl. 6.4",
     "tags": [
+      "maqueta",
+      "maqueta 20",
+      "maqueta-20",
       "presillado",
       "pilar compuesto",
       "upn",
       "pandeo",
       "presillas",
-      "compresion"
+      "compresion",
+      "pilar",
+      "compuesto",
+      "presillado"
     ],
     "modelFile": "/models/P1-13.glb",
     "dimensions": {
@@ -596,12 +1160,19 @@
       "fileSizeKb": 332.1
     },
     "fullTitle": "Soporte Compuesto Presillado con Perfiles UPN y Presillas Soldadas",
-    "shortTitle": "Pilar compuesto presillado"
+    "shortTitle": "Maqueta 20",
+    "maquetaNumber": 20,
+    "maquetaId": "maqueta-20",
+    "name": "Maqueta 20",
+    "displayName": "Maqueta 20",
+    "technicalTitle": "Pilar compuesto presillado",
+    "originalCode": "P1-13",
+    "thumbnail": "P1-13"
   },
   {
     "id": "P1-14",
-    "fileCode": "P1-14",
-    "title": "Cruce de vigueta y viga principal",
+    "fileCode": "MAQUETA-21",
+    "title": "Maqueta 21",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Entramados y Cruces de Forjado",
@@ -617,12 +1188,21 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.3 / UNE-EN 1993-1-8",
     "tags": [
+      "maqueta",
+      "maqueta 21",
+      "maqueta-21",
       "entramado",
       "cruce",
       "forjado",
       "viga principal",
       "secundaria",
-      "jacena"
+      "jacena",
+      "cruce",
+      "de",
+      "vigueta",
+      "y",
+      "viga",
+      "principal"
     ],
     "modelFile": "/models/P1-14.glb",
     "dimensions": {
@@ -637,12 +1217,19 @@
       "fileSizeKb": 57.6
     },
     "fullTitle": "Entramado de Forjado: Cruce de Viga Principal y Secundaria",
-    "shortTitle": "Cruce de vigueta y viga principal"
+    "shortTitle": "Maqueta 21",
+    "maquetaNumber": 21,
+    "maquetaId": "maqueta-21",
+    "name": "Maqueta 21",
+    "displayName": "Maqueta 21",
+    "technicalTitle": "Cruce de vigueta y viga principal",
+    "originalCode": "P1-14",
+    "thumbnail": "P1-14"
   },
   {
     "id": "P1-15",
-    "fileCode": "P1-15",
-    "title": "Nudo articulado con chapa corta",
+    "fileCode": "MAQUETA-22",
+    "title": "Maqueta 22",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Nudos Articulados Viga-Pilar",
@@ -658,12 +1245,20 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.4",
     "tags": [
+      "maqueta",
+      "maqueta 22",
+      "maqueta-22",
       "chapa frontal",
       "articulado",
       "chapa corta",
       "rotula",
       "ipe",
-      "cortante"
+      "cortante",
+      "nudo",
+      "articulado",
+      "con",
+      "chapa",
+      "corta"
     ],
     "modelFile": "/models/P1-15.glb",
     "dimensions": {
@@ -678,12 +1273,19 @@
       "fileSizeKb": 25.6
     },
     "fullTitle": "Nudo Articulado Viga IPE a Pilar con Chapa Frontal Corta",
-    "shortTitle": "Nudo articulado con chapa corta"
+    "shortTitle": "Maqueta 22",
+    "maquetaNumber": 22,
+    "maquetaId": "maqueta-22",
+    "name": "Maqueta 22",
+    "displayName": "Maqueta 22",
+    "technicalTitle": "Nudo articulado con chapa corta",
+    "originalCode": "P1-15",
+    "thumbnail": "P1-15"
   },
   {
     "id": "P1-17",
-    "fileCode": "P1-17",
-    "title": "Viga pasante sobre cabeza de pilar",
+    "fileCode": "MAQUETA-23",
+    "title": "Maqueta 23",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Empalmes y Continuidad",
@@ -699,11 +1301,20 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 6.2.8 y 8.3",
     "tags": [
+      "maqueta",
+      "maqueta 23",
+      "maqueta-23",
       "continuidad",
       "cabeza pilar",
       "viga pasante",
       "rigidizador",
-      "apoyo continuo"
+      "apoyo continuo",
+      "viga",
+      "pasante",
+      "sobre",
+      "cabeza",
+      "de",
+      "pilar"
     ],
     "modelFile": "/models/P1-17.glb",
     "dimensions": {
@@ -718,12 +1329,19 @@
       "fileSizeKb": 45.9
     },
     "fullTitle": "Enlace de Continuidad: Viga Pasante sobre Cabeza de Pilar con Rigidizador",
-    "shortTitle": "Viga pasante sobre cabeza de pilar"
+    "shortTitle": "Maqueta 23",
+    "maquetaNumber": 23,
+    "maquetaId": "maqueta-23",
+    "name": "Maqueta 23",
+    "displayName": "Maqueta 23",
+    "technicalTitle": "Viga pasante sobre cabeza de pilar",
+    "originalCode": "P1-17",
+    "thumbnail": "P1-17"
   },
   {
     "id": "P1-18",
-    "fileCode": "P1-18",
-    "title": "Cabeza de pilar con chapa de apoyo",
+    "fileCode": "MAQUETA-24",
+    "title": "Maqueta 24",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Empalmes y Continuidad",
@@ -738,10 +1356,20 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.3",
     "tags": [
+      "maqueta",
+      "maqueta 24",
+      "maqueta-24",
       "cabeza de pilar",
       "chapa reparto",
       "coronacion",
       "dintel",
+      "apoyo",
+      "cabeza",
+      "de",
+      "pilar",
+      "con",
+      "chapa",
+      "de",
       "apoyo"
     ],
     "modelFile": "/models/P1-18.glb",
@@ -757,53 +1385,19 @@
       "fileSizeKb": 26.5
     },
     "fullTitle": "Cabeza de Pilar con Chapa de Reparto para Apoyo de Dintel",
-    "shortTitle": "Cabeza de pilar con chapa de apoyo"
-  },
-  {
-    "id": "P1-2",
-    "fileCode": "P1-2",
-    "title": "Nudo viga a pilar con angulares",
-    "practice": "Práctica 1: Uniones y Empalmes",
-    "practiceNum": 1,
-    "category": "Nudos Articulados Viga-Pilar",
-    "categoryKey": "articulated",
-    "shortDescription": "Apoyo sobre angular de asiento inferior con angular estabilizador superior de cabeza.",
-    "detailedDescription": "Detalle constructivo de unión viga-soporte constituido por un angular inferior que resiste la reacción vertical de apoyo y un angular superior en el ala de cabeza que proporciona arriostramiento contra el vuelco lateral. Presenta rigidez rotacional parcial clasificada como semi-rígida.",
-    "structuralBehavior": "Reacción vertical resistida por angular inferior. Resistencia a momento moderada según deformabilidad del angular de cabeza.",
-    "components": [
-      "Pilar UPN",
-      "Viga metálica IPE",
-      "Angular de asiento inferior",
-      "Angular estabilizador de cabeza"
-    ],
-    "normativeReference": "CTE DB-SE-A Art. 8.4 / UNE-EN 1993-1-8 Cl. 5.1.2",
-    "tags": [
-      "asiento",
-      "semi-rigido",
-      "angular",
-      "vuelco",
-      "ipe",
-      "upn"
-    ],
-    "modelFile": "/models/P1-2.glb",
-    "dimensions": {
-      "width": 2.388,
-      "height": 2.074,
-      "depth": 0.219
-    },
-    "stats": {
-      "geometriesCount": 24,
-      "totalVertices": 25416,
-      "totalFaces": 8472,
-      "fileSizeKb": 699.5
-    },
-    "fullTitle": "Nudo Semi-Rígido Viga a Pilar con Angulares de Asiento y Cabeza",
-    "shortTitle": "Nudo viga a pilar con angulares"
+    "shortTitle": "Maqueta 24",
+    "maquetaNumber": 24,
+    "maquetaId": "maqueta-24",
+    "name": "Maqueta 24",
+    "displayName": "Maqueta 24",
+    "technicalTitle": "Cabeza de pilar con chapa de apoyo",
+    "originalCode": "P1-18",
+    "thumbnail": "P1-18"
   },
   {
     "id": "P1-20",
-    "fileCode": "P1-20",
-    "title": "Nudo rígido con cartela acartelada",
+    "fileCode": "MAQUETA-25",
+    "title": "Maqueta 25",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Nudos Rígidos Viga-Pilar",
@@ -820,12 +1414,20 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.6 / UNE-EN 1993-1-8 Cl. 6.2.7",
     "tags": [
+      "maqueta",
+      "maqueta 25",
+      "maqueta-25",
       "chapa testa extendida",
       "acartelado",
       "rigido",
       "tornillos TR",
       "portico",
-      "ductil"
+      "ductil",
+      "nudo",
+      "rígido",
+      "con",
+      "cartela",
+      "acartelada"
     ],
     "modelFile": "/models/P1-20.glb",
     "dimensions": {
@@ -840,12 +1442,19 @@
       "fileSizeKb": 795.7
     },
     "fullTitle": "Nudo Rígido Atornillado con Chapa de Testa Extendida y Cartela Acartelada",
-    "shortTitle": "Nudo rígido con cartela acartelada"
+    "shortTitle": "Maqueta 25",
+    "maquetaNumber": 25,
+    "maquetaId": "maqueta-25",
+    "name": "Maqueta 25",
+    "displayName": "Maqueta 25",
+    "technicalTitle": "Nudo rígido con cartela acartelada",
+    "originalCode": "P1-20",
+    "thumbnail": "P1-20"
   },
   {
     "id": "P1-21",
-    "fileCode": "P1-21",
-    "title": "Nudo con rigidizador diagonal",
+    "fileCode": "MAQUETA-26",
+    "title": "Maqueta 26",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Nudos Rígidos Viga-Pilar",
@@ -861,12 +1470,19 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.6.3 / UNE-EN 1993-1-8 Cl. 6.2.6.1",
     "tags": [
+      "maqueta",
+      "maqueta 26",
+      "maqueta-26",
       "panel cortante",
       "diagonal",
       "rigidizador diagonal",
       "rigido",
       "ductilidad",
-      "sismo"
+      "sismo",
+      "nudo",
+      "con",
+      "rigidizador",
+      "diagonal"
     ],
     "modelFile": "/models/P1-21.glb",
     "dimensions": {
@@ -881,12 +1497,19 @@
       "fileSizeKb": 627.7
     },
     "fullTitle": "Nudo Rígido Viga-Pilar con Rigidizador Diagonal en Panel de Cortante",
-    "shortTitle": "Nudo con rigidizador diagonal"
+    "shortTitle": "Maqueta 26",
+    "maquetaNumber": 26,
+    "maquetaId": "maqueta-26",
+    "name": "Maqueta 26",
+    "displayName": "Maqueta 26",
+    "technicalTitle": "Nudo con rigidizador diagonal",
+    "originalCode": "P1-21",
+    "thumbnail": "P1-21"
   },
   {
     "id": "P1-22",
-    "fileCode": "P1-22",
-    "title": "Apoyo de viga sobre jácena",
+    "fileCode": "MAQUETA-27",
+    "title": "Maqueta 27",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Entramados y Cruces de Forjado",
@@ -902,12 +1525,20 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.3",
     "tags": [
+      "maqueta",
+      "maqueta 27",
+      "maqueta-27",
       "cruce",
       "ala superior",
       "correa",
       "forjado",
       "diferente cota",
-      "apoyo"
+      "apoyo",
+      "apoyo",
+      "de",
+      "viga",
+      "sobre",
+      "jácena"
     ],
     "modelFile": "/models/P1-22.glb",
     "dimensions": {
@@ -922,12 +1553,19 @@
       "fileSizeKb": 298.5
     },
     "fullTitle": "Cruce de Forjado: Apoyo de Viga Secundaria sobre Ala Superior de Jácena",
-    "shortTitle": "Apoyo de viga sobre jácena"
+    "shortTitle": "Maqueta 27",
+    "maquetaNumber": 27,
+    "maquetaId": "maqueta-27",
+    "name": "Maqueta 27",
+    "displayName": "Maqueta 27",
+    "technicalTitle": "Apoyo de viga sobre jácena",
+    "originalCode": "P1-22",
+    "thumbnail": "P1-22"
   },
   {
     "id": "P1-23",
-    "fileCode": "P1-23",
-    "title": "Empalme de viga con platabandas",
+    "fileCode": "MAQUETA-28",
+    "title": "Maqueta 28",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Empalmes y Continuidad",
@@ -944,12 +1582,20 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.7",
     "tags": [
+      "maqueta",
+      "maqueta 28",
+      "maqueta-28",
       "empalme",
       "platabanda",
       "atornillado",
       "alta resistencia",
       "continuidad",
-      "ipe"
+      "ipe",
+      "empalme",
+      "de",
+      "viga",
+      "con",
+      "platabandas"
     ],
     "modelFile": "/models/P1-23.glb",
     "dimensions": {
@@ -964,12 +1610,19 @@
       "fileSizeKb": 136.9
     },
     "fullTitle": "Empalme Atornillado Viga-Viga de Alta Resistencia con Platabandas",
-    "shortTitle": "Empalme de viga con platabandas"
+    "shortTitle": "Maqueta 28",
+    "maquetaNumber": 28,
+    "maquetaId": "maqueta-28",
+    "name": "Maqueta 28",
+    "displayName": "Maqueta 28",
+    "technicalTitle": "Empalme de viga con platabandas",
+    "originalCode": "P1-23",
+    "thumbnail": "P1-23"
   },
   {
     "id": "P1-24",
-    "fileCode": "P1-24",
-    "title": "Unión enrasada con doble angular",
+    "fileCode": "MAQUETA-29",
+    "title": "Maqueta 29",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Entramados y Cruces de Forjado",
@@ -985,12 +1638,20 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.4",
     "tags": [
+      "maqueta",
+      "maqueta 29",
+      "maqueta-29",
       "enrasado",
       "misma cota",
       "doble angular",
       "forjado",
       "despunte",
-      "articulado"
+      "articulado",
+      "unión",
+      "enrasada",
+      "con",
+      "doble",
+      "angular"
     ],
     "modelFile": "/models/P1-24.glb",
     "dimensions": {
@@ -1005,174 +1666,19 @@
       "fileSizeKb": 298.5
     },
     "fullTitle": "Unión Viga Secundaria a Viga Principal Enrasada con Doble Angular",
-    "shortTitle": "Unión enrasada con doble angular"
-  },
-  {
-    "id": "P1-6",
-    "fileCode": "P1-6",
-    "title": "Nudo de esquina viga a pilar",
-    "practice": "Práctica 1: Uniones y Empalmes",
-    "practiceNum": 1,
-    "category": "Nudos Articulados Viga-Pilar",
-    "categoryKey": "articulated",
-    "shortDescription": "Apoyo de viga sobre repisa / chapa de asiento en cara exterior de pilar continuo.",
-    "detailedDescription": "Enlace constructivo donde la viga acomete a la cara del pilar continuo UPN apoyando directamente sobre una cartela o chapa de reparto rigidizada. Facilita el montaje de forjados garantizando la continuidad vertical del soporte.",
-    "structuralBehavior": "Apoyo directo por compresión vertical. Excentricidad de carga controlada sobre el eje del soporte.",
-    "components": [
-      "Pilar continuo UPN",
-      "Viga de forjado",
-      "Chapa de asiento rigidizada",
-      "Tornillos de fijación"
-    ],
-    "normativeReference": "CTE DB-SE-A Art. 8.3 / UNE-EN 1993-1-8",
-    "tags": [
-      "esquina",
-      "pilar continuo",
-      "chapa reparto",
-      "asiento",
-      "upn"
-    ],
-    "modelFile": "/models/P1-6.glb",
-    "dimensions": {
-      "width": 1.334,
-      "height": 1.836,
-      "depth": 0.28
-    },
-    "stats": {
-      "geometriesCount": 21,
-      "totalVertices": 1692,
-      "totalFaces": 564,
-      "fileSizeKb": 70.6
-    },
-    "fullTitle": "Nudo de Esquina con Pilar Continuo y Viga Apoyada en Chapa de Reparto",
-    "shortTitle": "Nudo de esquina viga a pilar"
-  },
-  {
-    "id": "P1-7",
-    "fileCode": "P1-7",
-    "title": "Nudo viga doble UPN a pilar",
-    "practice": "Práctica 1: Uniones y Empalmes",
-    "practiceNum": 1,
-    "category": "Nudos Articulados Viga-Pilar",
-    "categoryKey": "articulated",
-    "shortDescription": "Viga compuesta por doble perfil UPN conectada a cara de pilar mediante casquillo.",
-    "detailedDescription": "Unión de dintel formado por dos perfiles UPN dispuestos espalda contra espalda o en cajón hacia el soporte continuo. Se resuelve con casquillos y pasadores asegurando la entrega equilibrada de ambas vigas al pilar.",
-    "structuralBehavior": "Distribución simétrica de esfuerzos cortantes de ambas almas hacia el núcleo del pilar.",
-    "components": [
-      "Doble perfil UPN en viga",
-      "Pilar metálico",
-      "Casquillos de enlace",
-      "Tornillería pasante"
-    ],
-    "normativeReference": "CTE DB-SE-A Art. 8.5",
-    "tags": [
-      "doble upn",
-      "perfil compuesto",
-      "casquillo",
-      "articulado",
-      "viga doble"
-    ],
-    "modelFile": "/models/P1-7.glb",
-    "dimensions": {
-      "width": 3.759,
-      "height": 1.766,
-      "depth": 0.28
-    },
-    "stats": {
-      "geometriesCount": 23,
-      "totalVertices": 2304,
-      "totalFaces": 768,
-      "fileSizeKb": 91.2
-    },
-    "fullTitle": "Nudo Viga Doble UPN a Pilar Continuo con Casquillo",
-    "shortTitle": "Nudo viga doble UPN a pilar"
-  },
-  {
-    "id": "P1-8",
-    "fileCode": "P1-8",
-    "title": "Empalme soldado con cubrejuntas",
-    "practice": "Práctica 1: Uniones y Empalmes",
-    "practiceNum": 1,
-    "category": "Empalmes y Continuidad",
-    "categoryKey": "splice",
-    "shortDescription": "Empalme de continuidad soldado con platabandas de refuerzo en alas traccionada y comprimida.",
-    "detailedDescription": "Unión de prolongación longitudinal viga-viga realizada mediante soldadura a tope con biselado de chapas y reforzada con cubrejuntas soldadas en ambas alas. Desarrolla la capacidad portante completa del perfil metálico.",
-    "structuralBehavior": "Transmisión total de momento flector, esfuerzo cortante y axil (empalme de resistencia completa).",
-    "components": [
-      "Perfiles IPE alineados",
-      "Soldadura a tope en alma",
-      "Cubrejuntas de alas superior e inferior",
-      "Cordones en ángulo"
-    ],
-    "normativeReference": "CTE DB-SE-A Art. 8.7 / UNE-EN 1993-1-8",
-    "tags": [
-      "empalme",
-      "soldado",
-      "cubrejuntas",
-      "continuidad",
-      "ipe",
-      "tope"
-    ],
-    "modelFile": "/models/P1-8.glb",
-    "dimensions": {
-      "width": 2.418,
-      "height": 1.052,
-      "depth": 0.15
-    },
-    "stats": {
-      "geometriesCount": 11,
-      "totalVertices": 1128,
-      "totalFaces": 376,
-      "fileSizeKb": 44.7
-    },
-    "fullTitle": "Empalme de Viga Soldado a Tope con Cubrejuntas en Alas",
-    "shortTitle": "Empalme soldado con cubrejuntas"
-  },
-  {
-    "id": "P1-9",
-    "fileCode": "P1-9",
-    "title": "Empalme atornillado en alma y alas",
-    "practice": "Práctica 1: Uniones y Empalmes",
-    "practiceNum": 1,
-    "category": "Empalmes y Continuidad",
-    "categoryKey": "splice",
-    "shortDescription": "Empalme de montaje en obra con cubrejuntas atornilladas en alma y en ambas alas.",
-    "detailedDescription": "Solución estándar de montaje rápido en obra sin soldadura en posición. Las cubrejuntas de las alas absorben el par de fuerzas de tracción-compresión del momento flector, mientras que la cubrejunta doble de alma absorbe el cortante mediante tornillos de alta resistencia.",
-    "structuralBehavior": "Conexión a cortante por fricción/aplastamiento y absorción de momento flector por platabandas de ala.",
-    "components": [
-      "Perfiles viga",
-      "Platabandas de ala exterior e interior",
-      "Doble cubrejunta de alma",
-      "Tornillos de alta resistencia (8.8/10.9)"
-    ],
-    "normativeReference": "CTE DB-SE-A Art. 8.7 y 8.8",
-    "tags": [
-      "empalme atornillado",
-      "cubrejuntas",
-      "tornillos TR",
-      "alma",
-      "alas",
-      "resistencia completa"
-    ],
-    "modelFile": "/models/P1-9.glb",
-    "dimensions": {
-      "width": 2.418,
-      "height": 1.365,
-      "depth": 0.176
-    },
-    "stats": {
-      "geometriesCount": 13,
-      "totalVertices": 1200,
-      "totalFaces": 400,
-      "fileSizeKb": 47.3
-    },
-    "fullTitle": "Empalme Atornillado Viga-Viga con Cubrejuntas en Alma y Alas",
-    "shortTitle": "Empalme atornillado en alma y alas"
+    "shortTitle": "Maqueta 29",
+    "maquetaNumber": 29,
+    "maquetaId": "maqueta-29",
+    "name": "Maqueta 29",
+    "displayName": "Maqueta 29",
+    "technicalTitle": "Unión enrasada con doble angular",
+    "originalCode": "P1-24",
+    "thumbnail": "P1-24"
   },
   {
     "id": "P2-A1",
-    "fileCode": "P2-A1",
-    "title": "Base articulada simple",
+    "fileCode": "MAQUETA-30",
+    "title": "Maqueta 30",
     "practice": "Práctica 2: Bases de Pilar",
     "practiceNum": 2,
     "category": "Bases y Placas de Anclaje",
@@ -1188,12 +1694,18 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.9 / UNE-EN 1993-1-8 Cl. 6.2.8",
     "tags": [
+      "maqueta",
+      "maqueta 30",
+      "maqueta-30",
       "base",
       "placa anclaje",
       "articulada",
       "2 pernos",
       "cimentacion",
-      "upn"
+      "upn",
+      "base",
+      "articulada",
+      "simple"
     ],
     "modelFile": "/models/P2-A1.glb",
     "dimensions": {
@@ -1208,12 +1720,19 @@
       "fileSizeKb": 22.1
     },
     "fullTitle": "Base Articulada de Pilar UPN con Placa de Anclaje Simple",
-    "shortTitle": "Base articulada simple"
+    "shortTitle": "Maqueta 30",
+    "maquetaNumber": 30,
+    "maquetaId": "maqueta-30",
+    "name": "Maqueta 30",
+    "displayName": "Maqueta 30",
+    "technicalTitle": "Base articulada simple",
+    "originalCode": "P2-A1",
+    "thumbnail": "P2-A1"
   },
   {
     "id": "P2-A2",
-    "fileCode": "P2-A2",
-    "title": "Base articulada con placa de asiento",
+    "fileCode": "MAQUETA-31",
+    "title": "Maqueta 31",
     "practice": "Práctica 2: Bases de Pilar",
     "practiceNum": 2,
     "category": "Bases y Placas de Anclaje",
@@ -1229,11 +1748,20 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.9",
     "tags": [
+      "maqueta",
+      "maqueta 31",
+      "maqueta-31",
       "base articulada",
       "chapa reparto",
       "pedestal",
       "hormigon",
-      "presion"
+      "presion",
+      "base",
+      "articulada",
+      "con",
+      "placa",
+      "de",
+      "asiento"
     ],
     "modelFile": "/models/P2-A2.glb",
     "dimensions": {
@@ -1248,12 +1776,19 @@
       "fileSizeKb": 22.6
     },
     "fullTitle": "Base Articulada con Placa de Asiento y Chapa de Reparto en Cimentación",
-    "shortTitle": "Base articulada con placa de asiento"
+    "shortTitle": "Maqueta 31",
+    "maquetaNumber": 31,
+    "maquetaId": "maqueta-31",
+    "name": "Maqueta 31",
+    "displayName": "Maqueta 31",
+    "technicalTitle": "Base articulada con placa de asiento",
+    "originalCode": "P2-A2",
+    "thumbnail": "P2-A2"
   },
   {
     "id": "P2-A3",
-    "fileCode": "P2-A3",
-    "title": "Base articulada con cartelas",
+    "fileCode": "MAQUETA-32",
+    "title": "Maqueta 32",
     "practice": "Práctica 2: Bases de Pilar",
     "practiceNum": 2,
     "category": "Bases y Placas de Anclaje",
@@ -1269,11 +1804,18 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.9",
     "tags": [
+      "maqueta",
+      "maqueta 32",
+      "maqueta-32",
       "base",
       "cartelas de reparto",
       "placa base",
       "cimentacion",
-      "rigidez local"
+      "rigidez local",
+      "base",
+      "articulada",
+      "con",
+      "cartelas"
     ],
     "modelFile": "/models/P2-A3.glb",
     "dimensions": {
@@ -1288,12 +1830,19 @@
       "fileSizeKb": 30.7
     },
     "fullTitle": "Base Articulada de Pilar con Cartelas de Reparto Inferiores",
-    "shortTitle": "Base articulada con cartelas"
+    "shortTitle": "Maqueta 32",
+    "maquetaNumber": 32,
+    "maquetaId": "maqueta-32",
+    "name": "Maqueta 32",
+    "displayName": "Maqueta 32",
+    "technicalTitle": "Base articulada con cartelas",
+    "originalCode": "P2-A3",
+    "thumbnail": "P2-A3"
   },
   {
     "id": "P2-B1-A",
-    "fileCode": "P2-B1-A",
-    "title": "Base empotrada con 4 pernos",
+    "fileCode": "MAQUETA-33",
+    "title": "Maqueta 33",
     "practice": "Práctica 2: Bases de Pilar",
     "practiceNum": 2,
     "category": "Bases y Placas de Anclaje",
@@ -1309,11 +1858,19 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.9 / UNE-EN 1993-1-8 Cl. 6.2.8",
     "tags": [
+      "maqueta",
+      "maqueta 33",
+      "maqueta-33",
       "semi-empotrada",
       "4 pernos",
       "pedestal",
       "zapata",
-      "momento flector"
+      "momento flector",
+      "base",
+      "empotrada",
+      "con",
+      "4",
+      "pernos"
     ],
     "modelFile": "/models/P2-B1-A.glb",
     "dimensions": {
@@ -1325,15 +1882,22 @@
       "geometriesCount": 6,
       "totalVertices": 696,
       "totalFaces": 232,
-      "fileSizeKb": 28.0
+      "fileSizeKb": 28
     },
     "fullTitle": "Base Semi-Empotrada con 4 Pernos y Pedestal de Hormigón Armado",
-    "shortTitle": "Base empotrada con 4 pernos"
+    "shortTitle": "Maqueta 33",
+    "maquetaNumber": 33,
+    "maquetaId": "maqueta-33",
+    "name": "Maqueta 33",
+    "displayName": "Maqueta 33",
+    "technicalTitle": "Base empotrada con 4 pernos",
+    "originalCode": "P2-B1-A",
+    "thumbnail": "P2-B1-A"
   },
   {
     "id": "P2-B1-B",
-    "fileCode": "P2-B1-B",
-    "title": "Base empotrada con rigidizadores",
+    "fileCode": "MAQUETA-34",
+    "title": "Maqueta 34",
     "practice": "Práctica 2: Bases de Pilar",
     "practiceNum": 2,
     "category": "Bases y Placas de Anclaje",
@@ -1349,11 +1913,18 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.9",
     "tags": [
+      "maqueta",
+      "maqueta 34",
+      "maqueta-34",
       "empotrada",
       "pernos exteriores",
       "brazo mecanico",
       "portico",
-      "rigidizadores base"
+      "rigidizadores base",
+      "base",
+      "empotrada",
+      "con",
+      "rigidizadores"
     ],
     "modelFile": "/models/P2-B1-B.glb",
     "dimensions": {
@@ -1368,12 +1939,19 @@
       "fileSizeKb": 36.9
     },
     "fullTitle": "Base Empotrada de Pilar con Pernos Exteriores y Rigidizadores de Base",
-    "shortTitle": "Base empotrada con rigidizadores"
+    "shortTitle": "Maqueta 34",
+    "maquetaNumber": 34,
+    "maquetaId": "maqueta-34",
+    "name": "Maqueta 34",
+    "displayName": "Maqueta 34",
+    "technicalTitle": "Base empotrada con rigidizadores",
+    "originalCode": "P2-B1-B",
+    "thumbnail": "P2-B1-B"
   },
   {
     "id": "P2-C1",
-    "fileCode": "P2-C1",
-    "title": "Base con rigidizadores en cruz",
+    "fileCode": "MAQUETA-35",
+    "title": "Maqueta 35",
     "practice": "Práctica 2: Bases de Pilar",
     "practiceNum": 2,
     "category": "Bases y Placas de Anclaje",
@@ -1389,11 +1967,19 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.9",
     "tags": [
+      "maqueta",
+      "maqueta 35",
+      "maqueta-35",
       "flexion esviada",
       "rigidizadores en cruz",
       "gran inercia",
       "empotramiento biaxial",
-      "base"
+      "base",
+      "base",
+      "con",
+      "rigidizadores",
+      "en",
+      "cruz"
     ],
     "modelFile": "/models/P2-C1.glb",
     "dimensions": {
@@ -1408,12 +1994,19 @@
       "fileSizeKb": 27.1
     },
     "fullTitle": "Base de Gran Inercia con Rigidizadores en Cruz para Momentos Biaxiales",
-    "shortTitle": "Base con rigidizadores en cruz"
+    "shortTitle": "Maqueta 35",
+    "maquetaNumber": 35,
+    "maquetaId": "maqueta-35",
+    "name": "Maqueta 35",
+    "displayName": "Maqueta 35",
+    "technicalTitle": "Base con rigidizadores en cruz",
+    "originalCode": "P2-C1",
+    "thumbnail": "P2-C1"
   },
   {
     "id": "P2-C2",
-    "fileCode": "P2-C2",
-    "title": "Transición pilar UPN a IPE",
+    "fileCode": "MAQUETA-36",
+    "title": "Maqueta 36",
     "practice": "Práctica 2: Bases de Pilar",
     "practiceNum": 2,
     "category": "Empalmes y Continuidad",
@@ -1429,18 +2022,26 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.8",
     "tags": [
+      "maqueta",
+      "maqueta 36",
+      "maqueta-36",
       "transicion",
       "cambio de seccion",
       "pilar-pilar",
       "upn",
       "ipe",
-      "chapa transicion"
+      "chapa transicion",
+      "transición",
+      "pilar",
+      "upn",
+      "a",
+      "ipe"
     ],
     "modelFile": "/models/P2-C2.glb",
     "dimensions": {
       "width": 0.67,
       "height": 2.058,
-      "depth": 1.0
+      "depth": 1
     },
     "stats": {
       "geometriesCount": 15,
@@ -1449,12 +2050,19 @@
       "fileSizeKb": 60.3
     },
     "fullTitle": "Transición y Enlace Pilar-Pilar: Soporte Compuesto UPN a Perfil IPE",
-    "shortTitle": "Transición pilar UPN a IPE"
+    "shortTitle": "Maqueta 36",
+    "maquetaNumber": 36,
+    "maquetaId": "maqueta-36",
+    "name": "Maqueta 36",
+    "displayName": "Maqueta 36",
+    "technicalTitle": "Transición pilar UPN a IPE",
+    "originalCode": "P2-C2",
+    "thumbnail": "P2-C2"
   },
   {
     "id": "P2-D1",
-    "fileCode": "P2-D1",
-    "title": "Base empotrada con cartelas",
+    "fileCode": "MAQUETA-37",
+    "title": "Maqueta 37",
     "practice": "Práctica 2: Bases de Pilar",
     "practiceNum": 2,
     "category": "Bases y Placas de Anclaje",
@@ -1470,11 +2078,18 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.9",
     "tags": [
+      "maqueta",
+      "maqueta 37",
+      "maqueta-37",
       "gran canto",
       "cartelas triangulares",
       "nave industrial",
       "empotramiento perfecto",
-      "portico pesada"
+      "portico pesada",
+      "base",
+      "empotrada",
+      "con",
+      "cartelas"
     ],
     "modelFile": "/models/P2-D1.glb",
     "dimensions": {
@@ -1489,12 +2104,19 @@
       "fileSizeKb": 80.6
     },
     "fullTitle": "Base Empotrada de Pórtico con Cartelas Triangulares de Gran Canto",
-    "shortTitle": "Base empotrada con cartelas"
+    "shortTitle": "Maqueta 37",
+    "maquetaNumber": 37,
+    "maquetaId": "maqueta-37",
+    "name": "Maqueta 37",
+    "displayName": "Maqueta 37",
+    "technicalTitle": "Base empotrada con cartelas",
+    "originalCode": "P2-D1",
+    "thumbnail": "P2-D1"
   },
   {
     "id": "P3-1",
-    "fileCode": "P3-1",
-    "title": "Apoyo y arranque de cercha",
+    "fileCode": "MAQUETA-38",
+    "title": "Maqueta 38",
     "practice": "Práctica 3: Cercha Polonceau",
     "practiceNum": 3,
     "category": "Cercha Polonceau y Celosías",
@@ -1511,18 +2133,26 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.5",
     "tags": [
+      "maqueta",
+      "maqueta 38",
+      "maqueta-38",
       "nudo 1",
       "apoyo cercha",
       "arranque",
       "estribo",
       "cartela",
-      "pilar fachada"
+      "pilar fachada",
+      "apoyo",
+      "y",
+      "arranque",
+      "de",
+      "cercha"
     ],
     "modelFile": "/models/P3-1.glb",
     "dimensions": {
       "width": 1.659,
       "height": 1.219,
-      "depth": 1.0
+      "depth": 1
     },
     "stats": {
       "geometriesCount": 56,
@@ -1531,53 +2161,19 @@
       "fileSizeKb": 2200.3
     },
     "fullTitle": "Nudo 1: Apoyo y Arranque de Cercha en Cabeza de Pilar",
-    "shortTitle": "Apoyo y arranque de cercha"
-  },
-  {
-    "id": "P3-10",
-    "fileCode": "P3-10",
-    "title": "Nudo de cordón superior",
-    "practice": "Práctica 3: Cercha Polonceau",
-    "practiceNum": 3,
-    "category": "Cercha Polonceau y Celosías",
-    "categoryKey": "truss",
-    "shortDescription": "Encuentro en el par continuo de la cercha con el montante perpendicular y la diagonal.",
-    "detailedDescription": "Nudo intermedio a lo largo del cordón superior de la cercha Polonceau. En la cartela intermedia se produce el empalme y conexión del montante perpendicular al par y las barras diagonales estabilizadoras que reducen la luz de pandeo del par.",
-    "structuralBehavior": "Transmisión de esfuerzos axiles axiales concurrentes en un único punto nodal para evitar momentos secundarios parásitos.",
-    "components": [
-      "Par superior continuo",
-      "Montante tubular / angular",
-      "Diagonal de celosía",
-      "Cartela pasante atornillada"
-    ],
-    "normativeReference": "CTE DB-SE-A Art. 8.5",
-    "tags": [
-      "nudo intermedio",
-      "cordon superior",
-      "par",
-      "montante",
-      "diagonal",
-      "nudo 10"
-    ],
-    "modelFile": "/models/P3-10.glb",
-    "dimensions": {
-      "width": 4.357,
-      "height": 1.532,
-      "depth": 0.5
-    },
-    "stats": {
-      "geometriesCount": 110,
-      "totalVertices": 275622,
-      "totalFaces": 91874,
-      "fileSizeKb": 6259.8
-    },
-    "fullTitle": "Nudo 10: Nudo Intermedio de Cordón Superior (Par, Montante y Diagonal)",
-    "shortTitle": "Nudo de cordón superior"
+    "shortTitle": "Maqueta 38",
+    "maquetaNumber": 38,
+    "maquetaId": "maqueta-38",
+    "name": "Maqueta 38",
+    "displayName": "Maqueta 38",
+    "technicalTitle": "Apoyo y arranque de cercha",
+    "originalCode": "P3-1",
+    "thumbnail": "P3-1"
   },
   {
     "id": "P3-2",
-    "fileCode": "P3-2",
-    "title": "Nudo de cumbrera",
+    "fileCode": "MAQUETA-39",
+    "title": "Maqueta 39",
     "practice": "Práctica 3: Cercha Polonceau",
     "practiceNum": 3,
     "category": "Cercha Polonceau y Celosías",
@@ -1594,13 +2190,19 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.5",
     "tags": [
+      "maqueta",
+      "maqueta 39",
+      "maqueta-39",
       "cumbrera",
       "nudo 2",
       "coronacion",
       "vertice",
       "pares",
       "pendola",
-      "cartela cumbrera"
+      "cartela cumbrera",
+      "nudo",
+      "de",
+      "cumbrera"
     ],
     "modelFile": "/models/P3-2.glb",
     "dimensions": {
@@ -1615,95 +2217,19 @@
       "fileSizeKb": 177.6
     },
     "fullTitle": "Nudo 2: Cumbrera de Cercha (Encuentro de Pares en Coronación)",
-    "shortTitle": "Nudo de cumbrera"
-  },
-  {
-    "id": "P3-20",
-    "fileCode": "P3-20",
-    "title": "Nudo de tirante y péndola",
-    "practice": "Práctica 3: Cercha Polonceau",
-    "practiceNum": 3,
-    "category": "Cercha Polonceau y Celosías",
-    "categoryKey": "truss",
-    "shortDescription": "Unión inferior del tirante horizontal con las diagonales y el montante vertical.",
-    "detailedDescription": "Nudo articulado situado en la cuerda inferior de la cercha. Conecta los tramos del tirante traccionado con la péndola central que sostiene el tirante evitando su deformación por peso propio (catenaria).",
-    "structuralBehavior": "Tracción pura en barras horizontales equilibrada por la fuerza de suspensión de la péndola.",
-    "components": [
-      "Tirante horizontal (redondo / angular)",
-      "Péndola vertical de cuelgue",
-      "Cartela circular o trapezoidal",
-      "Bulones pasadores"
-    ],
-    "normativeReference": "CTE DB-SE-A Art. 8.5",
-    "tags": [
-      "tirante",
-      "nudo inferior",
-      "pendola",
-      "nudo 20",
-      "traccion",
-      "cuerda inferior"
-    ],
-    "modelFile": "/models/P3-20.glb",
-    "dimensions": {
-      "width": 2.583,
-      "height": 1.532,
-      "depth": 0.5
-    },
-    "stats": {
-      "geometriesCount": 113,
-      "totalVertices": 313548,
-      "totalFaces": 104516,
-      "fileSizeKb": 8789.9
-    },
-    "fullTitle": "Nudo 20: Nudo Central de Tirante Inferior y Péndola",
-    "shortTitle": "Nudo de tirante y péndola"
-  },
-  {
-    "id": "P3-29",
-    "fileCode": "P3-29",
-    "title": "Tensor de tirante con horquilla",
-    "practice": "Práctica 3: Cercha Polonceau",
-    "practiceNum": 3,
-    "category": "Cercha Polonceau y Celosías",
-    "categoryKey": "truss",
-    "shortDescription": "Mecanismo de tesado y regulación de longitud de tirante mediante bulón y horquilla.",
-    "detailedDescription": "Detalle constructivo de alta precisión para el tesado inicial y ajuste de flecha de la cercha metálica. Cuenta con horquilla roscada mecanizada, bulón pasador y tuercas de contrabloqueo para garantizar la puesta en carga uniforme de los tirantes.",
-    "structuralBehavior": "Conexión articulada pura (rótula cilíndrica) resistente a tracción pura axial sin transmisión de flexión al tensor.",
-    "components": [
-      "Tensor de acero macizo",
-      "Horquilla articulada roscada",
-      "Bulón pasador templado",
-      "Chapa de anclaje con barrilete"
-    ],
-    "normativeReference": "CTE DB-SE-A Art. 8.5 / UNE-EN 1993-1-11",
-    "tags": [
-      "tensor",
-      "bulon",
-      "horquilla",
-      "regulacion",
-      "tesado",
-      "nudo 29",
-      "tirante"
-    ],
-    "modelFile": "/models/P3-29.glb",
-    "dimensions": {
-      "width": 1.239,
-      "height": 2.001,
-      "depth": 0.611
-    },
-    "stats": {
-      "geometriesCount": 121,
-      "totalVertices": 402348,
-      "totalFaces": 134116,
-      "fileSizeKb": 9393.5
-    },
-    "fullTitle": "Nudo 29: Anclaje y Tensor de Tirante Inferior con Horquilla y Bulón",
-    "shortTitle": "Tensor de tirante con horquilla"
+    "shortTitle": "Maqueta 39",
+    "maquetaNumber": 39,
+    "maquetaId": "maqueta-39",
+    "name": "Maqueta 39",
+    "displayName": "Maqueta 39",
+    "technicalTitle": "Nudo de cumbrera",
+    "originalCode": "P3-2",
+    "thumbnail": "P3-2"
   },
   {
     "id": "P3-3",
-    "fileCode": "P3-3",
-    "title": "Cumbrera con apoyo de correa",
+    "fileCode": "MAQUETA-40",
+    "title": "Maqueta 40",
     "practice": "Práctica 3: Cercha Polonceau",
     "practiceNum": 3,
     "category": "Cercha Polonceau y Celosías",
@@ -1719,12 +2245,20 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 8.3",
     "tags": [
+      "maqueta",
+      "maqueta 40",
+      "maqueta-40",
       "cumbrera",
       "correa",
       "cubierta",
       "nudo 3",
       "apoyo correa",
-      "cartela"
+      "cartela",
+      "cumbrera",
+      "con",
+      "apoyo",
+      "de",
+      "correa"
     ],
     "modelFile": "/models/P3-3.glb",
     "dimensions": {
@@ -1739,12 +2273,187 @@
       "fileSizeKb": 162.4
     },
     "fullTitle": "Nudo 3: Cumbrera con Cartela de Enlace y Apoyo de Correa de Cubierta",
-    "shortTitle": "Cumbrera con apoyo de correa"
+    "shortTitle": "Maqueta 40",
+    "maquetaNumber": 40,
+    "maquetaId": "maqueta-40",
+    "name": "Maqueta 40",
+    "displayName": "Maqueta 40",
+    "technicalTitle": "Cumbrera con apoyo de correa",
+    "originalCode": "P3-3",
+    "thumbnail": "P3-3"
+  },
+  {
+    "id": "P3-10",
+    "fileCode": "MAQUETA-41",
+    "title": "Maqueta 41",
+    "practice": "Práctica 3: Cercha Polonceau",
+    "practiceNum": 3,
+    "category": "Cercha Polonceau y Celosías",
+    "categoryKey": "truss",
+    "shortDescription": "Encuentro en el par continuo de la cercha con el montante perpendicular y la diagonal.",
+    "detailedDescription": "Nudo intermedio a lo largo del cordón superior de la cercha Polonceau. En la cartela intermedia se produce el empalme y conexión del montante perpendicular al par y las barras diagonales estabilizadoras que reducen la luz de pandeo del par.",
+    "structuralBehavior": "Transmisión de esfuerzos axiles axiales concurrentes en un único punto nodal para evitar momentos secundarios parásitos.",
+    "components": [
+      "Par superior continuo",
+      "Montante tubular / angular",
+      "Diagonal de celosía",
+      "Cartela pasante atornillada"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.5",
+    "tags": [
+      "maqueta",
+      "maqueta 41",
+      "maqueta-41",
+      "nudo intermedio",
+      "cordon superior",
+      "par",
+      "montante",
+      "diagonal",
+      "nudo 10",
+      "nudo",
+      "de",
+      "cordón",
+      "superior"
+    ],
+    "modelFile": "/models/P3-10.glb",
+    "dimensions": {
+      "width": 4.357,
+      "height": 1.532,
+      "depth": 0.5
+    },
+    "stats": {
+      "geometriesCount": 110,
+      "totalVertices": 275622,
+      "totalFaces": 91874,
+      "fileSizeKb": 6259.8
+    },
+    "fullTitle": "Nudo 10: Nudo Intermedio de Cordón Superior (Par, Montante y Diagonal)",
+    "shortTitle": "Maqueta 41",
+    "maquetaNumber": 41,
+    "maquetaId": "maqueta-41",
+    "name": "Maqueta 41",
+    "displayName": "Maqueta 41",
+    "technicalTitle": "Nudo de cordón superior",
+    "originalCode": "P3-10",
+    "thumbnail": "P3-10"
+  },
+  {
+    "id": "P3-20",
+    "fileCode": "MAQUETA-42",
+    "title": "Maqueta 42",
+    "practice": "Práctica 3: Cercha Polonceau",
+    "practiceNum": 3,
+    "category": "Cercha Polonceau y Celosías",
+    "categoryKey": "truss",
+    "shortDescription": "Unión inferior del tirante horizontal con las diagonales y el montante vertical.",
+    "detailedDescription": "Nudo articulado situado en la cuerda inferior de la cercha. Conecta los tramos del tirante traccionado con la péndola central que sostiene el tirante evitando su deformación por peso propio (catenaria).",
+    "structuralBehavior": "Tracción pura en barras horizontales equilibrada por la fuerza de suspensión de la péndola.",
+    "components": [
+      "Tirante horizontal (redondo / angular)",
+      "Péndola vertical de cuelgue",
+      "Cartela circular o trapezoidal",
+      "Bulones pasadores"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.5",
+    "tags": [
+      "maqueta",
+      "maqueta 42",
+      "maqueta-42",
+      "tirante",
+      "nudo inferior",
+      "pendola",
+      "nudo 20",
+      "traccion",
+      "cuerda inferior",
+      "nudo",
+      "de",
+      "tirante",
+      "y",
+      "péndola"
+    ],
+    "modelFile": "/models/P3-20.glb",
+    "dimensions": {
+      "width": 2.583,
+      "height": 1.532,
+      "depth": 0.5
+    },
+    "stats": {
+      "geometriesCount": 113,
+      "totalVertices": 313548,
+      "totalFaces": 104516,
+      "fileSizeKb": 8789.9
+    },
+    "fullTitle": "Nudo 20: Nudo Central de Tirante Inferior y Péndola",
+    "shortTitle": "Maqueta 42",
+    "maquetaNumber": 42,
+    "maquetaId": "maqueta-42",
+    "name": "Maqueta 42",
+    "displayName": "Maqueta 42",
+    "technicalTitle": "Nudo de tirante y péndola",
+    "originalCode": "P3-20",
+    "thumbnail": "P3-20"
+  },
+  {
+    "id": "P3-29",
+    "fileCode": "MAQUETA-43",
+    "title": "Maqueta 43",
+    "practice": "Práctica 3: Cercha Polonceau",
+    "practiceNum": 3,
+    "category": "Cercha Polonceau y Celosías",
+    "categoryKey": "truss",
+    "shortDescription": "Mecanismo de tesado y regulación de longitud de tirante mediante bulón y horquilla.",
+    "detailedDescription": "Detalle constructivo de alta precisión para el tesado inicial y ajuste de flecha de la cercha metálica. Cuenta con horquilla roscada mecanizada, bulón pasador y tuercas de contrabloqueo para garantizar la puesta en carga uniforme de los tirantes.",
+    "structuralBehavior": "Conexión articulada pura (rótula cilíndrica) resistente a tracción pura axial sin transmisión de flexión al tensor.",
+    "components": [
+      "Tensor de acero macizo",
+      "Horquilla articulada roscada",
+      "Bulón pasador templado",
+      "Chapa de anclaje con barrilete"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.5 / UNE-EN 1993-1-11",
+    "tags": [
+      "maqueta",
+      "maqueta 43",
+      "maqueta-43",
+      "tensor",
+      "bulon",
+      "horquilla",
+      "regulacion",
+      "tesado",
+      "nudo 29",
+      "tirante",
+      "tensor",
+      "de",
+      "tirante",
+      "con",
+      "horquilla"
+    ],
+    "modelFile": "/models/P3-29.glb",
+    "dimensions": {
+      "width": 1.239,
+      "height": 2.001,
+      "depth": 0.611
+    },
+    "stats": {
+      "geometriesCount": 121,
+      "totalVertices": 402348,
+      "totalFaces": 134116,
+      "fileSizeKb": 9393.5
+    },
+    "fullTitle": "Nudo 29: Anclaje y Tensor de Tirante Inferior con Horquilla y Bulón",
+    "shortTitle": "Maqueta 43",
+    "maquetaNumber": 43,
+    "maquetaId": "maqueta-43",
+    "name": "Maqueta 43",
+    "displayName": "Maqueta 43",
+    "technicalTitle": "Tensor de tirante con horquilla",
+    "originalCode": "P3-29",
+    "thumbnail": "P3-29"
   },
   {
     "id": "P3-POLONCEAU COMPUESTA",
-    "fileCode": "P3-POLONCEAU COMPUESTA",
-    "title": "Cercha Polonceau completa",
+    "fileCode": "MAQUETA-44",
+    "title": "Maqueta 44",
     "practice": "Práctica 3: Cercha Polonceau",
     "practiceNum": 3,
     "category": "Cercha Polonceau y Celosías",
@@ -1761,6 +2470,9 @@
     ],
     "normativeReference": "CTE DB-SE-A Art. 6.3 / UNE-EN 1993-1-1 Cl. 6.3",
     "tags": [
+      "maqueta",
+      "maqueta 44",
+      "maqueta-44",
       "cercha polonceau",
       "celosia",
       "cubierta",
@@ -1768,7 +2480,10 @@
       "tirante",
       "par",
       "montante",
-      "luz 14m"
+      "luz 14m",
+      "cercha",
+      "polonceau",
+      "completa"
     ],
     "modelFile": "/models/P3-POLONCEAU COMPUESTA.glb",
     "dimensions": {
@@ -1783,6 +2498,13 @@
       "fileSizeKb": 234.9
     },
     "fullTitle": "Cercha Polonceau Compuesta Completa (Luz ~14m)",
-    "shortTitle": "Cercha Polonceau completa"
+    "shortTitle": "Maqueta 44",
+    "maquetaNumber": 44,
+    "maquetaId": "maqueta-44",
+    "name": "Maqueta 44",
+    "displayName": "Maqueta 44",
+    "technicalTitle": "Cercha Polonceau completa",
+    "originalCode": "P3-POLONCEAU COMPUESTA",
+    "thumbnail": "P3-POLONCEAU COMPUESTA"
   }
 ]

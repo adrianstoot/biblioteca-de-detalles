@@ -69,7 +69,7 @@ const DetailCard = memo(function DetailCard({ detail, isSelected, onSelect }) {
                   : 'bg-slate-100 text-slate-700 group-hover:bg-slate-200'
               }`}
             >
-              {detail.id}
+              {detail.fileCode || `MAQUETA-${detail.maquetaNumber}`}
             </span>
             <span className="text-[10px] text-slate-400 font-medium">
               {categoryLabel}
@@ -94,7 +94,7 @@ const DetailCard = memo(function DetailCard({ detail, isSelected, onSelect }) {
         <div className="flex items-center gap-2 mt-1 text-[10px] font-mono text-slate-400">
           <span>{widthMm}×{heightMm} mm</span>
           <span>•</span>
-          <span className="truncate">{detail.fileCode}</span>
+          <span className="truncate">{detail.technicalTitle || detail.originalCode || detail.id}</span>
         </div>
       </div>
     </div>
@@ -143,9 +143,12 @@ export default function Sidebar({
         const q = searchQuery.toLowerCase().trim();
         return (
           item.id.toLowerCase().includes(q) ||
+          (item.maquetaId && item.maquetaId.toLowerCase().includes(q)) ||
           (item.title && item.title.toLowerCase().includes(q)) ||
           (item.shortTitle && item.shortTitle.toLowerCase().includes(q)) ||
-          (item.fullTitle && item.fullTitle.toLowerCase().includes(q)) ||
+          (item.technicalTitle && item.technicalTitle.toLowerCase().includes(q)) ||
+          (item.originalCode && item.originalCode.toLowerCase().includes(q)) ||
+          (item.fileCode && item.fileCode.toLowerCase().includes(q)) ||
           item.category.toLowerCase().includes(q) ||
           (item.tags && item.tags.some(t => t.toLowerCase().includes(q)))
         );

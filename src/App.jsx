@@ -12,18 +12,26 @@ export default function App() {
       const params = new URLSearchParams(window.location.search);
       const urlId = params.get('id');
       if (urlId) {
-        const found = detailsData.find(d => d.id.toLowerCase() === urlId.toLowerCase());
+        const clean = urlId.toLowerCase().trim();
+        const found = detailsData.find(d => 
+          d.id.toLowerCase() === clean ||
+          (d.maquetaId && d.maquetaId.toLowerCase() === clean) ||
+          (d.fileCode && d.fileCode.toLowerCase() === clean) ||
+          d.title.toLowerCase() === clean ||
+          String(d.maquetaNumber) === clean ||
+          `maqueta-${d.maquetaNumber}` === clean
+        );
         if (found) return found;
       }
     }
-    return detailsData.find(d => d.id === 'P1-10') || detailsData[0];
+    return detailsData[0];
   });
 
   const handleSelectDetail = useCallback((detail) => {
     setSelectedDetail(detail);
     if (typeof window !== 'undefined') {
       const url = new URL(window.location);
-      url.searchParams.set('id', detail.id);
+      url.searchParams.set('id', detail.maquetaId || detail.id);
       window.history.replaceState(null, '', url);
     }
   }, []);

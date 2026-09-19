@@ -47,8 +47,11 @@ export default function Toolbar({
           </div>
           <span className="text-slate-300 mx-1 hidden sm:inline">/</span>
           <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 shadow-2xs">
-            <span className="font-mono text-blue-600 font-bold">{currentDetail?.id}</span>
-            <span className="truncate max-w-[140px] sm:max-w-[260px] text-slate-700">{currentDetail?.title}</span>
+            <span className="font-mono text-blue-600 font-bold">{currentDetail?.fileCode || `MAQUETA-${currentDetail?.maquetaNumber}`}</span>
+            <span className="text-slate-900 font-semibold">{currentDetail?.title}</span>
+            {currentDetail?.technicalTitle && (
+              <span className="truncate max-w-[140px] sm:max-w-[260px] text-slate-500 font-normal hidden sm:inline">• {currentDetail.technicalTitle}</span>
+            )}
           </div>
         </div>
       </div>

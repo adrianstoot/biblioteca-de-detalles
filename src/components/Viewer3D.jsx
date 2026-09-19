@@ -12,6 +12,9 @@ import {
   Hand
 } from 'lucide-react';
 
+// In-memory GLTF scene cache for instant 0ms switching between models
+const gltfCache = new Map();
+
 export default function Viewer3D({ 
   currentDetail, 
   materialPreset = 'steel_hot_rolled',
@@ -33,15 +36,15 @@ export default function Viewer3D({
   const shadowPlaneRef = useRef(null);
   const reqAnimRef = useRef(null);
 
-  // States
-  const [isLoading, setIsLoading] = useState(false);
+  // State
+  const [isLoading, setIsLoading] = useState(true);
   const [loadingProgress, setLoadingProgress] = useState(0);
+  const [controlMode, setControlMode] = useState('orbit'); // 'orbit' | 'pan'
   const [isTurntable, setIsTurntable] = useState(autoRotate);
-  const [controlMode, setControlMode] = useState('orbit');
 
-  // Initialize Three.js White Studio with High-Radiance IBL Environment
+  // 1. Initial Scene Setup
   useEffect(() => {
-    if (!containerRef.current) return;
+    if (!canvasRef.current || !containerRef.current) return;
 
     const width = containerRef.current.clientWidth;
     const height = containerRef.current.clientHeight;
@@ -66,7 +69,7 @@ export default function Viewer3D({
     renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.shadowMap.type = THREE.PCFShadowMap;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 0.95;
     rendererRef.current = renderer;
@@ -232,6 +235,39 @@ export default function Viewer3D({
     }
   }, [controlMode]);
 
+// Helper to guarantee UV coordinates for 2D PBR textures on any CAD mesh
+function ensureGeometryUV(geometry) {
+  if (!geometry || geometry.attributes.uv) return;
+  const pos = geometry.attributes.position;
+  if (!pos) return;
+  const count = pos.count;
+  const uvs = new Float32Array(count * 2);
+  const norm = geometry.attributes.normal;
+  
+  for (let i = 0; i < count; i++) {
+    const x = pos.getX(i);
+    const y = pos.getY(i);
+    const z = pos.getZ(i);
+    let nx = 0, ny = 1, nz = 0;
+    if (norm) {
+      nx = Math.abs(norm.getX(i));
+      ny = Math.abs(norm.getY(i));
+      nz = Math.abs(norm.getZ(i));
+    }
+    if (ny >= nx && ny >= nz) {
+      uvs[i * 2] = x;
+      uvs[i * 2 + 1] = z;
+    } else if (nx > ny && nx >= nz) {
+      uvs[i * 2] = z;
+      uvs[i * 2 + 1] = y;
+    } else {
+      uvs[i * 2] = x;
+      uvs[i * 2 + 1] = y;
+    }
+  }
+  geometry.setAttribute('uv', new THREE.BufferAttribute(uvs, 2));
+}
+
   // Apply Materials & Clean CAD Outlines
   const applyMaterialsAndEdges = useCallback((group, preset, withEdges, detailId) => {
     if (!group) return;
@@ -257,23 +293,29 @@ export default function Viewer3D({
         child.castShadow = true;
         child.receiveShadow = true;
 
-        const isTextured = currentDetail?.isTexturedModel || 
-                           currentDetail?.categoryKey === 'architectural_models' || 
-                           currentDetail?.categoryKey === 'tripo_models';
+        const isTripo = currentDetail?.categoryKey === 'tripo_models';
+        const isDatasmith = currentDetail?.categoryKey === 'architectural_models';
 
-        // Preserve original material if textured model, otherwise apply realistic materials
-        if (isTextured && child.userData.originalMaterial && preset !== 'wireframe') {
+        // Ensure UV coordinates for PBR textures
+        if (child.geometry) {
+          ensureGeometryUV(child.geometry);
+        }
+
+        // Preserve original material ONLY for Tripo scanned models with baked diffuse maps
+        if (isTripo && child.userData.originalMaterial && preset !== 'wireframe') {
           child.material = child.userData.originalMaterial;
           child.material.side = THREE.DoubleSide;
         } else {
-          child.material = createRealisticMaterial(preset, child.name, detailId);
+          // For Datasmith architectural maquetas and procedural structural steel nodes:
+          const origMatName = child.userData.originalMaterial?.name || '';
+          child.material = createRealisticMaterial(preset, child.name, detailId, origMatName);
           child.material.side = THREE.DoubleSide;
         }
 
-        // Technical Outline Edges (avoid clutter on organic tripo models)
-        const shouldDrawEdges = withEdges && preset !== 'wireframe' && (!isTextured || currentDetail?.categoryKey === 'architectural_models');
+        // Technical Outline Edges (avoid clutter on organic scanned tripo models)
+        const shouldDrawEdges = withEdges && preset !== 'wireframe' && (!isTripo);
         if (shouldDrawEdges) {
-          const threshold = isTextured ? 42 : 30;
+          const threshold = isDatasmith ? 45 : 30;
           const edgesGeo = new THREE.EdgesGeometry(child.geometry, threshold);
           const line = new THREE.LineSegments(edgesGeo, edgeLineMat);
           line.position.copy(child.position);
@@ -295,21 +337,18 @@ export default function Viewer3D({
     }
   }, [materialPreset, showEdges, applyMaterialsAndEdges, currentDetail?.id]);
 
-  // Load Model
+  // Load Model with In-Memory GLTF Caching
   useEffect(() => {
     if (!currentDetail || !sceneRef.current) return;
-
-    setIsLoading(true);
-    setLoadingProgress(15);
 
     const baseUrl = import.meta.env.BASE_URL || '/';
     const modelUrl = `${baseUrl}${currentDetail.modelFile.replace(/^\//, '')}`;
 
-    const loader = new GLTFLoader();
-    loader.load(
-      modelUrl,
-      (gltf) => {
+    const setupModel = (gltf) => {
+      try {
         const modelGroup = currentModelGroupRef.current;
+        if (!modelGroup) return;
+
         while (modelGroup.children.length > 0) {
           const obj = modelGroup.children[0];
           obj.traverse((child) => {
@@ -320,7 +359,7 @@ export default function Viewer3D({
           modelGroup.remove(obj);
         }
 
-        const model = gltf.scene;
+        const model = gltf.scene.clone(true);
         model.traverse((child) => {
           if (child.isMesh && child.material) {
             child.material.side = THREE.DoubleSide;
@@ -336,9 +375,29 @@ export default function Viewer3D({
 
         // Fit camera
         fitCameraToObject(model);
-
+      } catch (postErr) {
+        console.error('Error post-processing model:', postErr);
+      } finally {
         setIsLoading(false);
         setLoadingProgress(100);
+      }
+    };
+
+    if (gltfCache.has(modelUrl)) {
+      setIsLoading(false);
+      setupModel(gltfCache.get(modelUrl));
+      return;
+    }
+
+    setIsLoading(true);
+    setLoadingProgress(20);
+
+    const loader = new GLTFLoader();
+    loader.load(
+      modelUrl,
+      (gltf) => {
+        gltfCache.set(modelUrl, gltf);
+        setupModel(gltf);
       },
       (xhr) => {
         if (xhr.total > 0) {
@@ -377,6 +436,16 @@ export default function Viewer3D({
     controls.maxDistance = maxDim * 8;
     controls.minDistance = maxDim * 0.1;
     controls.update();
+
+    // Dynamically adapt floor grid and shadow plane to model scale
+    if (gridHelperRef.current) {
+      const gridScale = Math.max(1, (maxDim * 2.2) / 16);
+      gridHelperRef.current.scale.set(gridScale, 1, gridScale);
+    }
+    if (shadowPlaneRef.current) {
+      const planeScale = Math.max(1, (maxDim * 2.5) / 35);
+      shadowPlaneRef.current.scale.set(planeScale, planeScale, 1);
+    }
   };
 
   const setCameraView = (viewType) => {
@@ -415,7 +484,7 @@ export default function Viewer3D({
     rendererRef.current.render(sceneRef.current, cameraRef.current);
     const dataUrl = rendererRef.current.domElement.toDataURL('image/png');
     const link = document.createElement('a');
-    link.download = `ETSIE_${currentDetail?.id || 'detalle'}.png`;
+    link.download = `ETSIE_${currentDetail?.title ? currentDetail.title.replace(/\s+/g, '_') : (currentDetail?.id || 'maqueta')}.png`;
     link.href = dataUrl;
     link.click();
   };
