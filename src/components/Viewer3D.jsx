@@ -276,7 +276,7 @@ export default function Viewer3D({
         }
       }
     });
-  }, []);
+  }, [currentDetail]);
 
   // Update materials when preset or edge toggle changes
   useEffect(() => {
