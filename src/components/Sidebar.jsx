@@ -47,13 +47,18 @@ const DetailCard = memo(function DetailCard({ detail, isSelected, onSelect }) {
       <div className="relative w-14 h-14 rounded-lg bg-gradient-to-b from-slate-50 to-slate-100 border border-slate-200/80 flex items-center justify-center flex-shrink-0 overflow-hidden group-hover:border-slate-300 transition-colors">
         <Box className="w-6 h-6 text-slate-300 absolute inset-auto pointer-events-none" />
         <img
-          src={`${import.meta.env.BASE_URL || '/'}thumbnails/${detail.id}.png`}
+          src={`${import.meta.env.BASE_URL || '/'}${(detail.thumbnail || `thumbnails/${detail.id}.png`).replace(/^\//, '')}`}
           alt={displayTitle}
           loading="lazy"
           decoding="async"
           className="relative z-10 max-h-12 max-w-12 object-contain filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.12)] group-hover:scale-110 transition-transform duration-200"
           onError={(e) => {
-            e.currentTarget.style.display = 'none';
+            if (!e.currentTarget.dataset.retried) {
+              e.currentTarget.dataset.retried = 'true';
+              e.currentTarget.src = `${import.meta.env.BASE_URL || '/'}thumbnails/${detail.id}.png`;
+            } else {
+              e.currentTarget.style.display = 'none';
+            }
           }}
         />
       </div>

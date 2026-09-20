@@ -17,7 +17,8 @@ export default function Toolbar({
   onToggleSidebar,
   isPropsOpen,
   onToggleProps,
-  onResetView
+  onResetView,
+  onSelectFirst
 }) {
   return (
     <header className="h-14 bg-white border-b border-slate-200 px-4 flex items-center justify-between z-20 select-none">
@@ -33,8 +34,12 @@ export default function Toolbar({
           <PanelLeft className="w-4 h-4" />
         </button>
 
-        <div className="flex items-center gap-2.5">
-          <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow-sm shadow-blue-500/20">
+        <button 
+          onClick={onSelectFirst}
+          className="flex items-center gap-2.5 text-left cursor-pointer hover:opacity-85 transition-opacity group"
+          title="Ir a Maqueta 1 (Detalle de referencia inicial)"
+        >
+          <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow-sm shadow-blue-500/20 group-hover:scale-105 transition-transform">
             <Box className="w-4 h-4 text-white stroke-[2.2]" />
           </div>
           <div className="flex flex-col">
@@ -45,14 +50,15 @@ export default function Toolbar({
               </span>
             </span>
           </div>
-          <span className="text-slate-300 mx-1 hidden sm:inline">/</span>
-          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 shadow-2xs">
-            <span className="font-mono text-blue-600 font-bold">{currentDetail?.fileCode || `MAQUETA-${currentDetail?.maquetaNumber}`}</span>
-            <span className="text-slate-900 font-semibold">{currentDetail?.title}</span>
-            {currentDetail?.technicalTitle && (
-              <span className="truncate max-w-[140px] sm:max-w-[260px] text-slate-500 font-normal hidden sm:inline">• {currentDetail.technicalTitle}</span>
-            )}
-          </div>
+        </button>
+
+        <span className="text-slate-300 mx-1 hidden sm:inline">/</span>
+        <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 shadow-2xs">
+          <span className="font-mono text-blue-600 font-bold">{currentDetail?.fileCode || `MAQUETA-${currentDetail?.maquetaNumber}`}</span>
+          <span className="text-slate-900 font-semibold">{currentDetail?.title}</span>
+          {currentDetail?.technicalTitle && (
+            <span className="truncate max-w-[140px] sm:max-w-[260px] text-slate-500 font-normal hidden sm:inline">• {currentDetail.technicalTitle}</span>
+          )}
         </div>
       </div>
 

@@ -32,7 +32,7 @@ function getTexture(key, path, repeat = 1.0) {
 export function createRealisticMaterial(preset = 'steel_hot_rolled', partName = '', detailId = '', materialName = '') {
   const nameLower = (partName || '').toLowerCase();
   const matLower = (materialName || '').toLowerCase();
-  const isDatasmith = (detailId || '').startsWith('maqueta-ma');
+  const isDatasmith = (detailId || '').startsWith('maqueta-ma') || detailId.includes('ma02') || detailId.includes('ma03') || detailId.includes('ma04') || detailId.includes('ma05') || detailId.includes('ma07') || detailId.includes('ma08') || detailId.includes('ma09');
 
   // Textures
   const steelScale = 1.0;
@@ -41,24 +41,33 @@ export function createRealisticMaterial(preset = 'steel_hot_rolled', partName = 
   const steelNormal = getTexture('steelRealNormal', '/textures/steel_normal_real.jpg', steelScale);
   const steelMetal = getTexture('steelRealMetal', '/textures/steel_metalness_real.jpg', steelScale);
 
-  const boltScale = 2.0;
+  const boltScale = 1.5;
   const boltDiff = getTexture('galvRealDiff', '/textures/galv_color_real.jpg', boltScale);
   const boltRough = getTexture('galvRealRough', '/textures/galv_roughness_real.jpg', boltScale);
   const boltNormal = getTexture('galvRealNormal', '/textures/galv_normal_real.jpg', boltScale);
   const boltMetal = getTexture('galvRealMetal', '/textures/galv_metalness_real.jpg', boltScale);
 
-  const concScale = 1.2;
+  const concScale = 1.0;
   const concDiff = getTexture('concDiff', '/textures/concrete_diffuse_pbr.png', concScale);
   const concNormal = getTexture('concNormal', '/textures/concrete_normal.png', concScale);
   const concRough = getTexture('concRough', '/textures/concrete_roughness.png', concScale);
   const concBump = getTexture('concBump', '/textures/concrete_bump.png', concScale);
 
-  // 1. Concrete (Hormigón Estructural, Zapatas, Pedestales, Losas, Capa de Compresión, Estuco en maquetas Datasmith)
+  // 1. Concrete (Hormigón Estructural, Zapatas, Pedestales, Losas, Capa de Compresión, Plintos)
+  // En maquetas Datasmith: Vidrio (Mesh 8 en MA-05), Madera (pedestales en MA-04/03/02), Estuco y Hormigón son todos cimentaciones/losas reales
   const isPractice2 = (detailId || '').startsWith('P2');
   const isConcrete = (
     matLower.includes('hormigon') ||
     matLower.includes('hormigón') ||
-    (isDatasmith && (matLower.includes('estuco') || nameLower.includes('estuco') || nameLower.includes('hormigon'))) ||
+    (isDatasmith && (
+      matLower.includes('estuco') ||
+      matLower.includes('vidrio') ||
+      matLower.includes('madera') ||
+      nameLower.includes('estuco') ||
+      nameLower.includes('hormigon') ||
+      nameLower.includes('base') ||
+      nameLower.includes('pedestal')
+    )) ||
     (isPractice2 && (
       nameLower.includes('pedestal') ||
       nameLower.includes('capa:0.07') ||
@@ -78,14 +87,14 @@ export function createRealisticMaterial(preset = 'steel_hot_rolled', partName = 
 
   if (isConcrete && preset !== 'wireframe') {
     return new THREE.MeshStandardMaterial({
-      color: 0xffffff,
+      color: 0xe2e8f0,
       map: concDiff,
       normalMap: concNormal,
-      normalScale: new THREE.Vector2(0.75, 0.75),
+      normalScale: new THREE.Vector2(0.85, 0.85),
       roughnessMap: concRough,
       bumpMap: concBump,
       bumpScale: 0.04,
-      roughness: 0.86,
+      roughness: 0.84,
       metalness: 0.02,
       side: THREE.DoubleSide,
       transparent: false,
@@ -93,7 +102,7 @@ export function createRealisticMaterial(preset = 'steel_hot_rolled', partName = 
     });
   }
 
-  // 2. Hardware, Screws, Bolts, Cleats & Fasteners (Tornillos, Pernos, Varillas, Anclajes, Herrajes, y Baldosas de sujeción en MA07)
+  // 2. Hardware, Screws, Bolts, Cleats & Fasteners (Tornillos, Pernos, Varillas, Anclajes, Herrajes, y Baldosas de anclaje en MA07)
   const isFastener = (
     matLower.includes('cromo') ||
     matLower.includes('niquel') ||
@@ -119,18 +128,43 @@ export function createRealisticMaterial(preset = 'steel_hot_rolled', partName = 
       map: boltDiff,
       roughnessMap: boltRough,
       normalMap: boltNormal,
-      normalScale: new THREE.Vector2(0.55, 0.55),
+      normalScale: new THREE.Vector2(0.65, 0.65),
       metalnessMap: boltMetal,
-      roughness: 0.24,
-      metalness: 0.94,
+      roughness: 0.28,
+      metalness: 0.82,
       side: THREE.DoubleSide,
       transparent: false,
       opacity: 1.0
     });
   }
 
-  // 3. Timber & Structural Wood (Madera de Roble, Caoba, Vigas de Madera)
-  const isWood = (
+  // 3. Shop Primer / Bermellón / Burdeos / Minio Antioxidante (Cartelas de unión y rigidizadores de acero)
+  const isPrimer = (
+    matLower.includes('bermell') ||
+    matLower.includes('burdeos') ||
+    matLower.includes('minio') ||
+    (isDatasmith && matLower.includes('rojo')) ||
+    preset === 'red_primer'
+  );
+
+  if (isPrimer && preset !== 'wireframe') {
+    const isBurdeos = matLower.includes('burdeos');
+    return new THREE.MeshStandardMaterial({
+      color: isBurdeos ? 0x7c2d2d : 0xa8382a,
+      map: steelDiff,
+      roughnessMap: steelRough,
+      normalMap: steelNormal,
+      normalScale: new THREE.Vector2(0.6, 0.6),
+      roughness: 0.45,
+      metalness: 0.45,
+      side: THREE.DoubleSide,
+      transparent: false,
+      opacity: 1.0
+    });
+  }
+
+  // 4. Timber & Structural Wood (Solo en modelos no-Datasmith con madera real)
+  const isWood = (!isDatasmith) && (
     matLower.includes('madera') ||
     nameLower.includes('madera') ||
     matLower.includes('roble') ||
@@ -147,63 +181,39 @@ export function createRealisticMaterial(preset = 'steel_hot_rolled', partName = 
       color: isMahogany ? 0xb8603e : 0xf2cb9b,
       map: woodDiff,
       normalMap: woodNormal,
-      normalScale: new THREE.Vector2(0.45, 0.45),
+      normalScale: new THREE.Vector2(0.5, 0.5),
       roughnessMap: woodRough,
-      roughness: 0.62,
+      roughness: 0.60,
       metalness: 0.0,
       side: THREE.DoubleSide
     });
   }
 
-  // 4. Shop Primer / Bermellón / Burdeos / Minio Antioxidante (Cartelas de unión y rigidizadores de acero)
-  const isPrimer = (
-    matLower.includes('bermell') ||
-    matLower.includes('burdeos') ||
-    matLower.includes('minio') ||
-    preset === 'red_primer'
-  );
-
-  if (isPrimer && preset !== 'wireframe') {
-    const isBurdeos = matLower.includes('burdeos');
-    return new THREE.MeshStandardMaterial({
-      color: isBurdeos ? 0x7c2d2d : 0xb53a2b,
-      map: steelDiff,
-      roughnessMap: steelRough,
-      normalMap: steelNormal,
-      normalScale: new THREE.Vector2(0.45, 0.45),
-      roughness: 0.44,
-      metalness: 0.62,
-      side: THREE.DoubleSide,
-      transparent: false,
-      opacity: 1.0
-    });
-  }
-
-  // 5. Aluminum (Perfiles y Chapas de Aluminio)
-  if (matLower.includes('aluminio') && preset !== 'wireframe') {
+  // 5. Aluminum (Perfiles de Aluminio en modelos no-Datasmith)
+  if ((!isDatasmith) && matLower.includes('aluminio') && preset !== 'wireframe') {
     return new THREE.MeshStandardMaterial({
       color: 0xe2e8f0,
       map: steelDiff,
       normalMap: steelNormal,
-      normalScale: new THREE.Vector2(0.3, 0.3),
-      roughness: 0.32,
+      normalScale: new THREE.Vector2(0.4, 0.4),
+      roughness: 0.35,
+      metalness: 0.85,
+      side: THREE.DoubleSide
+    });
+  }
+
+  // 6. Copper Earthing Rods & Conductors (Puesta a tierra, solo no-Datasmith)
+  if ((!isDatasmith) && (matLower.includes('cobre') || nameLower.includes('cobre') || nameLower.includes('pica') || nameLower.includes('cable_cobre')) && preset !== 'wireframe') {
+    return new THREE.MeshStandardMaterial({
+      color: 0xca7748,
+      roughness: 0.28,
       metalness: 0.90,
       side: THREE.DoubleSide
     });
   }
 
-  // 6. Copper Earthing Rods & Conductors (Puesta a tierra)
-  if ((matLower.includes('cobre') || nameLower.includes('cobre') || nameLower.includes('pica') || nameLower.includes('cable_cobre')) && preset !== 'wireframe') {
-    return new THREE.MeshStandardMaterial({
-      color: 0xca7748,
-      roughness: 0.28,
-      metalness: 0.92,
-      side: THREE.DoubleSide
-    });
-  }
-
-  // 7. Architectural Glass (Vidrio Claro)
-  if ((matLower.includes('vidrio') || matLower.includes('cristal')) && preset !== 'wireframe') {
+  // 7. Architectural Glass (Solo no-Datasmith)
+  if ((!isDatasmith) && (matLower.includes('vidrio') || matLower.includes('cristal')) && preset !== 'wireframe') {
     return new THREE.MeshStandardMaterial({
       color: 0xe0f2fe,
       roughness: 0.05,
@@ -215,38 +225,42 @@ export function createRealisticMaterial(preset = 'steel_hot_rolled', partName = 
     });
   }
 
-  // 8. Structural Steel Profiles (Pintura Gris Claro / Pintura Gris Oscuro en Revit/Datasmith)
-  // These are structural steel beams, columns, purlins, base plates, trusses!
-  if ((matLower.includes('pintura-_gris_cl') || matLower.includes('pintura-_gris_os') || matLower.includes('pintura')) && preset !== 'wireframe') {
-    const isDark = matLower.includes('gris_os');
+  // 8. Terracotta / Ceramic (Bovedillas de forjado)
+  if (nameLower.includes('bovedilla') && preset !== 'wireframe') {
     return new THREE.MeshStandardMaterial({
-      color: isDark ? 0x999999 : 0xffffff,
-      map: steelDiff,
-      normalMap: steelNormal,
-      normalScale: new THREE.Vector2(0.7, 0.7),
-      roughnessMap: steelRough,
-      metalnessMap: steelMetal,
-      roughness: isDark ? 0.36 : 0.32,
-      metalness: 0.92,
-      side: THREE.DoubleSide,
-      transparent: false,
-      opacity: 1.0
+      color: 0xc25e38,
+      roughness: 0.92,
+      metalness: 0.0,
+      side: THREE.DoubleSide
     });
   }
 
-  // 9. Standard Structural Rolled Steel S275 / S355 (All other steel profiles, flanges, webs, gussets)
+  // 9. Cast Iron (Tapas de arqueta de registro y anclajes)
+  if (nameLower.includes('tapa') && preset !== 'wireframe') {
+    return new THREE.MeshStandardMaterial({
+      color: 0x27272a,
+      roughness: 0.82,
+      metalness: 0.65,
+      side: THREE.DoubleSide
+    });
+  }
+
+  // 10. Genuine Structural Rolled Steel S275 / S355 (Vigas, pilares, cartelas, correas, nudos)
+  // Aplica a acero Datasmith (Pintura Gris Claro, Pintura Gris Oscuro, Acero, vigas de aluminio, perfiles columna)
+  // y a todos los 34 detalles estructurales originales
+  const isDarkSteel = matLower.includes('gris_os') || nameLower.includes('oscuro');
   switch (preset) {
     case 'steel_hot_rolled':
     default:
       return new THREE.MeshStandardMaterial({
-        color: 0xf1f5f9,
+        color: isDarkSteel ? 0x9aa5b4 : 0xd2d9e3,
         map: steelDiff,
         roughnessMap: steelRough,
         normalMap: steelNormal,
-        normalScale: new THREE.Vector2(0.5, 0.5),
+        normalScale: new THREE.Vector2(0.8, 0.8),
         metalnessMap: steelMetal,
-        roughness: 0.36,
-        metalness: 0.90,
+        roughness: isDarkSteel ? 0.38 : 0.34,
+        metalness: 0.65,
         side: THREE.DoubleSide,
         transparent: false,
         opacity: 1.0

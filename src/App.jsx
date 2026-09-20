@@ -84,6 +84,7 @@ export default function App() {
         isPropsOpen={isPropsOpen}
         onToggleProps={() => setIsPropsOpen(!isPropsOpen)}
         onResetView={handleResetView}
+        onSelectFirst={() => handleSelectDetail(details[0])}
       />
 
       {/* Main Workspace: Left Biblioteca + 3D Viewport + Right Propiedades */}

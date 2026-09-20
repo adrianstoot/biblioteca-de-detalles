@@ -237,7 +237,11 @@ export default function Viewer3D({
 
 // Helper to guarantee UV coordinates for 2D PBR textures on any CAD mesh
 function ensureGeometryUV(geometry) {
-  if (!geometry || geometry.attributes.uv) return;
+  if (!geometry) return;
+  if (!geometry.attributes.normal) {
+    geometry.computeVertexNormals();
+  }
+  if (geometry.attributes.uv) return;
   const pos = geometry.attributes.position;
   if (!pos) return;
   const count = pos.count;
@@ -269,8 +273,11 @@ function ensureGeometryUV(geometry) {
 }
 
 // Uniform physical box UV projection for architectural Datasmith models
-function applyDatasmithPhysicalUVs(geometry, density = 1.0) {
+function applyDatasmithPhysicalUVs(geometry, density = 1.8) {
   if (!geometry) return;
+  if (!geometry.attributes.normal) {
+    geometry.computeVertexNormals();
+  }
   const pos = geometry.attributes.position;
   if (!pos) return;
   const count = pos.count;
@@ -330,10 +337,16 @@ function applyDatasmithPhysicalUVs(geometry, density = 1.0) {
         const isTripo = currentDetail?.categoryKey === 'tripo_models';
         const isDatasmith = currentDetail?.categoryKey === 'architectural_models';
 
-        // Ensure UV coordinates for PBR textures
+        // Ensure geometry normals and UV coordinates for PBR textures
         if (child.geometry) {
+          if (!child.geometry.attributes.normal) {
+            child.geometry.computeVertexNormals();
+          }
           if (isDatasmith) {
-            applyDatasmithPhysicalUVs(child.geometry, 1.8);
+            const matName = (child.userData.originalMaterial?.name || '').toLowerCase();
+            const isConcretePart = matName.includes('hormigon') || matName.includes('estuco') || matName.includes('vidrio') || matName.includes('madera');
+            const density = isConcretePart ? 1.4 : 1.8;
+            applyDatasmithPhysicalUVs(child.geometry, density);
           } else {
             ensureGeometryUV(child.geometry);
           }
@@ -395,6 +408,9 @@ function applyDatasmithPhysicalUVs(geometry, density = 1.0) {
         const model = gltf.scene.clone(true);
         model.traverse((child) => {
           if (child.isMesh && child.material) {
+            if (child.geometry && !child.geometry.attributes.normal) {
+              child.geometry.computeVertexNormals();
+            }
             child.material.side = THREE.DoubleSide;
             child.castShadow = true;
             child.receiveShadow = true;
