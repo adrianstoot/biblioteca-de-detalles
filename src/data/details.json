@@ -1,9 +1,69 @@
 [
   {
-    "id": "tripo-obra-model2",
+    "id": "P1-10",
     "fileCode": "MAQUETA-01",
     "title": "Maqueta 1",
+    "practice": "Práctica 1: Uniones y Empalmes",
+    "practiceNum": 1,
+    "category": "Nudos Rígidos Viga-Pilar",
+    "categoryKey": "rigid",
+    "shortDescription": "Empotramiento viga-pilar con rigidizadores horizontales de tracción y compresión.",
+    "detailedDescription": "Nudo rígido de pórtico formado por viga IPE soldada a tope directamente al ala de pilar HEB/IPE. Incluye rigidizadores horizontales en el alma del pilar alineados con las alas de la viga para evitar el abollamiento por compresión y plastificación por tracción del alma del pilar.",
+    "structuralBehavior": "Nudo rígido de resistencia completa. Transmisión íntegra del momento elástico/plástico de la viga sin distorsión del nudo.",
+    "components": [
+      "Pilar de perfiles HEB/IPE",
+      "Viga IPE",
+      "Rigidizadores de compresión",
+      "Rigidizadores de tracción",
+      "Soldadura a tope en alas y ángulo en alma"
+    ],
+    "normativeReference": "CTE DB-SE-A Art. 8.6 / UNE-EN 1993-1-8 Cl. 6.2",
+    "tags": [
+      "maqueta",
+      "maqueta 17",
+      "maqueta-17",
+      "rigido",
+      "empotrado",
+      "soldado",
+      "rigidizador",
+      "traccion",
+      "compresion",
+      "ipe",
+      "heb",
+      "nudo",
+      "heb",
+      "con",
+      "ipe",
+      "y",
+      "rigidizadores"
+    ],
+    "modelFile": "/models/P1-10.glb",
+    "dimensions": {
+      "width": 3.309,
+      "height": 0.792,
+      "depth": 0.45
+    },
+    "stats": {
+      "geometriesCount": 10,
+      "totalVertices": 1068,
+      "totalFaces": 356,
+      "fileSizeKb": 45.1
+    },
+    "fullTitle": "Nudo Rígido Soldado Viga IPE a Pilar con Rigidizadores de Alma",
     "shortTitle": "Maqueta 1",
+    "maquetaNumber": 1,
+    "maquetaId": "maqueta-1",
+    "name": "Maqueta 17",
+    "displayName": "Maqueta 17",
+    "technicalTitle": "Nudo HEB con IPE y rigidizadores (Detalle de Referencia)",
+    "originalCode": "P1-10",
+    "thumbnail": "/thumbnails/maqueta-1.png"
+  },
+  {
+    "id": "tripo-obra-model2",
+    "fileCode": "MAQUETA-02",
+    "title": "Maqueta 2",
+    "shortTitle": "Maqueta 2",
     "practice": "Modelos Tripo 3D Metaverso",
     "practiceNum": 4,
     "category": "Modelos Tripo 3D",
@@ -49,19 +109,19 @@
       "geometriesCount": 1,
       "fileSizeKb": 976
     },
-    "maquetaNumber": 1,
-    "maquetaId": "maqueta-1",
+    "maquetaNumber": 2,
+    "maquetaId": "maqueta-2",
     "name": "Maqueta 1",
     "displayName": "Maqueta 1",
     "technicalTitle": "Maqueta de Obra 3 (Losa y Muro de Hormigón Armado)",
     "originalCode": "TRIPO-OBRA-03",
-    "thumbnail": "tripo-obra-model2"
+    "thumbnail": "/thumbnails/maqueta-2.png"
   },
   {
     "id": "maqueta-ma02",
-    "fileCode": "MAQUETA-02",
-    "title": "Maqueta 2",
-    "shortTitle": "Maqueta 2",
+    "fileCode": "MAQUETA-03",
+    "title": "Maqueta 3",
+    "shortTitle": "Maqueta 3",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -110,19 +170,19 @@
       ],
       "fileSizeKb": 13.2
     },
-    "maquetaNumber": 2,
-    "maquetaId": "maqueta-2",
+    "maquetaNumber": 3,
+    "maquetaId": "maqueta-3",
     "name": "Maqueta 2",
     "displayName": "Maqueta 2",
     "technicalTitle": "Maqueta ETSIE MA-02 (Envolvente y Fachadas)",
     "originalCode": "MAQUETA-MA02",
-    "thumbnail": "maqueta-ma02"
+    "thumbnail": "/thumbnails/maqueta-3.png"
   },
   {
     "id": "maqueta-ma03",
-    "fileCode": "MAQUETA-03",
-    "title": "Maqueta 3",
-    "shortTitle": "Maqueta 3",
+    "fileCode": "MAQUETA-04",
+    "title": "Maqueta 4",
+    "shortTitle": "Maqueta 4",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -172,19 +232,19 @@
       ],
       "fileSizeKb": 10.5
     },
-    "maquetaNumber": 3,
-    "maquetaId": "maqueta-3",
+    "maquetaNumber": 4,
+    "maquetaId": "maqueta-4",
     "name": "Maqueta 3",
     "displayName": "Maqueta 3",
     "technicalTitle": "Maqueta ETSIE MA-03 (Espacios y Aulas)",
     "originalCode": "MAQUETA-MA03",
-    "thumbnail": "maqueta-ma03"
+    "thumbnail": "/thumbnails/maqueta-4.png"
   },
   {
     "id": "maqueta-ma04",
-    "fileCode": "MAQUETA-04",
-    "title": "Maqueta 4",
-    "shortTitle": "Maqueta 4",
+    "fileCode": "MAQUETA-05",
+    "title": "Maqueta 5",
+    "shortTitle": "Maqueta 5",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -234,19 +294,19 @@
       ],
       "fileSizeKb": 19.8
     },
-    "maquetaNumber": 4,
-    "maquetaId": "maqueta-4",
+    "maquetaNumber": 5,
+    "maquetaId": "maqueta-5",
     "name": "Maqueta 4",
     "displayName": "Maqueta 4",
     "technicalTitle": "Maqueta ETSIE MA-04 (Módulo Docente Norte)",
     "originalCode": "MAQUETA-MA04",
-    "thumbnail": "maqueta-ma04"
+    "thumbnail": "/thumbnails/maqueta-5.png"
   },
   {
     "id": "maqueta-ma05",
-    "fileCode": "MAQUETA-05",
-    "title": "Maqueta 5",
-    "shortTitle": "Maqueta 5",
+    "fileCode": "MAQUETA-06",
+    "title": "Maqueta 6",
+    "shortTitle": "Maqueta 6",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -299,19 +359,19 @@
       ],
       "fileSizeKb": 134.6
     },
-    "maquetaNumber": 5,
-    "maquetaId": "maqueta-5",
+    "maquetaNumber": 6,
+    "maquetaId": "maqueta-6",
     "name": "Maqueta 5",
     "displayName": "Maqueta 5",
     "technicalTitle": "Maqueta ETSIE MA-05 (Estructura y Forjados)",
     "originalCode": "MAQUETA-MA05",
-    "thumbnail": "maqueta-ma05"
+    "thumbnail": "/thumbnails/maqueta-6.png"
   },
   {
     "id": "tripo-obra-ma06",
-    "fileCode": "MAQUETA-06",
-    "title": "Maqueta 6",
-    "shortTitle": "Maqueta 6",
+    "fileCode": "MAQUETA-07",
+    "title": "Maqueta 7",
+    "shortTitle": "Maqueta 7",
     "practice": "Modelos Tripo 3D Metaverso",
     "practiceNum": 4,
     "category": "Modelos Tripo 3D",
@@ -357,19 +417,19 @@
       "geometriesCount": 1,
       "fileSizeKb": 1730.4
     },
-    "maquetaNumber": 6,
-    "maquetaId": "maqueta-6",
+    "maquetaNumber": 7,
+    "maquetaId": "maqueta-7",
     "name": "Maqueta 6",
     "displayName": "Maqueta 6",
     "technicalTitle": "Maqueta de Obra con Armaduras 1 (Cimentación y Ferralla)",
     "originalCode": "TRIPO-OBRA-01",
-    "thumbnail": "tripo-obra-ma06"
+    "thumbnail": "/thumbnails/maqueta-7.png"
   },
   {
     "id": "maqueta-ma07",
-    "fileCode": "MAQUETA-07",
-    "title": "Maqueta 7",
-    "shortTitle": "Maqueta 7",
+    "fileCode": "MAQUETA-08",
+    "title": "Maqueta 8",
+    "shortTitle": "Maqueta 8",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -419,19 +479,19 @@
       ],
       "fileSizeKb": 129.4
     },
-    "maquetaNumber": 7,
-    "maquetaId": "maqueta-7",
+    "maquetaNumber": 8,
+    "maquetaId": "maqueta-8",
     "name": "Maqueta 7",
     "displayName": "Maqueta 7",
     "technicalTitle": "Maqueta ETSIE MA-07 (Acabados y Pavimentos)",
     "originalCode": "MAQUETA-MA07",
-    "thumbnail": "maqueta-ma07"
+    "thumbnail": "/thumbnails/maqueta-8.png"
   },
   {
     "id": "maqueta-ma08",
-    "fileCode": "MAQUETA-08",
-    "title": "Maqueta 8",
-    "shortTitle": "Maqueta 8",
+    "fileCode": "MAQUETA-09",
+    "title": "Maqueta 9",
+    "shortTitle": "Maqueta 9",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -478,19 +538,19 @@
       ],
       "fileSizeKb": 15
     },
-    "maquetaNumber": 8,
-    "maquetaId": "maqueta-8",
+    "maquetaNumber": 9,
+    "maquetaId": "maqueta-9",
     "name": "Maqueta 8",
     "displayName": "Maqueta 8",
     "technicalTitle": "Maqueta ETSIE MA-08 (Instalaciones y Conducciones)",
     "originalCode": "MAQUETA-MA08",
-    "thumbnail": "maqueta-ma08"
+    "thumbnail": "/thumbnails/maqueta-9.png"
   },
   {
     "id": "maqueta-ma09",
-    "fileCode": "MAQUETA-09",
-    "title": "Maqueta 9",
-    "shortTitle": "Maqueta 9",
+    "fileCode": "MAQUETA-10",
+    "title": "Maqueta 10",
+    "shortTitle": "Maqueta 10",
     "practice": "Maquetas BIM Datasmith ETSIE",
     "practiceNum": 5,
     "category": "Maquetas Datasmith",
@@ -537,19 +597,19 @@
       ],
       "fileSizeKb": 106.6
     },
-    "maquetaNumber": 9,
-    "maquetaId": "maqueta-9",
+    "maquetaNumber": 10,
+    "maquetaId": "maqueta-10",
     "name": "Maqueta 9",
     "displayName": "Maqueta 9",
     "technicalTitle": "Maqueta ETSIE MA-09 (Cubiertas y Lucernarios)",
     "originalCode": "MAQUETA-MA09",
-    "thumbnail": "maqueta-ma09"
+    "thumbnail": "/thumbnails/maqueta-10.png"
   },
   {
     "id": "tripo-obra-ma10",
-    "fileCode": "MAQUETA-10",
-    "title": "Maqueta 10",
-    "shortTitle": "Maqueta 10",
+    "fileCode": "MAQUETA-11",
+    "title": "Maqueta 11",
+    "shortTitle": "Maqueta 11",
     "practice": "Modelos Tripo 3D Metaverso",
     "practiceNum": 4,
     "category": "Modelos Tripo 3D",
@@ -598,18 +658,18 @@
       "geometriesCount": 1,
       "fileSizeKb": 1390
     },
-    "maquetaNumber": 10,
-    "maquetaId": "maqueta-10",
+    "maquetaNumber": 11,
+    "maquetaId": "maqueta-11",
     "name": "Maqueta 10",
     "displayName": "Maqueta 10",
     "technicalTitle": "Maqueta de Obra con Armaduras 2 (Pilar y Nudo con Ferralla)",
     "originalCode": "TRIPO-OBRA-02",
-    "thumbnail": "tripo-obra-ma10"
+    "thumbnail": "/thumbnails/maqueta-11.png"
   },
   {
     "id": "P1-1",
-    "fileCode": "MAQUETA-11",
-    "title": "Maqueta 11",
+    "fileCode": "MAQUETA-12",
+    "title": "Maqueta 12",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Nudos Articulados Viga-Pilar",
@@ -654,19 +714,19 @@
       "fileSizeKb": 40.3
     },
     "fullTitle": "Nudo Articulado Viga IPE a Pilar UPN con Casquillo de Alma",
-    "shortTitle": "Maqueta 11",
-    "maquetaNumber": 11,
-    "maquetaId": "maqueta-11",
+    "shortTitle": "Maqueta 12",
+    "maquetaNumber": 12,
+    "maquetaId": "maqueta-12",
     "name": "Maqueta 11",
     "displayName": "Maqueta 11",
     "technicalTitle": "Nudo articulado viga a pilar",
     "originalCode": "P1-1",
-    "thumbnail": "P1-1"
+    "thumbnail": "/thumbnails/maqueta-12.png"
   },
   {
     "id": "P1-2",
-    "fileCode": "MAQUETA-12",
-    "title": "Maqueta 12",
+    "fileCode": "MAQUETA-13",
+    "title": "Maqueta 13",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Nudos Articulados Viga-Pilar",
@@ -711,19 +771,19 @@
       "fileSizeKb": 699.5
     },
     "fullTitle": "Nudo Semi-Rígido Viga a Pilar con Angulares de Asiento y Cabeza",
-    "shortTitle": "Maqueta 12",
-    "maquetaNumber": 12,
-    "maquetaId": "maqueta-12",
+    "shortTitle": "Maqueta 13",
+    "maquetaNumber": 13,
+    "maquetaId": "maqueta-13",
     "name": "Maqueta 12",
     "displayName": "Maqueta 12",
     "technicalTitle": "Nudo viga a pilar con angulares",
     "originalCode": "P1-2",
-    "thumbnail": "P1-2"
+    "thumbnail": "/thumbnails/maqueta-13.png"
   },
   {
     "id": "P1-6",
-    "fileCode": "MAQUETA-13",
-    "title": "Maqueta 13",
+    "fileCode": "MAQUETA-14",
+    "title": "Maqueta 14",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Nudos Articulados Viga-Pilar",
@@ -767,19 +827,19 @@
       "fileSizeKb": 70.6
     },
     "fullTitle": "Nudo de Esquina con Pilar Continuo y Viga Apoyada en Chapa de Reparto",
-    "shortTitle": "Maqueta 13",
-    "maquetaNumber": 13,
-    "maquetaId": "maqueta-13",
+    "shortTitle": "Maqueta 14",
+    "maquetaNumber": 14,
+    "maquetaId": "maqueta-14",
     "name": "Maqueta 13",
     "displayName": "Maqueta 13",
     "technicalTitle": "Nudo de esquina viga a pilar",
     "originalCode": "P1-6",
-    "thumbnail": "P1-6"
+    "thumbnail": "/thumbnails/maqueta-14.png"
   },
   {
     "id": "P1-7",
-    "fileCode": "MAQUETA-14",
-    "title": "Maqueta 14",
+    "fileCode": "MAQUETA-15",
+    "title": "Maqueta 15",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Nudos Articulados Viga-Pilar",
@@ -823,19 +883,19 @@
       "fileSizeKb": 91.2
     },
     "fullTitle": "Nudo Viga Doble UPN a Pilar Continuo con Casquillo",
-    "shortTitle": "Maqueta 14",
-    "maquetaNumber": 14,
-    "maquetaId": "maqueta-14",
+    "shortTitle": "Maqueta 15",
+    "maquetaNumber": 15,
+    "maquetaId": "maqueta-15",
     "name": "Maqueta 14",
     "displayName": "Maqueta 14",
     "technicalTitle": "Nudo viga doble UPN a pilar",
     "originalCode": "P1-7",
-    "thumbnail": "P1-7"
+    "thumbnail": "/thumbnails/maqueta-15.png"
   },
   {
     "id": "P1-8",
-    "fileCode": "MAQUETA-15",
-    "title": "Maqueta 15",
+    "fileCode": "MAQUETA-16",
+    "title": "Maqueta 16",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Empalmes y Continuidad",
@@ -878,19 +938,19 @@
       "fileSizeKb": 44.7
     },
     "fullTitle": "Empalme de Viga Soldado a Tope con Cubrejuntas en Alas",
-    "shortTitle": "Maqueta 15",
-    "maquetaNumber": 15,
-    "maquetaId": "maqueta-15",
+    "shortTitle": "Maqueta 16",
+    "maquetaNumber": 16,
+    "maquetaId": "maqueta-16",
     "name": "Maqueta 15",
     "displayName": "Maqueta 15",
     "technicalTitle": "Empalme soldado con cubrejuntas",
     "originalCode": "P1-8",
-    "thumbnail": "P1-8"
+    "thumbnail": "/thumbnails/maqueta-16.png"
   },
   {
     "id": "P1-9",
-    "fileCode": "MAQUETA-16",
-    "title": "Maqueta 16",
+    "fileCode": "MAQUETA-17",
+    "title": "Maqueta 17",
     "practice": "Práctica 1: Uniones y Empalmes",
     "practiceNum": 1,
     "category": "Empalmes y Continuidad",
@@ -935,74 +995,14 @@
       "fileSizeKb": 47.3
     },
     "fullTitle": "Empalme Atornillado Viga-Viga con Cubrejuntas en Alma y Alas",
-    "shortTitle": "Maqueta 16",
-    "maquetaNumber": 16,
-    "maquetaId": "maqueta-16",
+    "shortTitle": "Maqueta 17",
+    "maquetaNumber": 17,
+    "maquetaId": "maqueta-17",
     "name": "Maqueta 16",
     "displayName": "Maqueta 16",
     "technicalTitle": "Empalme atornillado en alma y alas",
     "originalCode": "P1-9",
-    "thumbnail": "P1-9"
-  },
-  {
-    "id": "P1-10",
-    "fileCode": "MAQUETA-17",
-    "title": "Maqueta 17",
-    "practice": "Práctica 1: Uniones y Empalmes",
-    "practiceNum": 1,
-    "category": "Nudos Rígidos Viga-Pilar",
-    "categoryKey": "rigid",
-    "shortDescription": "Empotramiento viga-pilar con rigidizadores horizontales de tracción y compresión.",
-    "detailedDescription": "Nudo rígido de pórtico formado por viga IPE soldada a tope directamente al ala de pilar HEB/IPE. Incluye rigidizadores horizontales en el alma del pilar alineados con las alas de la viga para evitar el abollamiento por compresión y plastificación por tracción del alma del pilar.",
-    "structuralBehavior": "Nudo rígido de resistencia completa. Transmisión íntegra del momento elástico/plástico de la viga sin distorsión del nudo.",
-    "components": [
-      "Pilar de perfiles HEB/IPE",
-      "Viga IPE",
-      "Rigidizadores de compresión",
-      "Rigidizadores de tracción",
-      "Soldadura a tope en alas y ángulo en alma"
-    ],
-    "normativeReference": "CTE DB-SE-A Art. 8.6 / UNE-EN 1993-1-8 Cl. 6.2",
-    "tags": [
-      "maqueta",
-      "maqueta 17",
-      "maqueta-17",
-      "rigido",
-      "empotrado",
-      "soldado",
-      "rigidizador",
-      "traccion",
-      "compresion",
-      "ipe",
-      "heb",
-      "nudo",
-      "heb",
-      "con",
-      "ipe",
-      "y",
-      "rigidizadores"
-    ],
-    "modelFile": "/models/P1-10.glb",
-    "dimensions": {
-      "width": 3.309,
-      "height": 0.792,
-      "depth": 0.45
-    },
-    "stats": {
-      "geometriesCount": 10,
-      "totalVertices": 1068,
-      "totalFaces": 356,
-      "fileSizeKb": 45.1
-    },
-    "fullTitle": "Nudo Rígido Soldado Viga IPE a Pilar con Rigidizadores de Alma",
-    "shortTitle": "Maqueta 17",
-    "maquetaNumber": 17,
-    "maquetaId": "maqueta-17",
-    "name": "Maqueta 17",
-    "displayName": "Maqueta 17",
-    "technicalTitle": "Nudo HEB con IPE y rigidizadores",
-    "originalCode": "P1-10",
-    "thumbnail": "P1-10"
+    "thumbnail": "/thumbnails/maqueta-17.png"
   },
   {
     "id": "P1-11",
@@ -1057,7 +1057,7 @@
     "displayName": "Maqueta 18",
     "technicalTitle": "Nudo IPE a pilar tubular",
     "originalCode": "P1-11",
-    "thumbnail": "P1-11"
+    "thumbnail": "/thumbnails/maqueta-18.png"
   },
   {
     "id": "P1-12",
@@ -1114,7 +1114,7 @@
     "displayName": "Maqueta 19",
     "technicalTitle": "Nudo rígido con cartela y rigidizadores",
     "originalCode": "P1-12",
-    "thumbnail": "P1-12"
+    "thumbnail": "/thumbnails/maqueta-19.png"
   },
   {
     "id": "P1-13",
@@ -1167,7 +1167,7 @@
     "displayName": "Maqueta 20",
     "technicalTitle": "Pilar compuesto presillado",
     "originalCode": "P1-13",
-    "thumbnail": "P1-13"
+    "thumbnail": "/thumbnails/maqueta-20.png"
   },
   {
     "id": "P1-14",
@@ -1224,7 +1224,7 @@
     "displayName": "Maqueta 21",
     "technicalTitle": "Cruce de vigueta y viga principal",
     "originalCode": "P1-14",
-    "thumbnail": "P1-14"
+    "thumbnail": "/thumbnails/maqueta-21.png"
   },
   {
     "id": "P1-15",
@@ -1280,7 +1280,7 @@
     "displayName": "Maqueta 22",
     "technicalTitle": "Nudo articulado con chapa corta",
     "originalCode": "P1-15",
-    "thumbnail": "P1-15"
+    "thumbnail": "/thumbnails/maqueta-22.png"
   },
   {
     "id": "P1-17",
@@ -1336,7 +1336,7 @@
     "displayName": "Maqueta 23",
     "technicalTitle": "Viga pasante sobre cabeza de pilar",
     "originalCode": "P1-17",
-    "thumbnail": "P1-17"
+    "thumbnail": "/thumbnails/maqueta-23.png"
   },
   {
     "id": "P1-18",
@@ -1392,7 +1392,7 @@
     "displayName": "Maqueta 24",
     "technicalTitle": "Cabeza de pilar con chapa de apoyo",
     "originalCode": "P1-18",
-    "thumbnail": "P1-18"
+    "thumbnail": "/thumbnails/maqueta-24.png"
   },
   {
     "id": "P1-20",
@@ -1449,7 +1449,7 @@
     "displayName": "Maqueta 25",
     "technicalTitle": "Nudo rígido con cartela acartelada",
     "originalCode": "P1-20",
-    "thumbnail": "P1-20"
+    "thumbnail": "/thumbnails/maqueta-25.png"
   },
   {
     "id": "P1-21",
@@ -1504,7 +1504,7 @@
     "displayName": "Maqueta 26",
     "technicalTitle": "Nudo con rigidizador diagonal",
     "originalCode": "P1-21",
-    "thumbnail": "P1-21"
+    "thumbnail": "/thumbnails/maqueta-26.png"
   },
   {
     "id": "P1-22",
@@ -1560,7 +1560,7 @@
     "displayName": "Maqueta 27",
     "technicalTitle": "Apoyo de viga sobre jácena",
     "originalCode": "P1-22",
-    "thumbnail": "P1-22"
+    "thumbnail": "/thumbnails/maqueta-27.png"
   },
   {
     "id": "P1-23",
@@ -1617,7 +1617,7 @@
     "displayName": "Maqueta 28",
     "technicalTitle": "Empalme de viga con platabandas",
     "originalCode": "P1-23",
-    "thumbnail": "P1-23"
+    "thumbnail": "/thumbnails/maqueta-28.png"
   },
   {
     "id": "P1-24",
@@ -1673,7 +1673,7 @@
     "displayName": "Maqueta 29",
     "technicalTitle": "Unión enrasada con doble angular",
     "originalCode": "P1-24",
-    "thumbnail": "P1-24"
+    "thumbnail": "/thumbnails/maqueta-29.png"
   },
   {
     "id": "P2-A1",
@@ -1727,7 +1727,7 @@
     "displayName": "Maqueta 30",
     "technicalTitle": "Base articulada simple",
     "originalCode": "P2-A1",
-    "thumbnail": "P2-A1"
+    "thumbnail": "/thumbnails/maqueta-30.png"
   },
   {
     "id": "P2-A2",
@@ -1783,7 +1783,7 @@
     "displayName": "Maqueta 31",
     "technicalTitle": "Base articulada con placa de asiento",
     "originalCode": "P2-A2",
-    "thumbnail": "P2-A2"
+    "thumbnail": "/thumbnails/maqueta-31.png"
   },
   {
     "id": "P2-A3",
@@ -1837,7 +1837,7 @@
     "displayName": "Maqueta 32",
     "technicalTitle": "Base articulada con cartelas",
     "originalCode": "P2-A3",
-    "thumbnail": "P2-A3"
+    "thumbnail": "/thumbnails/maqueta-32.png"
   },
   {
     "id": "P2-B1-A",
@@ -1892,7 +1892,7 @@
     "displayName": "Maqueta 33",
     "technicalTitle": "Base empotrada con 4 pernos",
     "originalCode": "P2-B1-A",
-    "thumbnail": "P2-B1-A"
+    "thumbnail": "/thumbnails/maqueta-33.png"
   },
   {
     "id": "P2-B1-B",
@@ -1946,7 +1946,7 @@
     "displayName": "Maqueta 34",
     "technicalTitle": "Base empotrada con rigidizadores",
     "originalCode": "P2-B1-B",
-    "thumbnail": "P2-B1-B"
+    "thumbnail": "/thumbnails/maqueta-34.png"
   },
   {
     "id": "P2-C1",
@@ -2001,7 +2001,7 @@
     "displayName": "Maqueta 35",
     "technicalTitle": "Base con rigidizadores en cruz",
     "originalCode": "P2-C1",
-    "thumbnail": "P2-C1"
+    "thumbnail": "/thumbnails/maqueta-35.png"
   },
   {
     "id": "P2-C2",
@@ -2057,7 +2057,7 @@
     "displayName": "Maqueta 36",
     "technicalTitle": "Transición pilar UPN a IPE",
     "originalCode": "P2-C2",
-    "thumbnail": "P2-C2"
+    "thumbnail": "/thumbnails/maqueta-36.png"
   },
   {
     "id": "P2-D1",
@@ -2111,7 +2111,7 @@
     "displayName": "Maqueta 37",
     "technicalTitle": "Base empotrada con cartelas",
     "originalCode": "P2-D1",
-    "thumbnail": "P2-D1"
+    "thumbnail": "/thumbnails/maqueta-37.png"
   },
   {
     "id": "P3-1",
@@ -2168,7 +2168,7 @@
     "displayName": "Maqueta 38",
     "technicalTitle": "Apoyo y arranque de cercha",
     "originalCode": "P3-1",
-    "thumbnail": "P3-1"
+    "thumbnail": "/thumbnails/maqueta-38.png"
   },
   {
     "id": "P3-2",
@@ -2224,7 +2224,7 @@
     "displayName": "Maqueta 39",
     "technicalTitle": "Nudo de cumbrera",
     "originalCode": "P3-2",
-    "thumbnail": "P3-2"
+    "thumbnail": "/thumbnails/maqueta-39.png"
   },
   {
     "id": "P3-3",
@@ -2280,7 +2280,7 @@
     "displayName": "Maqueta 40",
     "technicalTitle": "Cumbrera con apoyo de correa",
     "originalCode": "P3-3",
-    "thumbnail": "P3-3"
+    "thumbnail": "/thumbnails/maqueta-40.png"
   },
   {
     "id": "P3-10",
@@ -2335,7 +2335,7 @@
     "displayName": "Maqueta 41",
     "technicalTitle": "Nudo de cordón superior",
     "originalCode": "P3-10",
-    "thumbnail": "P3-10"
+    "thumbnail": "/thumbnails/maqueta-41.png"
   },
   {
     "id": "P3-20",
@@ -2391,7 +2391,7 @@
     "displayName": "Maqueta 42",
     "technicalTitle": "Nudo de tirante y péndola",
     "originalCode": "P3-20",
-    "thumbnail": "P3-20"
+    "thumbnail": "/thumbnails/maqueta-42.png"
   },
   {
     "id": "P3-29",
@@ -2448,7 +2448,7 @@
     "displayName": "Maqueta 43",
     "technicalTitle": "Tensor de tirante con horquilla",
     "originalCode": "P3-29",
-    "thumbnail": "P3-29"
+    "thumbnail": "/thumbnails/maqueta-43.png"
   },
   {
     "id": "P3-POLONCEAU COMPUESTA",
@@ -2505,6 +2505,6 @@
     "displayName": "Maqueta 44",
     "technicalTitle": "Cercha Polonceau completa",
     "originalCode": "P3-POLONCEAU COMPUESTA",
-    "thumbnail": "P3-POLONCEAU COMPUESTA"
+    "thumbnail": "/thumbnails/maqueta-44.png"
   }
 ]

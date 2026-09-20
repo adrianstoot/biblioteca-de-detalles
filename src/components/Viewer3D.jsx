@@ -268,6 +268,40 @@ function ensureGeometryUV(geometry) {
   geometry.setAttribute('uv', new THREE.BufferAttribute(uvs, 2));
 }
 
+// Uniform physical box UV projection for architectural Datasmith models
+function applyDatasmithPhysicalUVs(geometry, density = 1.0) {
+  if (!geometry) return;
+  const pos = geometry.attributes.position;
+  if (!pos) return;
+  const count = pos.count;
+  const uvs = new Float32Array(count * 2);
+  const norm = geometry.attributes.normal;
+
+  for (let i = 0; i < count; i++) {
+    const x = pos.getX(i);
+    const y = pos.getY(i);
+    const z = pos.getZ(i);
+    let nx = 0, ny = 1, nz = 0;
+    if (norm) {
+      nx = Math.abs(norm.getX(i));
+      ny = Math.abs(norm.getY(i));
+      nz = Math.abs(norm.getZ(i));
+    }
+    if (ny >= nx && ny >= nz) {
+      uvs[i * 2] = x * density;
+      uvs[i * 2 + 1] = z * density;
+    } else if (nx > ny && nx >= nz) {
+      uvs[i * 2] = z * density;
+      uvs[i * 2 + 1] = y * density;
+    } else {
+      uvs[i * 2] = x * density;
+      uvs[i * 2 + 1] = y * density;
+    }
+  }
+  geometry.setAttribute('uv', new THREE.BufferAttribute(uvs, 2));
+  geometry.attributes.uv.needsUpdate = true;
+}
+
   // Apply Materials & Clean CAD Outlines
   const applyMaterialsAndEdges = useCallback((group, preset, withEdges, detailId) => {
     if (!group) return;
@@ -298,7 +332,11 @@ function ensureGeometryUV(geometry) {
 
         // Ensure UV coordinates for PBR textures
         if (child.geometry) {
-          ensureGeometryUV(child.geometry);
+          if (isDatasmith) {
+            applyDatasmithPhysicalUVs(child.geometry, 1.8);
+          } else {
+            ensureGeometryUV(child.geometry);
+          }
         }
 
         // Preserve original material ONLY for Tripo scanned models with baked diffuse maps
