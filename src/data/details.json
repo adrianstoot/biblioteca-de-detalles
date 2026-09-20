@@ -1,5 +1,67 @@
 [
   {
+    "id": "maqueta-ma07",
+    "fileCode": "MAQUETA-08",
+    "title": "Maqueta 8",
+    "shortTitle": "Maqueta 8",
+    "practice": "Maquetas BIM Datasmith ETSIE",
+    "practiceNum": 5,
+    "category": "Maquetas Datasmith",
+    "categoryKey": "architectural_models",
+    "shortDescription": "Detalle constructivo de solados, pavimentos y encuentros de particiones.",
+    "detailedDescription": "Detalle constructivo de solados, pavimentos y encuentros de particiones. Ensamblado geométricamente a partir del archivo original Datasmith con jerarquía de piezas y materiales arquitectónicos reales (Hormigón, Acero Inoxidable, Baldosas Marrón, Pintura Bermellón, Pintura Gris Claro).",
+    "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
+    "components": [
+      "Pavimento de hormigón pulido",
+      "Revestimientos cerámicos marrones",
+      "Pinturas protectoras bermellón",
+      "Guías y zócalos de acero inox"
+    ],
+    "normativeReference": "Código Técnico de la Edificación (CTE)",
+    "tags": [
+      "maqueta",
+      "maqueta 7",
+      "maqueta-7",
+      "maqueta",
+      "ma07",
+      "datasmith",
+      "etsie",
+      "bim",
+      "metaverso",
+      "maqueta",
+      "etsie",
+      "ma-07",
+      "(acabados",
+      "y",
+      "pavimentos)"
+    ],
+    "modelFile": "/models/maqueta-MA07.glb",
+    "isTexturedModel": true,
+    "dimensions": {
+      "width": 10.14,
+      "height": 11.62,
+      "depth": 9.17
+    },
+    "stats": {
+      "geometriesCount": 6,
+      "materials": [
+        "Hormigón",
+        "Acero Inoxidable",
+        "Baldosas Marrón",
+        "Pintura Bermellón",
+        "Pintura Gris Claro"
+      ],
+      "fileSizeKb": 129.4
+    },
+    "maquetaNumber": 8,
+    "maquetaId": "maqueta-8",
+    "name": "Maqueta 7",
+    "displayName": "Maqueta 7",
+    "technicalTitle": "Maqueta ETSIE MA-07 (Acabados y Pavimentos)",
+    "originalCode": "MAQUETA-MA07",
+    "thumbnail": "/thumbnails/maqueta-8.png"
+  },
+  {
     "id": "P1-10",
     "fileCode": "MAQUETA-01",
     "title": "Maqueta 1",
@@ -424,68 +486,6 @@
     "technicalTitle": "Maqueta de Obra con Armaduras 1 (Cimentación y Ferralla)",
     "originalCode": "TRIPO-OBRA-01",
     "thumbnail": "/thumbnails/maqueta-7.png"
-  },
-  {
-    "id": "maqueta-ma07",
-    "fileCode": "MAQUETA-08",
-    "title": "Maqueta 8",
-    "shortTitle": "Maqueta 8",
-    "practice": "Maquetas BIM Datasmith ETSIE",
-    "practiceNum": 5,
-    "category": "Maquetas Datasmith",
-    "categoryKey": "architectural_models",
-    "shortDescription": "Detalle constructivo de solados, pavimentos y encuentros de particiones.",
-    "detailedDescription": "Detalle constructivo de solados, pavimentos y encuentros de particiones. Ensamblado geométricamente a partir del archivo original Datasmith con jerarquía de piezas y materiales arquitectónicos reales (Hormigón, Acero Inoxidable, Baldosas Marrón, Pintura Bermellón, Pintura Gris Claro).",
-    "structuralBehavior": "Maqueta volumétrica y constructiva para análisis espacial y estructural en el metaverso.",
-    "components": [
-      "Pavimento de hormigón pulido",
-      "Revestimientos cerámicos marrones",
-      "Pinturas protectoras bermellón",
-      "Guías y zócalos de acero inox"
-    ],
-    "normativeReference": "Código Técnico de la Edificación (CTE)",
-    "tags": [
-      "maqueta",
-      "maqueta 7",
-      "maqueta-7",
-      "maqueta",
-      "ma07",
-      "datasmith",
-      "etsie",
-      "bim",
-      "metaverso",
-      "maqueta",
-      "etsie",
-      "ma-07",
-      "(acabados",
-      "y",
-      "pavimentos)"
-    ],
-    "modelFile": "/models/maqueta-MA07.glb",
-    "isTexturedModel": true,
-    "dimensions": {
-      "width": 10.14,
-      "height": 11.62,
-      "depth": 9.17
-    },
-    "stats": {
-      "geometriesCount": 6,
-      "materials": [
-        "Hormigón",
-        "Acero Inoxidable",
-        "Baldosas Marrón",
-        "Pintura Bermellón",
-        "Pintura Gris Claro"
-      ],
-      "fileSizeKb": 129.4
-    },
-    "maquetaNumber": 8,
-    "maquetaId": "maqueta-8",
-    "name": "Maqueta 7",
-    "displayName": "Maqueta 7",
-    "technicalTitle": "Maqueta ETSIE MA-07 (Acabados y Pavimentos)",
-    "originalCode": "MAQUETA-MA07",
-    "thumbnail": "/thumbnails/maqueta-8.png"
   },
   {
     "id": "maqueta-ma08",

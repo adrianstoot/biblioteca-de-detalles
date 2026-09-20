@@ -116,11 +116,11 @@ export default function Viewer3D({
     pmremGenerator.dispose();
 
     // 6. Direct Scene Lighting (Calibrated for dark structural steel)
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.55);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.65);
     scene.add(ambientLight);
 
     // Main Sunlight
-    const sunLight = new THREE.DirectionalLight(0xfffdfa, 1.15);
+    const sunLight = new THREE.DirectionalLight(0xffffff, 1.35);
     sunLight.position.set(8, 14, 9);
     sunLight.castShadow = true;
     sunLight.shadow.mapSize.width = 2048;
@@ -273,7 +273,7 @@ function ensureGeometryUV(geometry) {
 }
 
 // Uniform physical box UV projection for architectural Datasmith models
-function applyDatasmithPhysicalUVs(geometry, density = 1.8) {
+function applyDatasmithPhysicalUVs(geometry, density = 1.0) {
   if (!geometry) return;
   if (!geometry.attributes.normal) {
     geometry.computeVertexNormals();
@@ -343,10 +343,7 @@ function applyDatasmithPhysicalUVs(geometry, density = 1.8) {
             child.geometry.computeVertexNormals();
           }
           if (isDatasmith) {
-            const matName = (child.userData.originalMaterial?.name || '').toLowerCase();
-            const isConcretePart = matName.includes('hormigon') || matName.includes('estuco') || matName.includes('vidrio') || matName.includes('madera');
-            const density = isConcretePart ? 1.4 : 1.8;
-            applyDatasmithPhysicalUVs(child.geometry, density);
+            applyDatasmithPhysicalUVs(child.geometry, 1.0);
           } else {
             ensureGeometryUV(child.geometry);
           }
@@ -474,7 +471,7 @@ function applyDatasmithPhysicalUVs(geometry, density = 1.8) {
     const maxDim = Math.max(size.x, size.y, size.z);
     const fov = camera.fov * (Math.PI / 180);
     let cameraZ = Math.abs(maxDim / 2 / Math.tan(fov / 2));
-    cameraZ *= 1.75;
+    cameraZ *= 1.20;
 
     camera.position.set(center.x + cameraZ * 0.85, center.y + cameraZ * 0.65, center.z + cameraZ * 0.85);
     camera.near = maxDim / 100;

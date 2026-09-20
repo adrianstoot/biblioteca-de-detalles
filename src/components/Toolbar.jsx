@@ -37,7 +37,7 @@ export default function Toolbar({
         <button 
           onClick={onSelectFirst}
           className="flex items-center gap-2.5 text-left cursor-pointer hover:opacity-85 transition-opacity group"
-          title="Ir a Maqueta 1 (Detalle de referencia inicial)"
+          title="Ir al primer modelo del catálogo"
         >
           <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow-sm shadow-blue-500/20 group-hover:scale-105 transition-transform">
             <Box className="w-4 h-4 text-white stroke-[2.2]" />
